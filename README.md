@@ -1,1 +1,1 @@
-# A-Study-of-Transcription-and-It-s-Effects
+# A Study of Transcription and Its Effects
