@@ -24,7 +24,7 @@ if lenPSSM == lenSeq
     % Open a blank figure
     figure;
     % Plot all the outputs in out
-    plot(1:lenSeq, cell2mat(out));
+    plot(1:lenSeq, cell2mat(out), '--o');
     % Make the plot look nice
     title('Graph of the Outputs from the PSSMs');
 else
