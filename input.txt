@@ -1,0 +1,6 @@
+SGDv3.fasta
+chr1
+yeast.tamo
+NND1
+0.35
+0.7
