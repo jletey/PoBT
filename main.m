@@ -29,6 +29,7 @@ fprintf(fileID, '%s %s \n', '# for transcription factor', TF);
 fprintf(fileID, '%s %s \n', '# weak threshold:', weakThresh);
 fprintf(fileID, '%s %s \n', '# strong threshold:', strongThresh);
 fprintf(fileID, '# \n');
+fprintf(fileID, '# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n');
 fprintf(fileID, '# \n');
 fprintf(fileID, '# %10s %10s \n', 'position', 'strength');
 % Evaluate all the chunks of the chromosome with the PSSM
