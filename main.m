@@ -22,3 +22,18 @@ chr = data{2, chrNumber};
 chr = cellstr(reshape(chr, lenOfPSSM, [])');
 % Get how many chunks of the chromosome there are
 [ amount, ~ ] = size(chr);
+% Open output.txt and write to it
+fileID = fopen('output.txt', 'w');
+fprintf(fileID, '%s %s \n', '# searching', chrName);
+fprintf(fileID, '%s %s \n', '# for transcription factor', TF);
+fprintf(fileID, '%s %s \n', '# weak threshold:', weakThresh);
+fprintf(fileID, '%s %s \n', '# strong threshold:', strongThresh);
+fprintf(fileID, '# \n');
+fprintf(fileID, '# \n');
+fprintf(fileID, '# position      strength \n');
+% Evaluate all the chunks of the chromosome with the PSSM
+for i = 1:amount
+    
+end
+% Close output.txt
+fclose(fileID);
