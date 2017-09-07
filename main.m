@@ -30,10 +30,15 @@ fprintf(fileID, '%s %s \n', '# weak threshold:', weakThresh);
 fprintf(fileID, '%s %s \n', '# strong threshold:', strongThresh);
 fprintf(fileID, '# \n');
 fprintf(fileID, '# \n');
-fprintf(fileID, '# position      strength \n');
+fprintf(fileID, '# %10s %10s \n', 'position', 'strength');
 % Evaluate all the chunks of the chromosome with the PSSM
+out = {};
 for i = 1:amount
-    
+    output = outputOfPSSM(PSSM, chr{i, 1});
+    out = horzcat(out, output);
+    if (output >= weakThresh)
+        fprintf(fileID, '  %10d   %10d \n', i, output);
+    end
 end
 % Close output.txt
 fclose(fileID);
