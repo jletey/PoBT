@@ -9,11 +9,16 @@ run('loadData.m');
 run('loadPSSM.m');
 % Get the name of the chromosome from input.txt
 input = textread('input.txt', '%s', 'delimiter', '\n');
-chr = input{2, 1};
+chrName = input{2, 1};
 % Get the threshold values from input.txt
 input = textread('input.txt', '%s', 'delimiter', '\n');
 weakThresh = input{5, 1};
 strongThresh = input{6, 1};
-% Break up chr into segments the same length as the PSSM
-
-% Evaluate the PSSMs
+% Get the chromosome
+chrNumber = chrName(4);
+chrNumber = str2num(chrNumber);
+chr = data{2, chrNumber};
+% Break up the chromosome into equal segments of length lenOfPSSM
+chr = cellstr(reshape(chr, lenOfPSSM, [])');
+% Get how many chunks of the chromosome there are
+[ amount, ~ ] = size(chr);
