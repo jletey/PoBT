@@ -31,14 +31,18 @@ fprintf(fileID, '%s %s \n', '# strong threshold:', strongThresh);
 fprintf(fileID, '# \n');
 fprintf(fileID, '# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n');
 fprintf(fileID, '# \n');
-fprintf(fileID, '# %10s %10s \n', 'position', 'strength');
+fprintf(fileID, '# %10s %10s %10s \n', 'position', 'strength', 'type');
 % Evaluate all the chunks of the chromosome with the PSSM
 out = {};
 for i = 1:amount
     output = outputOfPSSM(PSSM, chr{i, 1});
     out = horzcat(out, output);
     if (output >= weakThresh)
-        fprintf(fileID, '  %10d   %10d \n', i, output);
+        if (output < strongThresh)
+            fprintf(fileID, '  %10d   %10d %6s \n', i, output, 'weak');
+        else
+            fprintf(fileID, '  %10d   %10d %8s \n', i, output, 'strong');
+        end
     end
 end
 % Close output.txt
