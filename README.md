@@ -15,4 +15,4 @@ You can also type the above line of code into any of your MatLab scripts or func
 5. Weak threshold value
 6. Strong threshold value
 
-`main.m` outputs the file `output.txt`, which has a brief overview of what the program is doing, and the outputs and positions of the peices of the chromosome that have strong or weak output.
+`main.m` outputs the file `output.txt`, which contains a little about what the program is doing and important numbers the program outputs.
