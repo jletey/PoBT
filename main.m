@@ -18,10 +18,8 @@ strongThresh = str2num(input{6, 1});
 chrNumber = chrName(4);
 chrNumber = str2num(chrNumber);
 chr = data{2, chrNumber};
-% Break up the chromosome into equal segments of length lenOfPSSM
-chr = cellstr(reshape(chr, lenOfPSSM, [])');
-% Get how many chunks of the chromosome there are
-[ amount, ~ ] = size(chr);
+% Get the length of the chromosome
+[ ~, len ] = size(chr);
 % Open output.txt and write to it
 fileID = fopen('output.txt', 'w');
 fprintf(fileID, '%s %s \n', '# searching', chrName);
@@ -48,8 +46,12 @@ end
 out = {};
 weakAmount = 0;
 strongAmount = 0;
-for i = 1:amount
-    output = outputOfPSSM(PSSM, chr{i, 1}, max);
+for i = 1:len
+    if (i + lenOfPSSM - 1) > len
+        
+    else
+        output = outputOfPSSM(PSSM, chr(i:(i + lenOfPSSM - 1)), max);
+    end
     out = horzcat(out, output);
     if (output >= weakThresh)
         if (output < strongThresh)
@@ -61,5 +63,11 @@ for i = 1:amount
         end
     end
 end
+% Output to output.txt the amount of weak and strong sites
+fprintf(fileID, '# \n');
+fprintf(fileID, '# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n');
+fprintf(fileID, '# \n');
+fprintf(fileID, '# The number of weak sites is %d \n', weakAmount);
+fprintf(fileID, '# The number of strong sites is %d \n', strongAmount);
 % Close output.txt
 fclose(fileID);
