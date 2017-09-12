@@ -48,7 +48,7 @@ weakAmount = 0;
 strongAmount = 0;
 for i = 1:len
     if (i + lenOfPSSM - 1) > len
-        
+        output = outputOfPSSM(PSSM, horzcat(chr(i:end), blanks(i + lenOfPSSM - 1 - len)), max);
     else
         output = outputOfPSSM(PSSM, chr(i:(i + lenOfPSSM - 1)), max);
     end
