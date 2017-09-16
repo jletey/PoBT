@@ -1,4 +1,3 @@
-tic
 % main implementation
 % Copyright (2017) University of Colorado
 % All Rights Reserved
@@ -73,7 +72,7 @@ weak = {};
 strong = {};
 for i = 1:size(positionOfStrong, 2)
     for j = 1:size(positionOfWeak, 2)
-        if (abs(positionOfStrong{1, i} - positionOfWeak{1, j}) <= str2num(input{1, 7}))
+        if (abs(positionOfStrong{1, i} - positionOfWeak{1, j}) <= str2num(input{7, 1}))
             weak = horzcat(weak, positionOfWeak{1, j});
             strong = horzcat(strong, positionOfStrong{1, i});
         end
@@ -87,4 +86,3 @@ fprintf(fileID, '# The number of weak sites is %d \n', weakAmount);
 fprintf(fileID, '# The number of strong sites is %d \n', strongAmount);
 % Close output.txt
 fclose(fileID);
-toc
