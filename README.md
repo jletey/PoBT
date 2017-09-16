@@ -14,5 +14,6 @@ You can also type the above line of code into any of your MatLab scripts or func
 4. Name of TF (**T**ranscription **F**actor)
 5. Weak threshold value
 6. Strong threshold value
+7. The maximum allowed distance between weak and strong sites
 
 `main.m` outputs the file `output.txt`, which contains a little about what the program is doing and important numbers the program outputs.
