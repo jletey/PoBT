@@ -1,3 +1,4 @@
+tic
 % main implementation
 % Copyright (2017) University of Colorado
 % All Rights Reserved
@@ -7,11 +8,11 @@
 run('loadData.m');
 % Load the PSSM from the tamo file
 run('loadPSSM.m');
-% Get the name of the chromosome from input.txt
+% Read in input.txt
 input = textread('input.txt', '%s', 'delimiter', '\n');
+% Get the name of the chromosome from input.txt
 chrName = input{2, 1};
 % Get the threshold values from input.txt
-input = textread('input.txt', '%s', 'delimiter', '\n');
 weakThresh = str2num(input{5, 1});
 strongThresh = str2num(input{6, 1});
 % Get the chromosome
@@ -44,6 +45,8 @@ end
 % Evaluate all the chunks of the chromosome with the PSSM and count how
 % many strong and weak sites there are
 out = {};
+positionOfWeak = {};
+positionOfStrong = {};
 weakAmount = 0;
 strongAmount = 0;
 for i = 1:len
@@ -57,9 +60,22 @@ for i = 1:len
         if (output < strongThresh)
             fprintf(fileID, '  %10d   %10s %6s \n', i, num2str(output), 'weak');
             weakAmount = weakAmount + 1;
+            positionOfWeak = horzcat(positionOfWeak, i);
         else
             fprintf(fileID, '  %10d   %10s %8s \n', i, num2str(output), 'strong');
             strongAmount = strongAmount + 1;
+            positionOfStrong = horzcat(positionOfStrong, i);
+        end
+    end
+end
+% Compare the weak and strong sites
+weak = {};
+strong = {};
+for i = 1:size(positionOfStrong, 2)
+    for j = 1:size(positionOfWeak, 2)
+        if (abs(positionOfStrong{1, i} - positionOfWeak{1, j}) <= str2num(input{1, 7}))
+            weak = horzcat(weak, positionOfWeak{1, j});
+            strong = horzcat(strong, positionOfStrong{1, i});
         end
     end
 end
@@ -71,3 +87,4 @@ fprintf(fileID, '# The number of weak sites is %d \n', weakAmount);
 fprintf(fileID, '# The number of strong sites is %d \n', strongAmount);
 % Close output.txt
 fclose(fileID);
+toc
