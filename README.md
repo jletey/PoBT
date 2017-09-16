@@ -1,5 +1,7 @@
 # A Study of Transcription and Its Affects
 
+**Warning:** `main.m` takes 1374.493577 seconds, or approximately, 23 minutes
+
 To run the this repository locally, you will first want to download (or cloan) this repository and then run `main.m` with the following command
 
 ```
