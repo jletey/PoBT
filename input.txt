@@ -4,3 +4,4 @@ yeast.tamo
 YAP5
 0.35
 0.7
+30
