@@ -20,7 +20,3 @@ You can also type the above command into any of your MatLab scripts or functions
 8. Maximum allowed plus/minus distance between a strong and weak site
 
 `main.m` outputs the file `output.txt`, which contains a little about what the program is doing and important numbers the program outputs.
-
-:+1:
-
-:shipit:
