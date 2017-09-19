@@ -1,6 +1,6 @@
 # A Study of Transcription and Its Affects
 
-**Warning:** `main.m` takes 1374.493577 seconds, or approximately, 23 minutes to run.
+**Warning:** `main.m` takes 1374.493577 seconds, which is approximately 23 minutes, to run.
 
 To run the this repository locally, you will first want to download (or cloan) this repository and then run `main.m` with the command
 
