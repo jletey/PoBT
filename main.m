@@ -41,6 +41,21 @@ for i = 1:lenOfPSSM
     end
     max = max*maxForCollumn;
 end
+% Fix the PSSM
+for i = 1:lenOfPSSM
+    for j = 1:4
+        PSSM{j, i} = PSSM{j, i}/max;
+    end
+end
+% Open output.csv and write to it
+fileID2 = fopen('output.csv', 'w');
+fprintf(fileID2, '%s %s \n', 'searching', chrName);
+fprintf(fileID2, '%s %s \n', 'for transcription factor', TF);
+fprintf(fileID2, '%s %s \n', 'weak threshold:', num2str(weakThresh));
+fprintf(fileID2, '%s %s \n', 'strong threshold:', num2str(strongThresh));
+fprintf(fileID2, '%s %s %s \n', 'The PSSM for transcription factor', TF, 'is');
+T = cell2table(PSSM, 'RowNames', {'A', 'C', 'G', 'T'});
+writetable(T, 'output.csv', 'WriteRowNames', true);
 % Evaluate all the chunks of the chromosome with the PSSM and count how
 % many strong and weak sites there are
 out = {};
@@ -50,9 +65,9 @@ weakAmount = 0;
 strongAmount = 0;
 for i = 1:len
     if (i + lenOfPSSM - 1) > len
-        output = outputOfPSSM(PSSM, horzcat(chr(i:end), blanks(i + lenOfPSSM - 1 - len)), max);
+        output = outputOfPSSM(PSSM, horzcat(chr(i:end), blanks(i + lenOfPSSM - 1 - len)));
     else
-        output = outputOfPSSM(PSSM, chr(i:(i + lenOfPSSM - 1)), max);
+        output = outputOfPSSM(PSSM, chr(i:(i + lenOfPSSM - 1)));
     end
     out = horzcat(out, output);
     if (output >= weakThresh)
@@ -84,7 +99,8 @@ end
 fprintf(fileID, '# \n');
 fprintf(fileID, '# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n');
 fprintf(fileID, '# \n');
-fprintf(fileID, '# The number of weak sites is %d \n', weakAmount);
-fprintf(fileID, '# The number of strong sites is %d \n', strongAmount);
-% Close output.txt
+%fprintf(fileID, '# The number of weak sites is %d \n', weakAmount);
+%fprintf(fileID, '# The number of strong sites is %d \n', strongAmount);
+% Close output.txt and output.csv
 fclose(fileID);
+fclose(fileID2);
