@@ -3,7 +3,7 @@
 % All Rights Reserved
 % Author: John Letey
 
-function [ out ] = outputOfPSSM( PSSM, sequence )
+function [ out ] = outputOfPSSM( PSSM, sequence, max )
 % This function calculates the output of the PSSM given a DNA sequence
 
 % Calculate the size of the PSSM
@@ -17,18 +17,19 @@ if lenPSSM == lenSeq
     % Go through the PSSM and calculate output
     for i = 1:lenPSSM
         if sequence(i) == 'A'
-            out = out * PSSM{1, i};
+            out = out + PSSM{1, i};
         end
         if sequence(i) == 'C'
-            out = out * PSSM{2, i};
+            out = out + PSSM{2, i};
         end
         if sequence(i) == 'T'
-            out = out * PSSM{3, i};
+            out = out + PSSM{3, i};
         end
         if sequence(i) == 'G'
-            out = out * PSSM{4, i};
+            out = out + PSSM{4, i};
         end
     end
+    out = out/max;
 else
     % Display the error
     disp('The length of the sequence of DNA is not the same length as the PSSM');
