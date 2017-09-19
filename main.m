@@ -68,14 +68,10 @@ for i = 1:len
     end
 end
 % Compare the weak and strong sites
-weak = {};
-strong = {};
+categories = zeros(input{8, 1}/input{7, 1});
 for i = 1:size(positionOfStrong, 2)
     for j = 1:size(positionOfWeak, 2)
-        if (abs(positionOfStrong{1, i} - positionOfWeak{1, j}) <= str2num(input{7, 1}))
-            weak = horzcat(weak, positionOfWeak{1, j});
-            strong = horzcat(strong, positionOfStrong{1, i});
-        end
+        
     end
 end
 % Output to output.txt the amount of weak and strong sites
