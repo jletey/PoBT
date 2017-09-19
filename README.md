@@ -24,3 +24,4 @@ You can also type the above command into any of your MatLab scripts or functions
 - [x] Finish my changes
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
+- [ ] \(Optional) Open a followup issue
