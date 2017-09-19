@@ -41,21 +41,6 @@ for i = 1:lenOfPSSM
     end
     max = max*maxForCollumn;
 end
-% Fix the PSSM
-for i = 1:lenOfPSSM
-    for j = 1:4
-        PSSM{j, i} = PSSM{j, i}/max;
-    end
-end
-% Open output.csv and write to it
-fileID2 = fopen('output.csv', 'w');
-fprintf(fileID2, '%s %s \n', 'searching', chrName);
-fprintf(fileID2, '%s %s \n', 'for transcription factor', TF);
-fprintf(fileID2, '%s %s \n', 'weak threshold:', num2str(weakThresh));
-fprintf(fileID2, '%s %s \n', 'strong threshold:', num2str(strongThresh));
-fprintf(fileID2, '%s %s %s \n', 'The PSSM for transcription factor', TF, 'is');
-T = cell2table(PSSM, 'RowNames', {'A', 'C', 'G', 'T'});
-writetable(T, 'output.csv', 'WriteRowNames', true);
 % Evaluate all the chunks of the chromosome with the PSSM and count how
 % many strong and weak sites there are
 out = {};
@@ -65,9 +50,9 @@ weakAmount = 0;
 strongAmount = 0;
 for i = 1:len
     if (i + lenOfPSSM - 1) > len
-        output = outputOfPSSM(PSSM, horzcat(chr(i:end), blanks(i + lenOfPSSM - 1 - len)));
+        output = outputOfPSSM(PSSM, horzcat(chr(i:end), blanks(i + lenOfPSSM - 1 - len)), max);
     else
-        output = outputOfPSSM(PSSM, chr(i:(i + lenOfPSSM - 1)));
+        output = outputOfPSSM(PSSM, chr(i:(i + lenOfPSSM - 1)), max);
     end
     out = horzcat(out, output);
     if (output >= weakThresh)
@@ -82,6 +67,21 @@ for i = 1:len
         end
     end
 end
+% Fix the PSSM
+for i = 1:lenOfPSSM
+    for j = 1:4
+        PSSM{j, i} = PSSM{j, i}/max;
+    end
+end
+% Open output.csv and write to it
+fileID2 = fopen('output.csv', 'w');
+fprintf(fileID2, '%s %s \n', 'searching', chrName);
+fprintf(fileID2, '%s %s \n', 'for transcription factor', TF);
+fprintf(fileID2, '%s %s \n', 'weak threshold:', num2str(weakThresh));
+fprintf(fileID2, '%s %s \n', 'strong threshold:', num2str(strongThresh));
+fprintf(fileID2, '%s %s %s \n', 'The PSSM for transcription factor', TF, 'is');
+T = cell2table(PSSM/(max*cell(4, lenOfPSSM)), 'RowNames', {'A', 'C', 'G', 'T'});
+writetable(T, 'output.csv', 'WriteRowNames', true);
 % Compare the weak and strong sites
 categories = zeros(str2num(input{8, 1})/str2num(input{7, 1}), 1);
 for i = 1:size(positionOfStrong, 2)
