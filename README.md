@@ -21,6 +21,6 @@ You can also type the above command into any of your MatLab scripts or functions
 
 `main.m` outputs the file `output.txt`, which contains a little about what the program is doing and important numbers the program outputs.
 
-www.google.com/search?q=commonmark&hl=en
+:+1:
 
-www.google.com/search?q=commonmark&hl;
+:shipit:
