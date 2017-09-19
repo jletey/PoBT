@@ -20,3 +20,7 @@ You can also type the above command into any of your MatLab scripts or functions
 8. Maximum plus/minus distance between sites
 
 `main.m` outputs the file `output.txt`, which contains a little about what the program is doing and important numbers the program outputs.
+
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
