@@ -71,7 +71,11 @@ end
 categories = zeros(input{8, 1}/input{7, 1});
 for i = 1:size(positionOfStrong, 2)
     for j = 1:size(positionOfWeak, 2)
-        
+        for k = 1:input{8, 1}/input{7, 1}
+            if abs(positionOfStrong{i, 1} - positionOfWeak{j, 1}) <= input{7, 1}*k
+                
+            end
+        end
     end
 end
 % Output to output.txt the amount of weak and strong sites
