@@ -17,6 +17,6 @@ You can also type the above command into any of your MatLab scripts or functions
 5. Weak threshold value
 6. Strong threshold value
 7. Size of each category of distances between sites
-8. Maximum plus/minus distance between sites
+8. Maximum allowed plus/minus distance between a strong and weak site
 
 `main.m` outputs the file `output.txt`, which contains a little about what the program is doing and important numbers the program outputs.
