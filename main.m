@@ -41,7 +41,7 @@ for i = 1:lenOfPSSM
     end
     max = max*maxForCollumn;
 end
-% Evaluate the chromosome with the PSSM and count how many strong and weak sites there are
+% Evaluate the chromosome using the PSSM and count how many strong and weak sites there are
 out = {};
 positionOfWeak = {};
 positionOfStrong = {};
