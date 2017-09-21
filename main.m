@@ -41,32 +41,31 @@ for i = 1:lenOfPSSM
     end
     max = max*maxForCollumn;
 end
-% Evaluate all the chunks of the chromosome with the PSSM and count how
-% many strong and weak sites there are
-% out = {};
-% positionOfWeak = {};
-% positionOfStrong = {};
-% weakAmount = 0;
-% strongAmount = 0;
-% for i = 1:len
-%     if (i + lenOfPSSM - 1) > len
-%         output = outputOfPSSM(PSSM, horzcat(chr(i:end), blanks(i + lenOfPSSM - 1 - len)), max);
-%     else
-%         output = outputOfPSSM(PSSM, chr(i:(i + lenOfPSSM - 1)), max);
-%     end
-%     out = horzcat(out, output);
-%     if (output >= weakThresh)
-%         if (output < strongThresh)
-%             fprintf(fileID, '  %10d   %10s %6s \n', i, num2str(output), 'weak');
-%             weakAmount = weakAmount + 1;
-%             positionOfWeak = horzcat(positionOfWeak, i);
-%         else
-%             fprintf(fileID, '  %10d   %10s %8s \n', i, num2str(output), 'strong');
-%             strongAmount = strongAmount + 1;
-%             positionOfStrong = horzcat(positionOfStrong, i);
-%         end
-%     end
-% end
+% Evaluate the chromosome with the PSSM and count how many strong and weak sites there are
+out = {};
+positionOfWeak = {};
+positionOfStrong = {};
+weakAmount = 0;
+strongAmount = 0;
+for i = 1:len
+    if (i + lenOfPSSM - 1) > len
+        output = outputOfPSSM(PSSM, horzcat(chr(i:end), blanks(i + lenOfPSSM - 1 - len)), max);
+    else
+        output = outputOfPSSM(PSSM, chr(i:(i + lenOfPSSM - 1)), max);
+    end
+    out = horzcat(out, output);
+    if (output >= weakThresh)
+        if (output < strongThresh)
+            fprintf(fileID, '  %10d   %10s %6s \n', i, num2str(output), 'weak');
+            weakAmount = weakAmount + 1;
+            positionOfWeak = horzcat(positionOfWeak, i);
+        else
+            fprintf(fileID, '  %10d   %10s %8s \n', i, num2str(output), 'strong');
+            strongAmount = strongAmount + 1;
+            positionOfStrong = horzcat(positionOfStrong, i);
+        end
+    end
+end
 % Fix the PSSM
 for i = 1:lenOfPSSM
     for j = 1:4
