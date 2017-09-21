@@ -1,8 +1,0 @@
-# searching chr1 
-# for transcription factor YAP5 
-# weak threshold: 0.35 
-# strong threshold: 0.7 
-# 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-# 
-#   position   strength       type 
