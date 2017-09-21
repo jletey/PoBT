@@ -8,7 +8,7 @@ To run the this repository locally, you will first want to download (or cloan) t
 run('main.m');
 ```
 
-You can also type the above command into any of your MatLab scripts or functions to use the variables it outputs. `main.m` takes input from the file `input.txt`, which is formated as follows (where numbers are the line numbers)
+You can also type the above command into any of your MatLab scripts or functions to use the variables it outputs. `main.m` takes input from the file `input.txt`, which is formated as follows (please note that numbers are line numbers)
 
 1. Name of fasta file
 2. Name of chromosome
