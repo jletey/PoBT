@@ -100,8 +100,8 @@ end
 fprintf(fileID, '# \n');
 fprintf(fileID, '# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n');
 fprintf(fileID, '# \n');
-%fprintf(fileID, '# The number of weak sites is %d \n', weakAmount);
-%fprintf(fileID, '# The number of strong sites is %d \n', strongAmount);
+fprintf(fileID, '# The number of weak sites is %d \n', weakAmount);
+fprintf(fileID, '# The number of strong sites is %d \n', strongAmount);
 % Close output.txt and output.csv
 fclose(fileID);
 fclose(fileID2);
