@@ -13,7 +13,7 @@ You can also type the above command into any of your MatLab scripts or functions
 1. Name of fasta file
 2. Name of chromosome
 3. Name of tamo file
-4. Name of TF (**T**ranscription **F**actor)
+4. Name of the TF (**T**ranscription **F**actor) you want to use
 5. Weak threshold value
 6. Strong threshold value
 7. Size of each category of distances between sites
