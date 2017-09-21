@@ -19,4 +19,4 @@ You can also type the above command into any of your MatLab scripts or functions
 7. Size of each category of distances between sites
 8. Maximum allowed plus/minus distance between a strong and weak site
 
-`main.m` outputs the file `output.txt`, which contains a little about what the program is doing and important numbers the program outputs. `main.m` also outputs the file `output.csv`, which is contains a little more data than `output.txt`, since a *csv* file has more abilities than a *txt* file
+`main.m` outputs the file `output.txt`, which contains a little about what the program is doing and important numbers the program outputs. `main.m` also outputs the file `output.csv`, which is contains a little more data than `output.txt`, since a *csv* file has more abilities than a *txt* file, but the files are both roughly the same.
