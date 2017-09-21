@@ -41,7 +41,7 @@ for i = 1:lenOfPSSM
     end
     max = max*maxForCollumn;
 end
-% Evaluate the chromosome using the PSSM and count how many strong and weak sites there are
+% Evaluate the chromosome with the PSSM and count how many strong and weak sites there are
 out = {};
 positionOfWeak = {};
 positionOfStrong = {};
@@ -84,12 +84,12 @@ fprintf(fileID2, '%s %s \n', 'strong threshold:', num2str(strongThresh));
 fprintf(fileID2, '%s %s %s \n', 'The PSSM for transcription factor', TF, 'is');
 variableNames = mat2cell(1:lenOfPSSM, 1);
 % Compare the weak and strong sites
-categories = zeros(str2num(input{8, 1})/str2num(input{7, 1}), 1);
+categories = zeros(1, str2num(input{8, 1})/str2num(input{7, 1}));
 for i = 1:size(positionOfStrong, 2)
     for j = 1:size(positionOfWeak, 2)
+        mat = zeros(1, str2num(input{8, 1})/str2num(input{7, 1}));
         for k = 1:str2num(input{8, 1})/str2num(input{7, 1})
             if abs(positionOfStrong{i, 1} - positionOfWeak{j, 1}) <= str2num(input{7, 1})*k
-                mat = zeros(str2num(input{8, 1})/str2num(input{7, 1}), 1);
                 mat(k, 1) = ouput{j, 1};
             end
         end
