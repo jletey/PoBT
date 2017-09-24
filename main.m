@@ -93,9 +93,14 @@ for i = 1:size(positionOfStrong, 2)
                 mat(k, 1) = out{1, j};
             end
         end
-        categories = horzcat(categories, mat);
+        if mat ~= zeros(1, str2num(input{8, 1})/str2num(input{7, 1}))
+            categories = vertcat(categories, mat);
+            display('Not zero');
+        end
     end
 end
+% Plot the histogram
+histogram(categories)
 % Output to output.txt the amount of weak and strong sites
 fprintf(fileID, '# \n');
 fprintf(fileID, '# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n');
