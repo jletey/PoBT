@@ -96,7 +96,6 @@ for i = 1:size(positionOfStrong, 2)
         end
         if mat ~= zeros(1, str2num(input{8, 1})/str2num(input{7, 1}))
             categories = vertcat(categories, mat);
-            display('Not zero');
         end
     end
 end
