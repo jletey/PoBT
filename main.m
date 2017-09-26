@@ -84,7 +84,7 @@ fprintf(fileID2, '%s %s \n', 'strong threshold:', num2str(strongThresh));
 fprintf(fileID2, '%s %s %s \n', 'The PSSM for transcription factor', TF, 'is');
 variableNames = mat2cell(1:lenOfPSSM, 1);
 % Compare the weak and strong sites
-categories = zeros(1, str2num(input{8, 1})/str2num(input{7, 1}));
+categories = [];
 for i = 1:size(positionOfStrong, 2)
     for j = 1:size(positionOfWeak, 2)
         mat = zeros(1, str2num(input{8, 1})/str2num(input{7, 1}));
