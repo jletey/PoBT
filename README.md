@@ -1,4 +1,4 @@
-# A Study of Transcription and Its Affects
+## A Study of Transcription and Its Affects
 
 **Warning:** `main.m` takes 1522.384501 seconds, which is approximately 25 minutes, to run.
 
