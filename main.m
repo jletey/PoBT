@@ -91,7 +91,7 @@ for i = 1:size(positionOfStrong, 2)
         value = abs(positionOfStrong{1, i} - positionOfWeak{1, j});
         for k = 1:str2num(input{8, 1})/str2num(input{7, 1})
             if value <= (str2num(input{7, 1})*k)
-                mat(k) = out{1, j};
+                mat(k) = value;
             end
         end
         if mat ~= zeros(1, str2num(input{8, 1})/str2num(input{7, 1}))
