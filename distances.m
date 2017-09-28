@@ -1,3 +1,8 @@
+% distances implementation
+% Copyright (2017) University of Colorado
+% All Rights Reserved
+% Author: John Letey
+
 % Open output.csv and write to it
 T = cell2table(PSSM, 'RowNames', {'A', 'C', 'G', 'T'});
 writetable(T, 'output.csv', 'WriteRowNames', true);
