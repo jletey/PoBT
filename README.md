@@ -8,7 +8,7 @@ To run the this repository locally, you will first want to download (or cloan) t
 run('main.m');
 ```
 
-You can also type the above command into any of your MatLab scripts or functions to use the variables it outputs. `main.m` takes input from the file `input.txt`, which is formated as follows (please note that numbers are line numbers)
+The script `main.m` is broken up into two major parts. The first part is a script called `hits.m`, which takes the given input from `input.txt` and outputs all of the strong and weak binding sites. The second part is a script called `distances.m`, which takes the hits calculated by `hits.m` and finds all of the sites that are up to a certain distance away from each other. `hits.m` takes input from the file `input.txt`, which is formated as follows (please note that numbers are line numbers)
 
 1. Name of fasta file
 2. Name of chromosome
