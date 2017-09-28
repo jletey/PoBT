@@ -1,4 +1,4 @@
-% outputOfPSSM function definition and implementation
+% outputOfPSSM implementation
 % Copyright (2017) University of Colorado
 % All Rights Reserved
 % Author: John Letey
