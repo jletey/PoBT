@@ -1,6 +1,6 @@
 # A Study of Transcription and Its Affects
 
-**Notes:** Here is a [link](https://github.com/JohnLetey/A-Study-Of-Transcription-and-Its-Affects) to the repository.
+**Notes:** Here is a [PDF](https://github.com/JohnLetey/A-Study-Of-Transcription-and-Its-Affects/README.pdf) version of this `README.md` file.
 
 **Warning:** `main.m` takes 1522.384501 seconds, which is approximately 25 minutes, to run.
 
