@@ -1,6 +1,6 @@
 # A Study of Transcription and Its Affects
 
-**Warning:** `main.m` takes 1522.384501 seconds, which is approximately 25 minutes, to run.
+**Warning:** `main.m` takes 1522.384501 seconds, which is approximately 25 minutes, to run. [![Build Status](https://travis-ci.org/github/scientist.svg?branch=master)](https://travis-ci.org/github/scientist) [![Coverage Status](https://coveralls.io/repos/github/github/scientist/badge.svg?branch=master)](https://coveralls.io/github/github/scientist?branch=master)
 
 To run the this repository locally, you will first want to download (or cloan) this repository and then run `main.m` with the command
 
