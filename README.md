@@ -11,5 +11,7 @@ run('main.m');
 The script `main.m` is broken up into two major parts. Please note that hits are strong and weak binding sites.
 
 ## Part 1 : Finding the hits
+The script that finds the hits, which is called from `main.m`, is called `hits.m`. 
 
 ## Part 2 : Analysing the hits
+The script that analyses the hits, which is called from `main.m`, is called `distances.m`. 
