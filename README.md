@@ -14,4 +14,4 @@ The script `main.m` is broken up into two major parts. Please note that hits are
 The script that finds the hits, which is called from `main.m`, is called `hits.m`.  
 
 ## Part 2 : Analysing the Hits
-The script that analyses the hits, which is called from `main.m`, is called `distances.m`. 
+The script that analyses the hits, which is called from `main.m`, is called `distances.m`. `distances.m` calculates the distances between every weak and strong site.
