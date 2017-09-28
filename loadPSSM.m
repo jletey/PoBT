@@ -46,16 +46,21 @@ if strcmp(ext, '.tamo') == 1
     for i = 1:lenOfPSSM
         value = firstLine(((i - 1)*10 + 7):((i - 1)*10 + 12));
         value = str2num(value);
-        PSSM(1, i) = {exp(value)};
+        %value = 2.^value;
+        %PSSM(1, i) = {value/(1 + value)};
+        PSSM(1, i) = {value};
         value = secondLine(((i - 1)*10 + 7):((i - 1)*10 + 12));
         value = str2num(value);
-        PSSM(2, i) = {exp(value)};
+        %value = 2.^value;
+        PSSM(2, i) = {value};
         value = thirdLine(((i - 1)*10 + 7):((i - 1)*10 + 12));
         value = str2num(value);
-        PSSM(3, i) = {exp(value)};
+        %value = 2.^value;
+        PSSM(3, i) = {value};
         value = fourthLine(((i - 1)*10 + 7):((i - 1)*10 + 12));
         value = str2num(value);
-        PSSM(4, i) = {exp(value)};
+        %value = 2.^value;
+        PSSM(4, i) = {value};
     end
 else
     % Display the error to the user
