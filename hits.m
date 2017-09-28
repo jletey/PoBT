@@ -21,7 +21,7 @@ chr = data{2, chrNumber};
 % Get the length of the chromosome
 [ ~, len ] = size(chr);
 % Open output.txt and write to it
-fileID = fopen('output.txt', 'w');
+fileID = fopen('hits.txt', 'w');
 fprintf(fileID, '%s %s \n', '# searching', chrName);
 fprintf(fileID, '%s %s \n', '# for transcription factor', TF);
 fprintf(fileID, '%s %s \n', '# weak threshold:', num2str(weakThresh));
