@@ -34,5 +34,7 @@ for i = 1:size(positionOfStrong, 2)
 end
 % Plot the histogram
 histogram(categories)
+% Save the histogram to histogram.png
+print('-dpng', 'histogram.png', '-r100');
 % Close output.csv
 fclose(fileID2);
