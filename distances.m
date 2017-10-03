@@ -4,16 +4,16 @@
 % Author: John Letey
 
 % Open output.csv and write to it
-T = cell2table(PSSM, 'RowNames', {'A', 'C', 'G', 'T'});
-writetable(T, 'output.csv', 'WriteRowNames', true);
-fileID2 = fopen('output.csv', 'w');
-csvwrite('output.csv', [''], 1, 1);
-fprintf(fileID2, '%s %s \n', 'searching', chrName);
-fprintf(fileID2, '%s %s \n', 'for transcription factor', TF);
-fprintf(fileID2, '%s %s \n', 'weak threshold:', num2str(weakThresh));
-fprintf(fileID2, '%s %s \n', 'strong threshold:', num2str(strongThresh));
-fprintf(fileID2, '%s %s %s \n', 'The PSSM for transcription factor', TF, 'is');
-variableNames = mat2cell(1:lenOfPSSM, 1);
+% T = cell2table(PSSM, 'RowNames', {'A', 'C', 'G', 'T'});
+% writetable(T, 'output.csv', 'WriteRowNames', true);
+% fileID = fopen('output, 'w');
+% csvwrite('output.csv', [''], 1, 1);
+% fprintf(fileID2, '%s %s \n', 'searching', chrName);
+% fprintf(fileID2, '%s %s \n', 'for transcription factor', TF);
+% fprintf(fileID2, '%s %s \n', 'weak threshold:', num2str(weakThresh));
+% fprintf(fileID2, '%s %s \n', 'strong threshold:', num2str(strongThresh));
+% fprintf(fileID2, '%s %s %s \n', 'The PSSM for transcription factor', TF, 'is');
+% variableNames = mat2cell(1:lenOfPSSM, 1);
 % Compare the weak and strong sites
 categories = [];
 for i = 1:size(positionOfStrong, 2)
