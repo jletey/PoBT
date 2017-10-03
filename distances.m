@@ -21,11 +21,11 @@ for i = 1:size(positionOfStrong, 2)
         mat = zeros(1, str2num(input{8, 1})/str2num(input{7, 1}));
         value = abs(positionOfStrong{1, i} - positionOfWeak{1, j});
         for k = 1:str2num(input{8, 1})/str2num(input{7, 1})
-            if value <= (str2num(input{7, 1})*k) && value > (str2num(input{7, 1})*(k-1))
+            if (value <= (str2num(input{7, 1})*k)) && (value > (str2num(input{7, 1})*(k-1)))
                 mat(k) = value;
             end
         end
-        if mat ~= zeros(1, str2num(input{8, 1})/str2num(input{7, 1}))
+        if sum(mat ~= zeros(1, str2num(input{8, 1})/str2num(input{7, 1}))) >= 1
             categories = vertcat(categories, mat);
         end
     end
