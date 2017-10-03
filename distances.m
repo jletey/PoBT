@@ -21,7 +21,7 @@ for i = 1:size(positionOfStrong, 2)
         mat = zeros(1, str2num(input{8, 1})/str2num(input{7, 1}));
         value = abs(positionOfStrong{1, i} - positionOfWeak{1, j});
         for k = 1:str2num(input{8, 1})/str2num(input{7, 1})
-            if value <= (str2num(input{7, 1})*k)
+            if value <= (str2num(input{7, 1})*k) && value > (str2num(input{7, 1})*(k-1))
                 mat(k) = value;
             end
         end
@@ -31,11 +31,11 @@ for i = 1:size(positionOfStrong, 2)
     end
 end
 % Plot the histogram
-histogram(categories)
+h = histogram(categories, str2num(input{8, 1})/str2num(input{7, 1}))
 title('Histogram of Distances between Strong and Weak Sites');
 xlabel('Distance from Strong to Weak Site');
 ylabel('Amount of Sites');
 % Save the histogram to histogram.png
 print('-dpng', 'histogram.png', '-r100');
 % Close output.csv
-fclose(fileID2);
+%fclose(fileID2);
