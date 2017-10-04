@@ -15,21 +15,21 @@
 % fprintf(fileID2, '%s %s %s \n', 'The PSSM for transcription factor', TF, 'is');
 % variableNames = mat2cell(1:lenOfPSSM, 1);
 % Compare the weak and strong sites
-categories = [];
-for i = 1:size(positionOfStrong, 2)
-    for j = 1:size(positionOfWeak, 2)
-        mat = zeros(1, str2num(input{8, 1})/str2num(input{7, 1}));
-        value = abs(positionOfStrong{1, i} - positionOfWeak{1, j});
-        for k = 1:str2num(input{8, 1})/str2num(input{7, 1})
-            if (value <= (str2num(input{7, 1})*k)) && (value > (str2num(input{7, 1})*(k-1)))
-                mat(k) = value;
-            end
-        end
-        if sum(mat ~= zeros(1, str2num(input{8, 1})/str2num(input{7, 1}))) >= 1
-            categories = vertcat(categories, mat);
-        end
-    end
-end
+% categories = [];
+% for i = 1:size(positionOfStrong, 2)
+%     for j = 1:size(positionOfWeak, 2)
+%         mat = zeros(1, str2num(input{8, 1})/str2num(input{7, 1}));
+%         value = abs(positionOfStrong{1, i} - positionOfWeak{1, j});
+%         for k = 1:str2num(input{8, 1})/str2num(input{7, 1})
+%             if (value <= (str2num(input{7, 1})*k)) && (value > (str2num(input{7, 1})*(k-1)))
+%                 mat(k) = value;
+%             end
+%         end
+%         if sum(mat ~= zeros(1, str2num(input{8, 1})/str2num(input{7, 1}))) >= 1
+%             categories = vertcat(categories, mat);
+%         end
+%     end
+% end
 % Plot the histogram
 h = histogram(categories, str2num(input{8, 1})/str2num(input{7, 1}))
 title('Histogram of Distances between Strong and Weak Sites');
