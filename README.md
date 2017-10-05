@@ -27,4 +27,4 @@ The script that analyses the hits, which is called from `main.m`, is called `dis
 
 ![settings window](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/histogram.png?raw=true)
 
-Using this, we can analyse and look at what categories have the highest amount of sites and why. `distances.m` outputs a file called `ouput.csv`, which contains all the important data calculated in both `hits.m` and `distances.m`.
+Using this, we can analyse and look at what categories have the highest amount of sites and why.
