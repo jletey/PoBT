@@ -25,6 +25,6 @@ The script that finds the hits, which is called from `main.m`, is called `hits.m
 ## Part 2 : Analyzing the Hits
 The script that analyses the hits, which is called from `main.m`, is called `distances.m`. `distances.m` calculates the distances between every strong and weak site. After `distances.m` calculates the distances between every strong and weak site, it plots a histogram of how many sites are in certain categories of distances from each other. Here is what the histogram looks like:
 
-![settings window](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/histogram.png?raw=true)
+![settings window](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/raw/master/histogram.png)
 
 Using this, we can analyse and look at what categories have the highest amount of sites and why.
