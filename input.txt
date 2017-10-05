@@ -1,5 +1,5 @@
 SGDv3.fasta
-chr1
+chr2
 yeast.tamo
 YAP5
 0.35
