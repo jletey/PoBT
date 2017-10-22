@@ -1,5 +1,5 @@
 # A Study of Transcription and Its Affects
----
+
 **Author:** John M. Letey (John.Letey@colorado.edu), David A. Knox (David.Knox@colorado.edu)
 
 **Note:** To get to my GitHub repository, go to this [link](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects).
@@ -7,7 +7,7 @@
 I have broken this project into to major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome and transcription factor. The second portion analyses these hits. Let's talk about these two portions more in depth.
 
 ## Part 1: Finding the Hits
----
+
 To calculate the hits, I read in from a file called $\texttt{input.txt}$ which is formatted as follows:
 
 |  Line Number  | Description |
@@ -23,5 +23,6 @@ To calculate the hits, I read in from a file called $\texttt{input.txt}$ which i
 
 I had originally sought out to do this project in [MatLab](https://www.mathworks.com), but with the fact that we're running our code with super big data (and for the sake of your and my sanity), I have decided to use [Python](https://www.python.org), with [Jupyter Notebook](http://jupyter.org), for this project. I read in the chromosomes from a fasta file called $\texttt{SGDv3.fasta}$ and the associated PSSM to the transcription factor from the tamo file called $\texttt{yeast.tamo}$. Before we continue, let's first read in $\texttt{input.txt}$.
 
-# Part 2 : Analyzing the Hits
+## Part 2 : Analyzing the Hits
+
 ![settings window](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/histogram.png?raw=true)
