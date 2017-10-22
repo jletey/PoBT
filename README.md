@@ -1,3 +1,5 @@
+![Python3.6](https://img.shields.io/badge/python-3.6-blue.svg)
+
 # A Study of Transcription and Its Affects
 
 **Author:** John M. Letey (John.Letey@colorado.edu), David A. Knox (David.Knox@colorado.edu)
