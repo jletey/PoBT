@@ -1,5 +1,7 @@
 # Instructions
 
+Please follow the below instructions to successfully use my repository.
+
 ## Cloning the repository
 
 To clone my repository, type the following command into a terminal
