@@ -10,9 +10,9 @@ To clone my repository, type the following command into a terminal
 $ git clone https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects.git
 ```
 
-After that, if you don't already have Jupyter Notebook installed, I suggest doing the following instructions
-
 ## Jupyter Notebook Installation
+
+If you already don't have Jupyter Notebook installed, please follow the below instructions.
 
 - Install Anaconda from the this [link](https://www.anaconda.com/distribution/) (please download the Python 3 version).
 - Depending on which system you're on, Anaconda might have you answer some questions.
