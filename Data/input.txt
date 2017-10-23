@@ -1,0 +1,6 @@
+SGDv3.fasta
+yeast.tamo
+0.35
+0.7
+1
+150
