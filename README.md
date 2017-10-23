@@ -16,13 +16,11 @@ To calculate the hits, I read in from a file called `input.txt` which is formatt
 |  Line Number  | Description |
 |:---:|:---:|
 | 1 | Name of fasta file |
-| 2 | Name of chromosome |
-| 3 | Name of tamo file |
-| 4 | Name of the transcription factor you want to use |
-| 5 | Weak threshold value |
-| 6 | Strong threshold value |
-| 7 | Size of each category of distances between sites |
-| 8 | Maximum allowed plus/minus distance between a strong and weak site |
+| 2 | Name of tamo file |
+| 3 | Weak threshold value |
+| 4 | Strong threshold value |
+| 5 | Size of each category of distances between sites |
+| 6 | Maximum allowed plus/minus distance between a strong and weak site |
 
 I had originally sought out to do this project in MatLab, but with the fact that we're running our code with super big data (and for the sake of your and my sanity), I have decided to use Python, with Jupyter Notebook, for this project. I read in the chromosomes from a fasta file called `SGDv3.fasta` and the associated PSSM to the transcription factor from the tamo file called `yeast.tamo`. Before we continue, let's first read in `input.txt`.
 
