@@ -25,4 +25,4 @@ To calculate the hits, I read in from a file called `input.txt` which is formatt
 I had originally sought out to do this project in MatLab, but with the fact that we're running our code with super big data (and for the sake of your and my sanity), I have decided to use Python, with Jupyter Notebook, for this project. I read in the chromosomes from a fasta file called `SGDv3.fasta` and the associated PSSM to the transcription factor from the tamo file called `yeast.tamo`. Before we continue, let's first read in `input.txt`.
 
 ## Part 2 : Analyzing the Hits
-[settings window](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/Reasons+Code.ipynb?raw=true)
+[settings window](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/instructions.md?raw=true)
