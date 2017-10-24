@@ -1,5 +1,5 @@
 # searching chr1
-# for transcription factor YAP5
+# for transcription factor SMP1
 # weak threshold: 0.35
 # strong threshold: 0.7
 
@@ -115,5 +115,5 @@
 # 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 # 
-# The number of weak sites for the forwards direction is 13
-# The number of strong sites for the forwards direction is 0
+# The number of weak sites for the reverse compliment direction is 13
+# The number of strong sites for the reverse compliment direction is 0

@@ -1,5 +1,5 @@
 # searching chr1
-# for transcription factor YAP5
+# for transcription factor UGA3
 # weak threshold: 0.35
 # strong threshold: 0.7
 
@@ -8765,5 +8765,5 @@
 # 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 # 
-# The number of weak sites for the forwards direction is 6788
-# The number of strong sites for the forwards direction is 535
+# The number of weak sites for the reverse compliment direction is 6788
+# The number of strong sites for the reverse compliment direction is 535
