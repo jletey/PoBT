@@ -26,6 +26,6 @@ To calculate the hits, I read in from a file called `input.txt` which is formatt
 | 5 | Size of each category of distances between sites |
 | 6 | Maximum allowed plus/minus distance between a strong and weak site |
 
-I had originally sought out to do this project in MatLab, but with the fact that we're running our code with super big data (and for the sake of your and my sanity), I have decided to use Python, with Jupyter Notebook, for this project. I read in the chromosomes from a fasta file called `SGDv3.fasta` and the associated PSSM to the transcription factor from the tamo file called `yeast.tamo`.
+I had originally sought out to do this project in MATLAB, but with the fact that we're running our code with super big data (and for the sake of your and my sanity), I have decided to use Python, with Jupyter Notebook, for this project. I read in the chromosomes from a fasta file called `SGDv3.fasta` and the associated PSSM to the transcription factor from the tamo file called `yeast.tamo`.
 
 ## Part 2 : Analyzing the Hits
