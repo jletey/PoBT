@@ -9,7 +9,7 @@
 
 This project follows the below pipeline.
 
-[settings window](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/pipeline.png?raw=true)
+![settings window](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/pipeline.png?raw=true)
 
 I have broken this project into to major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome and transcription factor. The second portion analyses these hits. Let's talk about these two portions more in depth.
 
