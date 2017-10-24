@@ -18,3 +18,5 @@ If you already don't have Jupyter Notebook installed, please follow the below in
 - Depending on which system you're on, Anaconda might have you answer some questions.
 - When you're done installing, open Anaconda Navigator. Click the launch button under the box saying Jupyter Notebook.
 - This should open up Jupyter Notebook in your default browser.
+
+After you've done the above instructions, you should be all set to play around with my repository!
