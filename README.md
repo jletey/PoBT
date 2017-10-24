@@ -1,6 +1,6 @@
 ![JupyterNotebook](https://img.shields.io/badge/jupyter-notebook-orange.svg)
 ![Python3.6](https://img.shields.io/badge/python-3.6-blue.svg)
-![MATLAB](https://img.shields.io/badge/MATLAB-R17A-purple.svg)
+![MATLAB](https://img.shields.io/badge/MATLAB-R17A-pink.svg)
 
 # A Study of Transcription and Its Affects
 
