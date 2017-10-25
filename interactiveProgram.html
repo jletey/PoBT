@@ -34,39 +34,7 @@
 	<h2>Part 1: Finding the Hits</h2>
 
 	<p>To calculate the hits, I read in from a file called input.txt which is formatted as follows:</p>
-
-	<table>
-  		<colgroup>
-    	<col style="width:150px" /><col />
-  		</colgroup>
-  		<thead>
-    		<tr><th>Column 1</th><th>Column 2</th></tr>
-  		</thead>
-  		<tfoot>
-    		<tr><td>Footer 1</td><td>Footer 2</td></tr>
-  		</tfoot>
-  		<tbody>
-    		<tr><td>Cell 1.1</td><td>Cell 1.2</td></tr>
-    		<tr><td>Cell 2.1</td><td>Cell 2.2</td></tr>
-  		</tbody>
-	</table>
-
-	<table>
-  		<colgroup>
-    		<col style="width:100px" /><col />
-  		</colgroup>
-  		<thead>
-    		<tr><th>Column 1</th><th>Column 2</th></tr>
-  		</thead>
-  		<tfoot>
-    		<tr><td>Footer 1</td><td>Footer 2</td></tr>
-  		</tfoot>
-  		<tbody>
-    		<tr><td>Cell 1.1</td><td>Cell 1.2</td></tr>
-    		<tr><td>Cell 2.1</td><td>Cell 2.2</td></tr>
-  		</tbody>
-	</table>
-
+	
 	<table>
 		<thead>
 			<tr><th>Line Number</th><th>Description</th></tr>
@@ -76,16 +44,10 @@
     		<tr><td>2</td><td>Name of tamo file</td></tr>
     		<tr><td>3</td><td>Weak threshold value</td></tr>
     		<tr><td>4</td><td>Strong threshold value</td></tr>
+    		<tr><td>5</td><td>Size of each category of distances between sites</td></tr>
+    		<tr><td>6</td><td>Maximum allowed plus/minus distance between a strong and weak site</td></tr>
 		</tbody>
 	</table>
-|  Line Number  | Description |
-|:---:|:---:|
-| 1 | Name of fasta file |
-| 2 | Name of tamo file |
-| 3 | Weak threshold value |
-| 4 | Strong threshold value |
-| 5 | Size of each category of distances between sites |
-| 6 | Maximum allowed plus/minus distance between a strong and weak site |
 
 I had originally sought out to do this project in [MATLAB](https://www.mathworks.com), but with the fact that we're running our code with super big data (and for the sake of your and my sanity), I have decided to use [Python](https://www.python.org), with [Jupyter Notebook](http://jupyter.org), for this project. I read in the chromosomes from a fasta file called $\texttt{SGDv3.fasta}$ and the associated PSSM to the transcription factor from the tamo file called $\texttt{yeast.tamo}$. Before we continue, let's first read in $\texttt{input.txt}$.
 </body>
