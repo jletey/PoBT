@@ -1,0 +1,25 @@
+# searching chr1
+# for transcription factor DAL81
+# weak threshold: 0.35
+# strong threshold: 0.7
+
+# The following is the outputs of the program in the forwards direction. 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# position  strength  type       
+# 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# The number of weak sites for the forwards direction is 0
+# The number of strong sites for the forwards direction is 0
+
+
+# The following is the outputs of the program in the reverse compliment direction. 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# position  strength  type       
+# 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# The number of weak sites for the reverse compliment direction is 0
+# The number of strong sites for the reverse compliment direction is 0
