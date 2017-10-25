@@ -14,28 +14,20 @@
 	<p>Do you want an explaination of my project?</p> <button id="wantanexplaination" onclick="explainationclick()">Explaination hidden</button>
 	<script type="text/javascript" src="helper.js"></script>
 	
-	<p id="explaination1"></p>
-	<p id="explaination2"></p>
+	<p id="explaination1" style="display:none;"><b>Contributors</b>: John M. Letey (John.Letey@colorado.edu) and David A. Knox (David.Knox@colorado.edu).</p>
+	<p id="explaination2" style="display:none"><b>Notes</b>: To get to my GitHub repository, go to this <a href="https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects">website</a>. For instructions on how to use my repository, go <a href="https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/instructions.md">here</a>.</p>
 
-	<input id="mytextbox"></input>
-	<button type="button" onclick="buttonclick()">Click here</button>
-	<script type="text/javascript" src="helper.js"></script>
-	
-	<p><b>Contributors</b>: John M. Letey (John.Letey@colorado.edu) and David A. Knox (David.Knox@colorado.edu).</p>
+	<p id="explaination3" style="display:none">This project follows the below pipeline</p>
 
-	<p><b>Notes</b>: To get to my GitHub repository, go to this <a href="https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects">website</a>. For instructions on how to use my repository, go <a href="https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/instructions.md">here</a>.</p>
+	<img id="explaination4" style="display:none" src="pipeline.png" alt="">
 
-	<p>This project follows the below pipeline.</p>
+	<p id="explaination5" style="display:none">I have broken this project into to major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome and transcription factor. The second portion analyses these hits. Let's talk about these two portions more in depth.</p>
 
-	<img src="pipeline.png" alt="">
+	<h2 id="explaination6" style="display:none">Part 1: Finding the Hits</h2>
 
-	<p>I have broken this project into to major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome and transcription factor. The second portion analyses these hits. Let's talk about these two portions more in depth.</p>
+	<p id="explaination7" style="display:none">To calculate the hits, I read in from a file called input.txt which is formatted as follows:</p>
 
-	<h2>Part 1: Finding the Hits</h2>
-
-	<p>To calculate the hits, I read in from a file called input.txt which is formatted as follows:</p>
-	
-	<table>
+	<table id="explaination8" style="display:none">
 		<thead>
 			<tr><th>Line Number</th><th>Description</th></tr>
 		</thead>
@@ -49,6 +41,10 @@
 		</tbody>
 	</table>
 
-I had originally sought out to do this project in [MATLAB](https://www.mathworks.com), but with the fact that we're running our code with super big data (and for the sake of your and my sanity), I have decided to use [Python](https://www.python.org), with [Jupyter Notebook](http://jupyter.org), for this project. I read in the chromosomes from a fasta file called $\texttt{SGDv3.fasta}$ and the associated PSSM to the transcription factor from the tamo file called $\texttt{yeast.tamo}$. Before we continue, let's first read in $\texttt{input.txt}$.
+	<p id="explaination9" style="display:none">I had originally sought out to do this project in <a href="https://www.mathworks.com">MATLAB</a>, but with the fact that we're running our code with super big data (and for the sake of your and my sanity), I have decided to use <a href="https://www.python.org">Python</a>, with <a href="https://jupyter.org">Jupyter Notebook</a>, for this project. I read in the chromosomes from a fasta file called <code>SGDv3.fasta</code> and the associated PSSM to the transcription factor from the tamo file called <code>yeast.tamo</code>. Before we continue, let's first read in <code>input.txt</code>.</p>
+
+	<input id="mytextbox"></input>
+	<button type="button" onclick="buttonclick()">Click here</button>
+	<script type="text/javascript" src="helper.js"></script>
 </body>
 </html>

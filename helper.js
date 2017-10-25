@@ -13,13 +13,37 @@ function explainationclick(){
 	var mybutton = document.getElementById("wantanexplaination");
 	var myexplaination1 = document.getElementById("explaination1");
 	var myexplaination2 = document.getElementById("explaination2");
+	var myexplaination3 = document.getElementById("explaination3");
+	var myexplaination4 = document.getElementById("explaination4");
+	var myexplaination5 = document.getElementById("explaination5");
+	var myexplaination6 = document.getElementById("explaination6");
+	var myexplaination7 = document.getElementById("explaination7");
+	var myexplaination8 = document.getElementById("explaination8");
+	var myexplaination9 = document.getElementById("explaination9");
 	if (mybutton.innerHTML == "Explaination hidden"){
 		mybutton.innerHTML = "Explaination visible";
-		myexplaination1.innerHTML = "Contributors: John M. Letey (John.Letey@colorado.edu) and David A. Knox (David.Knox@colorado.edu).";
-		myexplaination2.innerHTML = ""
+		console.log(myexplaination1);
+		myexplaination1.style.display = 'block';
+		myexplaination2.style.display = 'block';
+		myexplaination3.style.display = 'block';
+		myexplaination4.style.display = 'block';
+		myexplaination5.style.display = 'block';
+		myexplaination6.style.display = 'block';
+		myexplaination7.style.display = 'block';
+		myexplaination8.style.display = 'block';
+		myexplaination9.style.display = 'block';
 	}
 	else{
 		mybutton.innerHTML = "Explaination hidden";
-		myexplaination1.innerHTML = "";
+		console.log('in hide', myexplaination1);
+		myexplaination1.style.display = 'none';
+		myexplaination2.style.display = 'none';
+		myexplaination3.style.display = 'none';
+		myexplaination4.style.display = 'none';
+		myexplaination5.style.display = 'none';
+		myexplaination6.style.display = 'none';
+		myexplaination7.style.display = 'none';
+		myexplaination8.style.display = 'none';
+		myexplaination9.style.display = 'none';
 	}
 }
