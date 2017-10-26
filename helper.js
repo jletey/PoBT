@@ -54,4 +54,5 @@ function explainationClick(){
 
 function fastaFilenameClick(){
 	var input = document.getElementById("fastaFile");
+	var fileID = open(input.value);
 }
