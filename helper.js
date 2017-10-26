@@ -38,7 +38,6 @@ function explainationClick(){
 	}
 	else{
 		mybutton.innerHTML = "Explaination is hidden";
-		console.log('in hide', myexplaination1);
 		myexplaination0.style.display = 'none';
 		myexplaination1.style.display = 'none';
 		myexplaination2.style.display = 'none';
@@ -54,5 +53,5 @@ function explainationClick(){
 }
 
 function fastaFilenameClick(){
-	var value = document.getElementById("fastaFile").innerHTML;
+	var input = document.getElementById("fastaFile");
 }
