@@ -9,11 +9,16 @@
 	</style>
 </head>
 <body>
+	<!--Run the JavaScript program in the backround-->
 	<script type="text/javascript" src="helper.js"></script>
+	<!--Make a header-->
 	<h1 id="myheader">A Study of Transcription and Its Affects</h1>
+	<!--Make a line after the header-->
 	<hr width="100%" size="2px"/>
-	<p>Do you want an explaination and information of my project?</p> <button id="wantanexplaination" onclick="explainationclick()">Explaination is hidden</button>
+
+	<p>Do you want an explaination and information of my project?</p> <button id="wantanexplaination" onclick="explainationClick()">Explaination is hidden</button>
 	
+	<h2 id="explaination0" style="display:none">Explaination and Information</h2>
 	<p id="explaination1" style="display:none;"><b>Contributors</b>: John M. Letey (John.Letey@colorado.edu) and David A. Knox (David.Knox@colorado.edu).</p>
 	<p id="explaination2" style="display:none"><b>Notes</b>: To get to my GitHub repository, go to this <a href="https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects">website</a>. For instructions on how to use my repository, go <a href="https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/instructions.md">here</a>.</p>
 
@@ -23,7 +28,7 @@
 
 	<p id="explaination5" style="display:none">I have broken this project into to major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome and transcription factor. The second portion analyses these hits. Let's talk about these two portions more in depth.</p>
 
-	<h2 id="explaination6" style="display:none">Part 1: Finding the Hits</h2>
+	<h3 id="explaination6" style="display:none">Part 1: Finding the Hits</h3>
 
 	<p id="explaination7" style="display:none">To calculate the hits, I read in from a file called input.txt which is formatted as follows:</p>
 
@@ -43,16 +48,24 @@
 
 	<p id="explaination9" style="display:none">I had originally sought out to do this project in <a href="https://www.mathworks.com">MATLAB</a>, but with the fact that we're running our code with super big data (and for the sake of your and my sanity), I have decided to use <a href="https://www.python.org">Python</a>, with <a href="https://jupyter.org">Jupyter Notebook</a>, for this project. I read in the chromosomes from a fasta file called <code>SGDv3.fasta</code> and the associated PSSM to the transcription factor from the tamo file called <code>yeast.tamo</code>. Before we continue, let's first read in <code>input.txt</code>.</p>
 
-	<h2 id="explaination10" style="display:none">Part 2: Analysing the Hits</h2>
+	<h3 id="explaination10" style="display:none">Part 2: Analysing the Hits</h3>
 
 	<!--<input id="mytextbox"></input>
-	<button type="button" onclick="buttonclick()">Click here</button>
+	<button type="button" onclick="buttonClick()">Click here</button>
 	<script type="text/javascript" src="helper.js"></script>-->
 
-	<p>The following is an interactive program that runs a JavaScript program in the backround that is the equivalent to my Python code for my research project. Please enter in the name of your fasta file:</p>
-	<input id="fastaFile"></input>
-	<button type="button" onclick="fastaFilenameclick()">Enter</button>
+	<h2>Interactive Program</h2>
+	<p>The following is an interactive program that runs a JavaScript program in the backround that is the equivalent to my Python code for my research project. Please enter in the name of your fasta file into the following box and click enter.</p>
+	<!--<select name="gender">
+  		<option value="Value 1" selected="selected">Male</option>
+  		<option value="Value 2">Female</option>
+  		<option value="Value 3">Other</option>
+	</select>-->
 	
+	<input id="fastaFile"></input>
+	<button type="button" onclick="fastaFilenameClick()">Enter</button>
+	<!--Add a drop down menu-->
+
 	<!--<canvas id="histogram"></canvas>-->
 </body>
 </html>

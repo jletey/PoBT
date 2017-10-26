@@ -2,15 +2,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 });
 
-function buttonclick(){
+function buttonClick(){
 	var mytextbox = document.getElementById("mytextbox");
 	var myheader = document.getElementById("myheader");
 	var input = mytextbox.value;
 	myheader.innerHTML = input;
 }
 
-function explainationclick(){
+function explainationClick(){
 	var mybutton = document.getElementById("wantanexplaination");
+	var myexplaination0 = document.getElementById("explaination0");
 	var myexplaination1 = document.getElementById("explaination1");
 	var myexplaination2 = document.getElementById("explaination2");
 	var myexplaination3 = document.getElementById("explaination3");
@@ -23,7 +24,7 @@ function explainationclick(){
 	var myexplaination10 = document.getElementById("explaination10");
 	if (mybutton.innerHTML == "Explaination is hidden"){
 		mybutton.innerHTML = "Explaination is visible";
-		console.log(myexplaination1);
+		myexplaination0.style.display = 'block';
 		myexplaination1.style.display = 'block';
 		myexplaination2.style.display = 'block';
 		myexplaination3.style.display = 'block';
@@ -38,6 +39,7 @@ function explainationclick(){
 	else{
 		mybutton.innerHTML = "Explaination is hidden";
 		console.log('in hide', myexplaination1);
+		myexplaination0.style.display = 'none';
 		myexplaination1.style.display = 'none';
 		myexplaination2.style.display = 'none';
 		myexplaination3.style.display = 'none';
@@ -51,6 +53,6 @@ function explainationclick(){
 	}
 }
 
-function fastaFilenameclick(){
+function fastaFilenameClick(){
 	var value = document.getElementById("fastaFile").innerHTML;
 }
