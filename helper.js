@@ -3,56 +3,57 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function buttonClick(){
-	var mytextbox = document.getElementById("mytextbox");
-	var myheader = document.getElementById("myheader");
-	var input = mytextbox.value;
+	let mytextbox = document.getElementById("mytextbox");
+	let myheader = document.getElementById("myheader");
+	let input = mytextbox.value;
 	myheader.innerHTML = input;
 }
 
-function explainationClick(){
-	var mybutton = document.getElementById("wantanexplaination");
-	var myexplaination0 = document.getElementById("explaination0");
-	var myexplaination1 = document.getElementById("explaination1");
-	var myexplaination2 = document.getElementById("explaination2");
-	var myexplaination3 = document.getElementById("explaination3");
-	var myexplaination4 = document.getElementById("explaination4");
-	var myexplaination5 = document.getElementById("explaination5");
-	var myexplaination6 = document.getElementById("explaination6");
-	var myexplaination7 = document.getElementById("explaination7");
-	var myexplaination8 = document.getElementById("explaination8");
-	var myexplaination9 = document.getElementById("explaination9");
-	var myexplaination10 = document.getElementById("explaination10");
-	if (mybutton.innerHTML == "Explaination is hidden"){
-		mybutton.innerHTML = "Explaination is visible";
-		myexplaination0.style.display = 'block';
-		myexplaination1.style.display = 'block';
-		myexplaination2.style.display = 'block';
-		myexplaination3.style.display = 'block';
-		myexplaination4.style.display = 'block';
-		myexplaination5.style.display = 'block';
-		myexplaination6.style.display = 'block';
-		myexplaination7.style.display = 'block';
-		myexplaination8.style.display = 'block';
-		myexplaination9.style.display = 'block';
-		myexplaination10.style.display = 'block';
+function explanationClick(){
+	let mybutton = document.getElementById("wantanexplanation");
+	let myexplanation0 = document.getElementById("explanation0");
+	let myexplanation1 = document.getElementById("explanation1");
+	let myexplanation2 = document.getElementById("explanation2");
+	let myexplanation3 = document.getElementById("explanation3");
+	let myexplanation4 = document.getElementById("explanation4");
+	let myexplanation5 = document.getElementById("explanation5");
+	let myexplanation6 = document.getElementById("explanation6");
+	let myexplanation7 = document.getElementById("explanation7");
+	let myexplanation8 = document.getElementById("explanation8");
+	let myexplanation9 = document.getElementById("explanation9");
+	let myexplanation10 = document.getElementById("explanation10");
+	if (mybutton.innerHTML == "Explanation is hidden"){
+		mybutton.innerHTML = "Explanation is visible";
+		myexplanation0.style.display = 'block';
+		myexplanation1.style.display = 'block';
+		myexplanation2.style.display = 'block';
+		myexplanation3.style.display = 'block';
+		myexplanation4.style.display = 'block';
+		myexplanation5.style.display = 'block';
+		myexplanation6.style.display = 'block';
+		myexplanation7.style.display = 'block';
+		myexplanation8.style.display = 'block';
+		myexplanation9.style.display = 'block';
+		myexplanation10.style.display = 'block';
 	}
 	else{
-		mybutton.innerHTML = "Explaination is hidden";
-		myexplaination0.style.display = 'none';
-		myexplaination1.style.display = 'none';
-		myexplaination2.style.display = 'none';
-		myexplaination3.style.display = 'none';
-		myexplaination4.style.display = 'none';
-		myexplaination5.style.display = 'none';
-		myexplaination6.style.display = 'none';
-		myexplaination7.style.display = 'none';
-		myexplaination8.style.display = 'none';
-		myexplaination9.style.display = 'none';
-		myexplaination10.style.display = 'none';
+		mybutton.innerHTML = "Explanation is hidden";
+		myexplanation0.style.display = 'none';
+		myexplanation1.style.display = 'none';
+		myexplanation2.style.display = 'none';
+		myexplanation3.style.display = 'none';
+		myexplanation4.style.display = 'none';
+		myexplanation5.style.display = 'none';
+		myexplanation6.style.display = 'none';
+		myexplanation7.style.display = 'none';
+		myexplanation8.style.display = 'none';
+		myexplanation9.style.display = 'none';
+		myexplanation10.style.display = 'none';
 	}
 }
 
 function fastaFilenameClick(){
-	var input = document.getElementById("fastaFile");
-	var fileID = open(input.value);
+	let input = document.getElementById("fastaFile");
+	console.log(input.value);
+	//let fileID = open(input.value);
 }
