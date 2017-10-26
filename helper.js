@@ -50,3 +50,7 @@ function explainationclick(){
 		myexplaination10.style.display = 'none';
 	}
 }
+
+function fastaFilenameclick(){
+	var value = document.getElementById("fastaFile").innerHTML;
+}
