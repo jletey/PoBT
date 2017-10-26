@@ -20,8 +20,9 @@ function explainationclick(){
 	var myexplaination7 = document.getElementById("explaination7");
 	var myexplaination8 = document.getElementById("explaination8");
 	var myexplaination9 = document.getElementById("explaination9");
-	if (mybutton.innerHTML == "Explaination hidden"){
-		mybutton.innerHTML = "Explaination visible";
+	var myexplaination10 = document.getElementById("explaination10");
+	if (mybutton.innerHTML == "Explaination is hidden"){
+		mybutton.innerHTML = "Explaination is visible";
 		console.log(myexplaination1);
 		myexplaination1.style.display = 'block';
 		myexplaination2.style.display = 'block';
@@ -32,9 +33,10 @@ function explainationclick(){
 		myexplaination7.style.display = 'block';
 		myexplaination8.style.display = 'block';
 		myexplaination9.style.display = 'block';
+		myexplaination10.style.display = 'block';
 	}
 	else{
-		mybutton.innerHTML = "Explaination hidden";
+		mybutton.innerHTML = "Explaination is hidden";
 		console.log('in hide', myexplaination1);
 		myexplaination1.style.display = 'none';
 		myexplaination2.style.display = 'none';
@@ -45,5 +47,6 @@ function explainationclick(){
 		myexplaination7.style.display = 'none';
 		myexplaination8.style.display = 'none';
 		myexplaination9.style.display = 'none';
+		myexplaination10.style.display = 'none';
 	}
 }
