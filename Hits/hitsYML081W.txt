@@ -1,0 +1,84 @@
+# searching chr1
+# for transcription factor YML081W
+# weak threshold: 0.35
+# strong threshold: 0.7
+
+# The following is the outputs of the program in the forwards direction. 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# position  strength  type       
+  2844     0.6134517904834578      weak  
+  4019     0.5416689377009866      weak  
+  10584     0.8969858832506679      strong  
+  12211     0.7706437019676241      strong  
+  19590     0.6988608491851528      weak  
+  24643     0.7706437019676241      strong  
+  31926     0.8252030304681964      strong  
+  39792     0.7397939717665014      strong  
+  50794     0.7397939717665014      strong  
+  52244     0.5649970022346978      weak  
+  63186     0.3517196271870061      weak  
+  83959     0.8428080885158337      strong  
+  95079     0.368452608055813      weak  
+  105193     0.4386548209516542      weak  
+  105488     0.5958467324358205      weak  
+  115578     0.7221889137188642      strong  
+  115762     0.5649970022346978      weak  
+  116406     0.8736578187169564      strong  
+  121093     0.5649970022346978      weak  
+  124041     0.5958467324358205      weak  
+  126935     0.8428080885158337      strong  
+  130481     0.35182863683435983      weak  
+  140600     0.5416689377009866      weak  
+  144263     0.7706437019676241      strong  
+  158129     0.6680111189840301      weak  
+  160201     0.6134517904834578      weak  
+  165643     0.71646590723279      strong  
+  172483     0.5416689377009866      weak  
+  174646     0.6680111189840301      weak  
+  184372     0.7397939717665014      strong  
+  188686     0.36834359840845915      weak  
+  190659     0.8428080885158337      strong  
+  199863     0.5416689377009866      weak  
+  220617     0.36850711287948984      weak  
+  227265     0.6134517904834578      weak  
+# 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# The number of weak sites for the forwards direction is 21
+# The number of strong sites for the forwards direction is 14
+
+
+# The following is the outputs of the program in the reverse compliment direction. 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# position  strength  type       
+  1491     0.3683435984084591      weak  
+  26179     0.351719627187006      weak  
+  26854     0.351719627187006      weak  
+  26989     0.351719627187006      weak  
+  31453     0.36834359840845915      weak  
+  55032     0.3683435984084591      weak  
+  67846     0.8736578187169564      strong  
+  74403     0.7397939717665013      strong  
+  75884     0.8736578187169564      strong  
+  95274     0.5649970022346977      weak  
+  113713     0.7397939717665013      strong  
+  129411     0.5416689377009865      weak  
+  145250     0.3686161225268436      weak  
+  157401     0.5958467324358204      weak  
+  165156     0.6680111189840301      weak  
+  165424     0.8252030304681964      strong  
+  168330     0.36834359840845915      weak  
+  169606     0.5649970022346977      weak  
+  170542     1.0      strong  
+  179106     0.8428080885158337      strong  
+  203456     0.5958467324358204      weak  
+  212126     0.6988608491851528      weak  
+  214255     0.8736578187169564      strong  
+  221192     0.3683435984084591      weak  
+# 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# The number of weak sites for the reverse compliment direction is 16
+# The number of strong sites for the reverse compliment direction is 8

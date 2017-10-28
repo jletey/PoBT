@@ -1,0 +1,36 @@
+# searching chr1
+# for transcription factor RLR1
+# weak threshold: 0.35
+# strong threshold: 0.7
+
+# The following is the outputs of the program in the forwards direction. 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# position  strength  type       
+  5452     0.3972753725421039      weak  
+  19734     0.4451106604355878      weak  
+  25423     0.37628956882109166      weak  
+  44612     0.40812097698615646      weak  
+  74331     0.42606472092408076      weak  
+  91087     0.35578873115245563      weak  
+  161658     0.3901331452252888      weak  
+  182950     0.40009699321047526      weak  
+# 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# The number of weak sites for the forwards direction is 8
+# The number of strong sites for the forwards direction is 0
+
+
+# The following is the outputs of the program in the reverse compliment direction. 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# position  strength  type       
+  13539     0.45097434088704713      weak  
+  131831     0.38691473415042765      weak  
+  207967     0.3823296005643242      weak  
+# 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# The number of weak sites for the reverse compliment direction is 3
+# The number of strong sites for the reverse compliment direction is 0

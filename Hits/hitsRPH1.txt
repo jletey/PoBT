@@ -1,0 +1,64 @@
+# searching chr1
+# for transcription factor RPH1
+# weak threshold: 0.35
+# strong threshold: 0.7
+
+# The following is the outputs of the program in the forwards direction. 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# position  strength  type       
+  6364     0.6578890567666739      weak  
+  17334     0.6578890567666739      weak  
+  45789     0.6578890567666739      weak  
+  46231     0.6578890567666739      weak  
+  68552     0.6578890567666739      weak  
+  106600     0.6578890567666739      weak  
+  124036     0.6578890567666739      weak  
+  127212     0.6578890567666739      weak  
+  135154     0.6578890567666739      weak  
+  136989     0.6578890567666739      weak  
+  157386     0.6578890567666739      weak  
+  168939     0.6578890567666739      weak  
+  175021     0.6578890567666739      weak  
+  183770     0.6578890567666739      weak  
+  198513     0.6578890567666739      weak  
+  211216     0.6578890567666739      weak  
+# 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# The number of weak sites for the forwards direction is 16
+# The number of strong sites for the forwards direction is 0
+
+
+# The following is the outputs of the program in the reverse compliment direction. 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# position  strength  type       
+  5987     0.6578890567666739      weak  
+  18411     0.6578890567666739      weak  
+  22507     0.6578890567666739      weak  
+  48637     0.6578890567666739      weak  
+  53975     0.6578890567666739      weak  
+  77836     0.6578890567666739      weak  
+  80802     0.6578890567666739      weak  
+  83518     0.6578890567666739      weak  
+  85436     0.6578890567666739      weak  
+  99331     0.6578890567666739      weak  
+  100587     0.6578890567666739      weak  
+  113700     0.6578890567666739      weak  
+  115350     0.6578890567666739      weak  
+  127346     0.6578890567666739      weak  
+  140481     0.6578890567666739      weak  
+  143163     0.6578890567666739      weak  
+  148555     0.6578890567666739      weak  
+  152347     0.6578890567666739      weak  
+  154966     0.6578890567666739      weak  
+  155180     0.6578890567666739      weak  
+  168665     0.6578890567666739      weak  
+  202529     0.6578890567666739      weak  
+  216753     0.6578890567666739      weak  
+# 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+# 
+# The number of weak sites for the reverse compliment direction is 23
+# The number of strong sites for the reverse compliment direction is 0
