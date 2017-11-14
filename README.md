@@ -7,6 +7,8 @@
 
 **Notes:** To get to my GitHub repository, go to this [website](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects). For instructions on how to use my repository, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/instructions.md).
 
+**Dependencies:** My Jupyter Notebook uses the [BioPython](https://github.com/biopython/biopython) package, which you can easily get and download using the built in interface in the Anaconda Navigator.
+
 This project follows the below pipeline.
 
 ![pipeline](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/pipeline.png?raw=true)
