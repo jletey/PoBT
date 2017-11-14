@@ -5,11 +5,11 @@
 
 **Contributors:** John M. Letey (John.Letey@colorado.edu), David A. Knox (David.Knox@colorado.edu)
 
-**Notes:** To get to my GitHub repository, go to this [website](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects). For instructions on how to use my repository, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md).
+**Notes:** To get to my GitHub repository, go to this [website](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects). For instructions on how to use my repository, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/instructions.md).
 
 This project follows the below pipeline.
 
-![pipeline](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/pipeline.png?raw=true)
+![pipeline](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/pipeline.png?raw=true)
 
 I have broken this project into to major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome and transcription factor. The second portion analyses these hits. Let's talk about these two portions more in depth.
 
