@@ -13,21 +13,15 @@ This project follows the below pipeline.
 
 ![pipeline](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/pipeline.png?raw=true)
 
-I have broken this project into to major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome and transcription factor. The second portion analyses these hits. Let's talk about these two portions more in depth.
+I have broken this project into to two major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome (or all of the chromosomes) and transcription factor. The second portion analyses these hits. Before we talk about these two parts more in depth, I'm going to give you a brief introduction on why I'm doing this.
+
+## Introduction
+
+The fundamental component of life, whether we're talking about animals or humans or anything, is the cell. The cell is the most complex and unique part of any living being. As humans, some of us wonder what goes on inside such a fundamental component of us. That when I started wondering, is there a pattern? In all cells, the DNA goes through a process called transcription which converts it into RNA (which then the cell uses to make proteins). While doing this, there are transcription factors, which the whole point of there existence is to bind to the DNA. Each transcription factor has a unique target string which it is looking for in the DNA sequence.
 
 ## Part 1: Finding the Hits
 
-To calculate the hits, I read in from a file called `input.txt` which is formatted as follows:
 
-|  Line Number  | Description |
-|:---:|:---:|
-| 1 | Name of fasta file |
-| 2 | Name of tamo file |
-| 3 | Weak threshold value |
-| 4 | Strong threshold value |
-| 5 | Size of each category of distances between sites |
-| 6 | Maximum allowed plus/minus distance between a strong and weak site |
-
-I had originally sought out to do this project in MATLAB, but with the fact that we're running our code with super big data (and for the sake of your and my sanity), I have decided to use Python, with Jupyter Notebook, for this project. I read in the chromosomes from a fasta file called `SGDv3.fasta` and the associated PSSM to the transcription factor from the tamo file called `yeast.tamo`.
 
 ## Part 2 : Analyzing the Hits
+
