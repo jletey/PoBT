@@ -25,4 +25,14 @@ Once you have downloaded Jupyter Notebook, launch your Anaconda Navigator and cl
 
 ![Step1](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/enviroments.png?raw=true)
 
+After you've done that, click on "Installed" and switch it to "All". You should get this:
+
+![Step2](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/packages.png?raw=true)
+
+Next you want to search biopython in the search box.
+
+![Step3](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/biopython.png?raw=true)
+
+Select it and download. This is all you need to do. Anaconda will do the rest for you! :smiley:
+
 After you've done the above instructions, you should be all set to play around with my repository!
