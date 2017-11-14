@@ -19,4 +19,10 @@ If you already don't have Jupyter Notebook installed, please follow the below in
 - When you're done installing, open Anaconda Navigator. Click the launch button under the box saying Jupyter Notebook.
 - This should open up Jupyter Notebook in your default browser.
 
+## Installing biopython
+
+Once you have downloaded Jupyter Notebook, launch your Anaconda Navigator and click on the side button that says "Enviroments". You should see something that looks like this:
+
+![]()
+
 After you've done the above instructions, you should be all set to play around with my repository!
