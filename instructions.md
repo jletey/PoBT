@@ -23,6 +23,6 @@ If you already don't have Jupyter Notebook installed, please follow the below in
 
 Once you have downloaded Jupyter Notebook, launch your Anaconda Navigator and click on the side button that says "Enviroments". You should see something that looks like this:
 
-![]()
+![Step1](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/enviroments.png?raw=true)
 
 After you've done the above instructions, you should be all set to play around with my repository!
