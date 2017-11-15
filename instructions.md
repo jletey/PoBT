@@ -6,8 +6,8 @@ Please follow the below instructions to successfully use my repository.
 
 To clone my repository, type the following command into a terminal
 
-```
-$ git clone https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects.git
+```sh
+git clone https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects.git
 ```
 
 ## Jupyter Notebook Installation
