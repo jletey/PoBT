@@ -29,7 +29,7 @@ After you've done that, click on `Installed` and switch it to `All`. You should 
 
 ![Step2](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/packages.png?raw=true)
 
-Next you want to search biopython in the search box.
+Next you want to search `biopython` in the search box.
 
 ![Step3](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/biopython.png?raw=true)
 
