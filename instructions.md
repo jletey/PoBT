@@ -21,11 +21,11 @@ If you already don't have Jupyter Notebook installed, please follow the below in
 
 ## Installing biopython
 
-Once you have downloaded Jupyter Notebook, launch your Anaconda Navigator and click on the side button that says "Enviroments". You should see something that looks like this:
+Once you have downloaded Jupyter Notebook, launch your Anaconda Navigator and click on the side option that says `Enviroments`. You should see something that looks like this:
 
 ![Step1](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/enviroments.png?raw=true)
 
-After you've done that, click on "Installed" and switch it to "All". You should get this:
+After you've done that, click on `Installed` and switch it to `All`. You should get this:
 
 ![Step2](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/packages.png?raw=true)
 
