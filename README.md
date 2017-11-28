@@ -19,9 +19,9 @@ I have broken this project into to two major portions. The first portion calcula
 
 The fundamental component of life, whether we're talking about animals or humans or anything, is the cell. The cell is the most complex and unique part of any living being. As humans, some of us wonder what goes on inside such a fundamental component of us. That when I started wondering, is there a pattern? In all cells, the DNA goes through a process called transcription which converts it into RNA (which then the cell uses to make proteins, and then the process repeats). While doing this, there are transcription factors, which the whole point of there existence is to bind to the DNA. Each transcription factor has a unique target string which it is looking for in the DNA sequence.
 
-## Part 1: Finding the Hits
+<!--## Part 1: Finding the Hits-->
 
 <!--We're given both the chromosomes (in fasta format) and transcription factors and there corresponding pssm (in tamo format). How to we get strong and weak sites out of this? The way I implemented the part, was:-->
 
-## Part 2 : Analyzing the Hits
+<!--## Part 2 : Analyzing the Hits-->
 
