@@ -14,9 +14,9 @@ Here is the pipeline I followed in this project:
 
 I have broken this project into to two major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome (or all of the chromosomes) and transcription factor. The second portion analyses these hits. Before we talk about these two parts more in depth, I'm going to give you a brief introduction on why I'm doing this.
 
-## Introduction
+<!--## Introduction-->
 
-The fundamental component of life, whether we're talking about animals or humans or anything, is the cell. The cell is the most complex and unique part of any living being. As humans, some of us wonder what goes on inside such a fundamental component of us. That when I started wondering, is there a pattern? In all cells, the DNA goes through a process called transcription which converts it into RNA (which then the cell uses to make proteins, and then the process repeats). While doing this, there are transcription factors, which the whole point of there existence is to bind to the DNA. Each transcription factor has a unique target string which it is looking for in the DNA sequence.
+<!--The fundamental component of life, whether we're talking about animals or humans or anything, is the cell. The cell is the most complex and unique part of any living being. As humans, some of us wonder what goes on inside such a fundamental component of us. That when I started wondering, is there a pattern? In all cells, the DNA goes through a process called transcription which converts it into RNA (which then the cell uses to make proteins, and then the process repeats). While doing this, there are transcription factors, which the whole point of there existence is to bind to the DNA. Each transcription factor has a unique target string which it is looking for in the DNA sequence.-->
 
 <!--## Part 1: Finding the Hits-->
 
