@@ -21,7 +21,7 @@ The fundamental component of life, whether we're talking about animals or humans
 
 ## Part 1: Finding the Hits
 
-We're given both the chromosomes (in fasta format) and transcription factors and there corresponding pssm (in tamo format). How to we get strong and weak sites out of this? The way I implemented the part, was:
+<!--We're given both the chromosomes (in fasta format) and transcription factors and there corresponding pssm (in tamo format). How to we get strong and weak sites out of this? The way I implemented the part, was:-->
 
 ## Part 2 : Analyzing the Hits
 
