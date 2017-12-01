@@ -7,13 +7,17 @@
 
 **Notes:** To get to my GitHub repository, go to this [website](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects). For instructions on how to use my repository, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md).
 
-**Dependencies:** My Jupyter Notebook uses the [biopython](https://github.com/biopython/biopython) package, which you can easily download using the built in interface in the Anaconda Navigator. Look at my instructions [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md) on how to download biopython. I also have the dependency of having the package [pandas](https://github.com/pandas-dev/pandas), which should come pre-installed when you download Anaconda.
+**Dependencies:** None, except for Anaconda. <!--My Jupyter Notebook uses the [biopython](https://github.com/biopython/biopython) package, which you can easily download using the built in interface in the Anaconda Navigator. Look at my instructions [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md) on how to download biopython. I also have the dependency of having the package [pandas](https://github.com/pandas-dev/pandas), which should come pre-installed when you download Anaconda.-->
 
 Here is the pipeline I followed in this project:
 
 ![pipeline](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/pipeline.png?raw=true)
 
 I have broken this project into to two major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome (or all of the chromosomes) and transcription factor. The second portion analyses these hits. Before we talk about these two parts more in depth, I'm going to give you a brief introduction on why I'm doing this.
+
+## Improvements
+
+One improvement to my project would be to use the [biopython](https://github.com/biopython/biopython) package, which I give instructions on how to get [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md), and the [pandas](https://github.com/pandas-dev/pandas), which should come preinstalled when you download Anaconda.
 
 <!--## Introduction-->
 
