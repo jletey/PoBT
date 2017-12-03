@@ -4,7 +4,7 @@
 
 # A Study of Transcription and Its Affects
 
-**Contributors:** John Letey (John.Letey@colorado.edu) and David Knox (David.Knox@colorado.edu)
+**Contributors:** John Letey (John.Letey@colorado.edu, @JohnLetey) and David Knox (David.Knox@colorado.edu, @dark2dark)
 
 **Notes:** To get to my GitHub repository, go to this [website](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects). For instructions on how to use my repository, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md).
 
