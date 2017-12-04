@@ -7,7 +7,7 @@
 
 **Contributors:** John Letey (John.Letey@colorado.edu) and David Knox (David.Knox@colorado.edu)
 
-**Warnings:**
+**Warnings:** Our Python code takes a long time to run. I'd suggest looking at the output of my program and not running our code to get the output.
 
 **Notes:** To get to my GitHub repository, go to this [website](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects). For instructions on how to use my repository, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md). For more information on the builds of this project, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/build.md).
 
