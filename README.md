@@ -6,7 +6,7 @@
 
 **Contributors:** John Letey (John.Letey@colorado.edu) and David Knox (David.Knox@colorado.edu)
 
-**Notes:** To get to my GitHub repository, go to this [website](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects). For instructions on how to use my repository, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md). For more information on the build, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/build.md).
+**Notes:** To get to my GitHub repository, go to this [website](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects). For instructions on how to use my repository, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md). For more information on the builds of this project, go [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/build.md).
 
 **Dependencies:** My Jupyter Notebook uses the [biopython](https://github.com/biopython/biopython) package, which you can easily download using the built in interface in the Anaconda Navigator. Look at my instructions [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md) on how to download biopython. I also have the dependency of having the package [pandas](https://github.com/pandas-dev/pandas), which should come pre-installed when you download Anaconda.
 
