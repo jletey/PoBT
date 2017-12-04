@@ -19,7 +19,7 @@ I have broken this project into to two major portions. The first portion calcula
 
 ## Overview
 
-
+In the high level, we're looking for patterns in DNA.
 
 <!--## Introduction-->
 
