@@ -1,7 +1,7 @@
 ![JupyterNotebook](https://img.shields.io/badge/jupyter%20notebook-5.2.1-orange.svg) 
 ![Python3.6](https://img.shields.io/badge/python-3.6-blue.svg)
-<!-- ![BuildStatus](https://img.shields.io/badge/build-failing-red.svg) -->
 ![BuildStatus](https://img.shields.io/badge/build-passing-brightgreen.svg)
+<!-- ![BuildStatus](https://img.shields.io/badge/build-failing-red.svg) -->
 
 # A Study of Transcription and Its Affects
 
