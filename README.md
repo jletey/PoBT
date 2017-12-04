@@ -19,6 +19,10 @@ I have broken this project into to two major portions. The first portion calcula
 
 ## Overview
 
+### The Why
+
+### The How
+
 
 
 <!--## Introduction-->
