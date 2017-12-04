@@ -21,7 +21,7 @@ I have broken this project into to two major portions. The first portion calcula
 
 ## Overview
 
-In the high level, we're looking for patterns in DNA.
+In the high level, all we're doing is looking for patterns in DNA. Using Python (in the form of a Jupyter Notebook), we analyse the DNA, given in the form of chromosomes, and
 
 <!--## Introduction-->
 
