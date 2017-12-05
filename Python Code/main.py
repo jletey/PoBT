@@ -6,6 +6,13 @@ from time import time
 import matplotlib.pyplot as plt
 import numpy as np
 import os
+## Tell the user that all data will be grabbed from the data section
+print('All data used will be grabbed from the data section')
+choice = str(input('Are you okay with this? [y/n] '))
+if choice == 'n':
+    path = str(input('What is your data path called? '))
+else:
+    path = 'Data'
 ##
 def getCHRs(filename, numUseless):
     # Tell the user the program is getting the fasta data
@@ -25,7 +32,7 @@ def getCHRs(filename, numUseless):
     return fastaDF
 ##
 # Get the data from the fasta file that I'm working with and take away two of those
-fastaDF = getCHRs('Data/SGDv3.fasta', 2)
+fastaDF = getCHRs(path + '/SGDv3.fasta', 2)
 # Get the amount of chromosomes
 countCHR = fastaDF.count()
 numOfCHR = countCHR['chromosome']
@@ -100,7 +107,7 @@ def getPSSMs(filename):
     return pssms
 ##
 # Get the data from the tamo file that I'm working with
-tamoDF = getPSSMs('Data/yeast.tamo')
+tamoDF = getPSSMs(path + '/yeast.tamo')
 # Get the amount of PSSMs (or TFs, both are the same)
 countTF = tamoDF.count()
 numOfTF = countTF['TF']
