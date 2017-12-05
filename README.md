@@ -13,7 +13,7 @@
 
 **Dependencies:** My Jupyter Notebook uses the [biopython](https://github.com/biopython/biopython) package, which you can easily download using the built in interface in the Anaconda Navigator. Look at my instructions [here](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/instructions.md) on how to download biopython. I also have the dependency of having the package [pandas](https://github.com/pandas-dev/pandas), which should come pre-installed when you download Anaconda.
 
-The below figure is the pipeline I followed in this project:
+The below figure is the pipeline which I implemented in this project:
 
 ![pipeline](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/current/Pictures/pipeline.png?raw=true)
 
