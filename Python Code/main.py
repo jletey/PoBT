@@ -7,13 +7,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 ## Tell the user that all data will be grabbed from the data section
-print('All data used will be grabbed from the data section')
+print('All data used will be grabbed from the data section (titled Data)')
 choice = str(input('Are you okay with this? [y/n] '))
 if choice == 'n':
     path = str(input('What is your data path called? '))
+    path = path.split('/')
+    path = path[0]
 else:
     path = 'Data'
-##
+## Implementation of getCHRs
 def getCHRs(filename, numUseless):
     # Tell the user the program is getting the fasta data
     print('Getting the fasta data out of the file:', filename)
@@ -30,17 +32,19 @@ def getCHRs(filename, numUseless):
     fastaDF = pd.DataFrame(dict(chromosome=s1, sequence=s2))
     # Return the dataframe
     return fastaDF
-##
+## Get the fasta data
+# Ask the user how much data they want to throw away
+n = int(input('How many chromosomes do you want to throw away? '))
 # Get the data from the fasta file that I'm working with and take away two of those
-fastaDF = getCHRs(path + '/SGDv3.fasta', 2)
+fastaDF = getCHRs(path + '/SGDv3.fasta', n)
 # Get the amount of chromosomes
 countCHR = fastaDF.count()
 numOfCHR = countCHR['chromosome']
 # Show the dataframe
 choice = str(input('Show the fasta dataframe? [y/n] '))
 if choice == 'y':
-	print(fastaDF)
-## 
+    print(fastaDF)
+## Implementation of getPSSMs
 def getPSSMs(filename):
     # Tell the user the program is getting the tamo data
     print('Getting the tamo data out of the file:', filename)
@@ -105,7 +109,7 @@ def getPSSMs(filename):
     pssms = pd.DataFrame(dict(TF=s1, ForwardsPSSM=s2, ReversePSSM=s3))
     # Return the dataframe
     return pssms
-##
+## Get the tamo data
 # Get the data from the tamo file that I'm working with
 tamoDF = getPSSMs(path + '/yeast.tamo')
 # Get the amount of PSSMs (or TFs, both are the same)
@@ -114,8 +118,8 @@ numOfTF = countTF['TF']
 # Show the dataframe
 choice = str(input('Show the tamo dataframe? Warning, this might be long! [y/n] '))
 if choice == 'y':
-        print(tamoDF)
-##
+    print(tamoDF)
+## Implementation of outputOfPSSM
 def outputOfPSSM(PSSM, sequence):
     # Find the length (horizontal length) of the PSSM
     lenOfPSSM = PSSM.count(1) - 1
@@ -140,7 +144,7 @@ def outputOfPSSM(PSSM, sequence):
     output /= maximum
     # Return the output of the PSSM
     return output
-##
+## Implementation of calculateHits
 def calculateHits(fastaDF, tamoDF, numOfTF, numOfCHR, weakThreshold, strongThreshold, Path):
     # Get the time
     t_beg = time()
@@ -186,6 +190,6 @@ def calculateHits(fastaDF, tamoDF, numOfTF, numOfCHR, weakThreshold, strongThres
     t_end = time()
     # Return the time it took to calculate the hits
     return t_end - t_beg
-##
+## Calculate the hits
 time_est = calculateHits(fastaDF, tamoDF, numOfTF, numOfCHR, 0.35, 0.7, 'Hits Files')
 print(time_est)
