@@ -26,7 +26,7 @@ if choice == 'n':
     else:
         path = str(input('What is your data path called? '))
     path = path.split('/')
-    path = path[0]
+    path = path[:len(path)-1]
 else:
     path = 'Data'
 ## Implementation of getCHRs
@@ -226,5 +226,12 @@ def calculateHits(fastaDF, tamoDF, numOfTF, numOfCHR, weakThreshold, strongThres
     # Return the time it took to calculate the hits
     return t_end - t_beg
 ## Calculate the hits
-time_est = calculateHits(fastaDF, tamoDF, numOfTF, numOfCHR, 0.35, 0.7, 'Hits Files')
+if len(args) > 0:
+    if isDifferentDataPath:
+        path = args[5]
+    else:
+        path = args[4]
+else:
+    path = 'Hits Files'
+time_est = calculateHits(fastaDF, tamoDF, numOfTF, numOfCHR, 0.35, 0.7, path)
 print(time_est)
