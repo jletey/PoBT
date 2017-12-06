@@ -10,6 +10,10 @@ To clone my repository, type the following command into a terminal
 git clone https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects.git
 ```
 
+## Running the Code
+
+If you want to run my code, and not have to install Jupyter Notebook, you can go in and run my Python program titled `main.py` or you can run my `run.sh` program that automatically runs my program.
+
 ## Jupyter Notebook Installation
 
 If you already don't have Jupyter Notebook installed, please follow the below instructions.
