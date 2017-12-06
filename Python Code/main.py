@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 ## Imports
 import Bio
 from Bio import SeqIO
