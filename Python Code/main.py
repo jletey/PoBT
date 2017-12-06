@@ -25,8 +25,8 @@ if choice == 'n':
         print('What is you data path called?', path)
     else:
         path = str(input('What is your data path called? '))
-    path = path.split('/')
-    path = path[:len(path)-1]
+    if path[len(path)-1] == '/':
+    	path = path[:len(path)-1]
 else:
     path = 'Data'
 ## Implementation of getCHRs
