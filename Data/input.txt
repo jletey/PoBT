@@ -1,6 +1,0 @@
-Data/SGDv3.fasta
-Data/yeast.tamo
-0.35
-0.7
-1
-150
