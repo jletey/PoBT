@@ -89,18 +89,22 @@
 		</style>
 	</head>
 	<body>
-		<script src="../build/three.js"></script>
-		<script src="js/libs/tween.min.js"></script>
-		<script src="js/controls/TrackballControls.js"></script>
-		<script src="js/renderers/CSS3DRenderer.js"></script>
+		<script src="assets/js/three.js"></script>
+		<script src="assets/js/tween.min.js"></script>
+		<script src="assets/js/TrackballControls.js"></script>
+		<script src="assets/js/CSS3DRenderer.js"></script>
 
 		<div id="container"></div>
-		<div id="info"><a href="http://threejs.org" target="_blank" rel="noopener">three.js css3d</a> - periodic table. <a href="https://plus.google.com/113862800338869870683/posts/QcFk5HrWran" target="_blank" rel="noopener">info</a>.</div>
+		<!-- <div id="helix"></div> -->
+		<div id="up"></div>
+		<div id="down"></div>
+		<div id="right"></div>
+		<div id="left"></div>
 		<div id="menu">
 			<button id="table">TABLE</button>
-			<button id="sphere">SPHERE</button>
+			<!-- <button id="sphere">SPHERE</button> -->
 			<button id="helix">HELIX</button>
-			<button id="grid">GRID</button>
+			<!-- <button id="grid">GRID</button> -->
 		</div>
 
 		<script>
@@ -227,7 +231,7 @@
 			var camera, scene, renderer;
 			var controls;
 			var objects = [];
-			var targets = { table: [], sphere: [], helix: [], grid: [] };
+			var targets = { table: [], helix: [] };
 			init();
 			animate();
 			function init() {
@@ -264,18 +268,18 @@
 					targets.table.push( object );
 				}
 				// sphere
-				var vector = new THREE.Vector3();
-				var spherical = new THREE.Spherical();
-				for ( var i = 0, l = objects.length; i < l; i ++ ) {
-					var phi = Math.acos( -1 + ( 2 * i ) / l );
-					var theta = Math.sqrt( l * Math.PI ) * phi;
-					var object = new THREE.Object3D();
-					spherical.set( 800, phi, theta );
-					object.position.setFromSpherical( spherical );
-					vector.copy( object.position ).multiplyScalar( 2 );
-					object.lookAt( vector );
-					targets.sphere.push( object );
-				}
+				// var vector = new THREE.Vector3();
+				// var spherical = new THREE.Spherical();
+				// for ( var i = 0, l = objects.length; i < l; i ++ ) {
+				// 	var phi = Math.acos( -1 + ( 2 * i ) / l );
+				// 	var theta = Math.sqrt( l * Math.PI ) * phi;
+				// 	var object = new THREE.Object3D();
+				// 	spherical.set( 800, phi, theta );
+				// 	object.position.setFromSpherical( spherical );
+				// 	vector.copy( object.position ).multiplyScalar( 2 );
+				// 	object.lookAt( vector );
+				// 	targets.sphere.push( object );
+				// }
 				// helix
 				var vector = new THREE.Vector3();
 				var cylindrical = new THREE.Cylindrical();
@@ -292,13 +296,13 @@
 					targets.helix.push( object );
 				}
 				// grid
-				for ( var i = 0; i < objects.length; i ++ ) {
-					var object = new THREE.Object3D();
-					object.position.x = ( ( i % 5 ) * 400 ) - 800;
-					object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800;
-					object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
-					targets.grid.push( object );
-				}
+				// for ( var i = 0; i < objects.length; i ++ ) {
+				// 	var object = new THREE.Object3D();
+				// 	object.position.x = ( ( i % 5 ) * 400 ) - 800;
+				// 	object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800;
+				// 	object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
+				// 	targets.grid.push( object );
+				// }
 				//
 				renderer = new THREE.CSS3DRenderer();
 				renderer.setSize( window.innerWidth, window.innerHeight );
@@ -314,19 +318,23 @@
 				button.addEventListener( 'click', function ( event ) {
 					transform( targets.table, 2000 );
 				}, false );
-				var button = document.getElementById( 'sphere' );
-				button.addEventListener( 'click', function ( event ) {
-					transform( targets.sphere, 2000 );
-				}, false );
+				// var button = document.getElementById( 'sphere' );
+				// button.addEventListener( 'click', function ( event ) {
+				// 	transform( targets.sphere, 2000 );
+				// }, false );
 				var button = document.getElementById( 'helix' );
 				button.addEventListener( 'click', function ( event ) {
 					transform( targets.helix, 2000 );
 				}, false );
-				var button = document.getElementById( 'grid' );
-				button.addEventListener( 'click', function ( event ) {
-					transform( targets.grid, 2000 );
-				}, false );
-				transform( targets.table, 2000 );
+				// var button = document.getElementById( 'grid' );
+				// button.addEventListener( 'click', function ( event ) {
+				// 	transform( targets.grid, 2000 );
+				// }, false );
+				var command = document.getElementById( 'up' );
+				button.addEventListener( 'keyboard_key', function ( event ) {
+					camera.position.y += 10;
+				}, false);
+				transform( targets.helix, 2000 );
 				//
 				window.addEventListener( 'resize', onWindowResize, false );
 			}
