@@ -1,11 +1,9 @@
 # A Study of Transcription and Its Affects
 
+[![Build Status](https://travis-ci.org/JohnLetey/A-Study-of-Transcription-and-Its-Affects.svg?branch=current)](https://travis-ci.org/JohnLetey/A-Study-of-Transcription-and-Its-Affects)
+[![GitHub issues](https://img.shields.io/github/issues/JohnLetey/A-Study-of-Transcription-and-Its-Affects.svg)](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/issues)
 ![JupyterNotebook](https://img.shields.io/badge/jupyter%20notebook-v5.2.2-orange.svg) 
 ![Python3.6](https://img.shields.io/badge/python-v3.6-blue.svg) 
-[![GitHub issues](https://img.shields.io/github/issues/JohnLetey/A-Study-of-Transcription-and-Its-Affects.svg)](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/JohnLetey/A-Study-of-Transcription-and-Its-Affects.svg)](https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/pulls)
-![BuildStatus](https://img.shields.io/badge/build-passing-brightgreen.svg)
-<!-- ![BuildStatus](https://img.shields.io/badge/build-failing-red.svg) -->
 
 **Contributors:** John Letey (John.Letey@colorado.edu) and David Knox (David.Knox@colorado.edu)
 
