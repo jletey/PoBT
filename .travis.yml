@@ -1,0 +1,8 @@
+language: python	
+before_script:
+  - pip install biopython
+  - pip install pandas
+  - pip install matplotlib
+script: bash run.sh
+notifications:
+  email: false
