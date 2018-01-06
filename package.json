@@ -1,0 +1,26 @@
+{
+  "name": "A Study of Transcription and Its Affects",
+  "private": true,
+  "version": "",
+  "author": "John Letey",
+  "description": "My trancription research project code",
+  "homepage": "https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/issues"
+  },
+  "license": "",
+  "scripts": {
+    "test": ""
+  },
+  "dependencies": {
+    "biopython": "^1.69",
+    "pandas": "^0.21.1",
+    "matplotlib": "^2.1.1"
+  },
+  "engines": {
+  }
+}
