@@ -8,17 +8,28 @@
 A Study of Transcription and Its Affects
 ========================================
 
-**Contributors:** John Letey (John.Letey@colorado.edu) and David Knox (David.Knox@colorado.edu)
+WRITE OVERVIEW HERE
 
-**Warnings:** My Python code takes a long time to run. I'd suggest looking at the output of my program and not running my code to get the output.
+Quick Start
+===========
 
-**Notes:** To get to my GitHub repository, go to this `website <https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects>`_. For instructions on how to use my repository, go `here <https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/instructions.md>`_.
+**Installing Dependencies**
 
-**Dependencies:** Please checkout my ``package.json`` file, or this `page <https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/network/dependencies>`_... both contain the dependencies.
+1. Install Python 3
 
-The below figure is the pipeline which I implemented in this project:
+2. Install requirements::
 
-.. image:: https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/blob/master/Pictures/pipeline.png?raw=true
-   :alt: Pipeline
+    pip install -r requirements.txt
+   
+**Using my data output**
 
-I have broken this project into to two major portions. The first portion calculates the hits (weak and strong transcription factor binding sights) for a specified chromosome (or all of the chromosomes) and transcription factor. The second portion analyses these hits. Let's jump right in.
+TODO
+
+**Running on your own data**
+
+TODO
+
+Notes and Warning
+=================
+
+- 
