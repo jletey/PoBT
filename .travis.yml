@@ -1,4 +1,4 @@
-language: python3
+language: python
 before_script:
 script: 
   - python3 run_server.py
