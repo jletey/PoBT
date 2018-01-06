@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "biopython": "^1.69",
-    "pandas-dev/pandas": "^0.21.1",
+    "pandas-dev": "^0.21.1",
     "matplotlib": "^2.1.1"
   },
   "engines": {
