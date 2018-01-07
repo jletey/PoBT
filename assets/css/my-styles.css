@@ -1,4 +1,4 @@
-.main-banner {
+.back-main-banner {
     background-color: #22395C;
     color: #ffffff;
     height: 50vh;
@@ -9,18 +9,18 @@
     padding-top: 10vh;
 }
 
-.main-banner-2 {
+.noback-main-banner {
     background-color: #22395C;
     color: #ffffff;
     height: 50vh;
     padding-top: 10vh;
 }
 
-.main-banner h1, .main-banner h2, .main-banner h3 {
+.back-main-banner h1, .back-main-banner h2, .back-main-banner h3 {
     vertical-align: middle;
 }
 
-.main-banner-2 h1, .main-banner-2 h2, .main-banner-2 h3 {
+.noback-main-banner h1, .noback-main-banner h2, .noback-main-banner h3 {
     vertical-align: middle;
 }
 
