@@ -5,11 +5,22 @@
     background-image: url('images/new_logo.svg');
     background-repeat: no-repeat;
     background-size: 90vh 90vh;
-    background-position: right;
+    background-position: center;
+    padding-top: 10vh;
+}
+
+.main-banner-2 {
+    background-color: #22395C;
+    color: #ffffff;
+    height: 50vh;
     padding-top: 10vh;
 }
 
 .main-banner h1, .main-banner h2, .main-banner h3 {
+    vertical-align: middle;
+}
+
+.main-banner-2 h1, .main-banner-2 h2, .main-banner-2 h3 {
     vertical-align: middle;
 }
 
