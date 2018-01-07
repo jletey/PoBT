@@ -1,3 +1,4 @@
+/* Main Banner with Backround */
 .back-main-banner {
     background-color: #22395C;
     color: #ffffff;
@@ -8,26 +9,26 @@
     background-position: center;
     padding-top: 10vh;
 }
-
+/* Main Banner without Backround */
 .noback-main-banner {
     background-color: #22395C;
     color: #ffffff;
     height: 50vh;
     padding-top: 10vh;
 }
-
+/* Header styles for the Main Banner with Backround */
 .back-main-banner h1, .back-main-banner h2, .back-main-banner h3 {
     vertical-align: middle;
 }
-
+/* Header styles for the Main Banner without Backround */
 .noback-main-banner h1, .noback-main-banner h2, .noback-main-banner h3 {
     vertical-align: middle;
 }
-
+/* Main Banner Button styles */
 .main-banner-buttons {
     padding-top: 2em;
 }
-
+/* Top Bar setting */
 .top-bar, .top-bar ul {
     background-color: #4F678D;
     color: #ffffff;
@@ -37,16 +38,31 @@
     height: 2em;
     margin-right: 1em;
 }
-
 .top-bar a {
     color: #ffffff;
 }
-
 .top-bar-title {
     font-weight: bold;
     padding-left: 2em;
 }
-
+/* Left Bar setting */
+.left-bar, .left-bar ul {
+    background-color: #4F678D;
+    color: #ffffff;
+}
+.left-bar-logo {
+    width: 2em;
+    height: 2em;
+    margin-bottom: 1em;
+}
+.left-bar a {
+    color: #ffffff;
+}
+.left-bar-title {
+    font-weight: bold;
+    padding-top: 2em;
+}
+/* Main Content styles */
 .main-content {
     padding-top: 3em;
 }
