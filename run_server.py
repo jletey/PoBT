@@ -1,6 +1,6 @@
 import argparse
 import falcon
-from hparams import hparams, hparams_debug_string
+# from hparams import hparams, hparams_debug_string
 import os
 from synthesizer import Synthesizer
 
@@ -78,7 +78,7 @@ api.add_route('/', UIResource())
 
 
 if __name__ == '__main__':
-  from wsgiref import simple_server
+#   from wsgiref import simple_server
   parser = argparse.ArgumentParser()
   parser.add_argument('--checkpoint', required=True, help='Full path to model checkpoint')
   parser.add_argument('--port', type=int, default=9000)
@@ -86,8 +86,8 @@ if __name__ == '__main__':
     help='Hyperparameter overrides as a comma-separated list of name=value pairs')
   args = parser.parse_args()
   os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-  hparams.parse(args.hparams)
-  print(hparams_debug_string())
+#   hparams.parse(args.hparams)
+#   print(hparams_debug_string())
   synthesizer.load(args.checkpoint)
   print('Serving on port %d' % args.port)
   simple_server.make_server('0.0.0.0', args.port, api).serve_forever()
