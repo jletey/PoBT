@@ -26,6 +26,16 @@
 }
 /* Main Banner Button styles */
 .main-banner-buttons {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    height: 3.2em;
+    letter-spacing: 0.05em;
+    line-height: 3.75em;
+    text-align: center;
     padding-top: 2em;
 }
 /* Top Bar setting */
