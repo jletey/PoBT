@@ -12,15 +12,9 @@
   "bugs": {
     "url": "https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/issues"
   },
-  "license": "",
-  "scripts": {
-    "test": ""
-  },
   "dependencies": {
-    "bio": "^1.69",
-    "pandas-dev": "^0.21.1",
-    "matplotlib": "^2.1.1"
-  },
-  "engines": {
+    "biopython": "1.69",
+    "pandas": "0.21.1",
+    "matplotlib": "2.1.1"
   }
 }
