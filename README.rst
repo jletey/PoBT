@@ -21,9 +21,13 @@ Quick Start
 
     pip install -r requirements.txt
    
-**Using my data output**
+**Using my data (This is still a work in progress)**
 
-TODO
+To use my data, run the following command::
+    
+    python3 run_server.py
+    
+Then, open up ``localhost:9000`` in your favorite browser.
 
 **Running on your own data**
 
