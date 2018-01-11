@@ -16,12 +16,22 @@
     height: 50vh;
     padding-top: 10vh;
 }
+/* Big Main Banner without Backround */
+.bignoback-main-banner {
+    background-color: #22395C;
+    color: #ffffff;
+    padding-top: 10vh;
+}
 /* Header styles for the Main Banner with Backround */
 .back-main-banner h1, .back-main-banner h2, .back-main-banner h3 {
     vertical-align: middle;
 }
 /* Header styles for the Main Banner without Backround */
 .noback-main-banner h1, .noback-main-banner h2, .noback-main-banner h3 {
+    vertical-align: middle;
+}
+/* Header styles for the Big Main Banner without Backround */
+.bignoback-main-banner h1, .bignoback-main-banner h2, .bignoback-main-banner h3 {
     vertical-align: middle;
 }
 /* Main Banner Button styles */
