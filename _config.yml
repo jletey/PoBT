@@ -15,5 +15,9 @@ plugins:
   - jekyll-redirect-from
 whitelist:
   - jekyll-redirect-from
+css:
+  css_dir: assets/css
+js:
+  js_dir: assets/js
 # sass:
 #   sass_dir: assets/stylesheets
