@@ -4,13 +4,5 @@ script:
   - python3 run_server.py
   - open http://localhost:9000
   - bash run.sh
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: 
-    - secure: yY94s2R81ygjtkhSAL5k
-  keep-history: true
-  on:
-    branch: master
 notifications:
   email: false
