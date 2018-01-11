@@ -20,4 +20,4 @@ css:
 js:
   js_dir: assets/js
 sass:
-  sass_dir: [assets/scss]
+  sass_dir: assets/sass
