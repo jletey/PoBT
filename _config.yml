@@ -2,7 +2,7 @@ title: "Research Project Website"
 email: ""
 url: "https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/"
 docs_github: "https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/"
-exclude: [assets, src, .travis.yml, README.md, package.json, requirements.txt, run.sh, run_server.py]
+exclude: [src, .travis.yml, README.md, package.json, requirements.txt, run.sh, run_server.py]
 markdown: kramdown
 permalink: :/title/
 syntax-highlighting:
