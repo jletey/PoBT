@@ -66,7 +66,7 @@ TODO
 
 Within the master branch, you'll find the following directories and files, logically grouping common assets. The master branch looks something like this:
 
-```
+```sh
 master/
 ├── assets/
 |   ├── css/
@@ -95,15 +95,15 @@ master/
 |   ├── Hits Files/
 |   |   └── TODO
 |   └── main.py
-├── .travis.yml
-├── README.md
-├── dna.html
-├── index.html
-├── overview.html
-├── package.json
-├── requirements.txt
-├── run.sh
-└── run_server.py
+├── .travis.yml                       # Travis CI Build File
+├── README.md                         # README File
+├── dna.html                          #
+├── index.html                        # Homepage For This Repository
+├── overview.html                     # 
+├── package.json                      # List Of Dependencies in JSON Form
+├── requirements.txt                  # List Of Dependencies in TXT Form
+├── run.sh                            # 
+└── run_server.py                     #
 ```
 
 For more information on how to run my code, go to the [Quick Start](#quick-start) section.
