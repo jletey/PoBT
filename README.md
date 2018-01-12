@@ -70,22 +70,12 @@ Within the master branch, you'll find the following directories and files, logic
 master/
 ├── assets/
 |   ├── css/
-|   |   ├── images/
-|   |   |   ├── close.svg
-|   |   |   └── dna.svg
-|   |   ├── font-awesome.min.css
-|   |   ├── foundation.min.css
-|   |   ├── main.css
-|   |   ├── my-styles.css
-|   |   └── stylesheet.css
-|   ├── fonts/
-|   |   └── TODO
-|   ├── images/
-|   |   └── TODO
+|   |   ├── keen-dashboards.css
+|   |   └── keen-static.css
+|   ├── img/
+|   |   └── bg-bars.png
 |   ├── js/
-|   |   └── TODO
-|   └── sass/
-|       └── TODO
+|   |   └── keen-analytics.js
 ├── docs/
 |   ├── docs_home.html
 |   └── getting_started.html
