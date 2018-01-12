@@ -70,21 +70,20 @@ Within the master branch, you'll find the following directories and files, logic
 master/
 ├── assets/
 |   ├── css/
-|   |   ├── keen-dashboards.css
-|   |   └── keen-static.css
-|   ├── img/
-|   |   └── bg-bars.png
+|   |   ├── keen-dashboards.css       #
+|   |   └── keen-static.css           #
+|   ├── img/ 
+|   |   └── bg-bars.png               #
 |   ├── js/
-|   |   └── keen-analytics.js
+|   |   └── keen-analytics.js         #
 ├── docs/
-|   ├── docs_home.html
-|   └── getting_started.html
+|   ├── docs_home.html                #
+|   └── getting_started.html          #
 ├── src/
 |   ├── Data/
-|   |   └── TODO
-|   ├── Hits Files/
-|   |   └── TODO
-|   └── main.py
+|   |   ├── SGDv3.fasta               #
+|   |   └── yeast.tamo                #
+|   └── main.py                       # 
 ├── .travis.yml                       # Travis CI Build File
 ├── README.md                         # README File
 ├── dna.html                          #
