@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 ## Imports
-from get_chrs import getCHRs, getPSSMs
+from get_data import getCHRs, getPSSMs
 import Bio
 from Bio import SeqIO
 import pandas as pd
