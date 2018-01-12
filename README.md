@@ -66,7 +66,7 @@ TODO
 
 Within the master branch, you'll find the following directories and files, logically grouping common assets. The master branch looks something like this:
 
-```sh
+```
 master/
 ├── assets/
 |   ├── css/
