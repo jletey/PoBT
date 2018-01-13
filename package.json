@@ -13,6 +13,7 @@
     "url": "https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/issues"
   },
   "dependencies": {
+    "bootswatch": "4.0.0-beta.3"
     "biopython": "1.69",
     "pandas": "0.21.1",
     "matplotlib": "2.1.1"
