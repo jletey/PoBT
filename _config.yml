@@ -1,5 +1,4 @@
-original_repo: https://github.com/hackcu/hackcu
-
+original_repo: https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects
 sass:
     sass_dir: assets/_sass
     style: compressed
