@@ -1,8 +1,6 @@
 <footer class="text-center-xs">
-
     <div class="container">
         <div class="row">
-
             <div class="col-sm-6">
                 <ul class="list-inline">
                     {% for link in site.data.footer_links %}
@@ -12,27 +10,14 @@
                             {%endif%}
                             {{ link.name|upcase }}{%if link.url%}</a>{%endif%}
                     </li>
-
                     {%endfor%}
                 </ul>
             </div>
             <div class="social-icons col-sm-6 text-right text-center-xs">
-                <a class="btns" target="_blank" href="https://www.instagram.com/hackcu/?hl=en">
-                    <i aria-hidden="true" class="fa fa-instagram fa-lg"></i>
-                </a>
-                <a class="btns" target="_blank" href="https://medium.com/hackcu/">
-                    <i aria-hidden="true" class="fa fa-medium fa-lg"></i>
-                </a>
-                <a class="btns" target="_blank" href="http://fb.com/hackcu">
-                    <i aria-hidden="true" class="fa fa-facebook fa-lg"></i>
-                </a>
-                <a class="btns" target="_blank" href="mailto:contact@hackcu.org">
+                <a class="btns" target="_blank" href="mailto:john.letey@colorado.edu">
                     <i aria-hidden="true" class="fa fa-envelope-o fa-lg"></i>
                 </a>
-                <a class="btns" target="_blank" href="https://twitter.com/hackcu">
-                    <i aria-hidden="true" class="fa fa-twitter fa-lg"></i>
-                </a>
-                <a class="btns" target="_blank" href="https://github.com/hackcu/">
+                <a class="btns" target="_blank" href="https://github.com/JohnLetey/">
                     <i aria-hidden="true" class="fa fa-github fa-lg"></i>
                 </a>
                 <br>
@@ -54,5 +39,4 @@
             </div>
         </div>
     </div>
-
 </footer>
