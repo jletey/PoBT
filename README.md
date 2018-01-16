@@ -61,7 +61,7 @@ TODO
 
 [![Travis Build Status][travis-image]][travis-url]
 [![GitHub Issues][issues-image]][issues-url]
-[![Coded by John Letey][coded-by-image]][coded-by-image]
+[![Coded by John Letey][coded-by-image]][coded-by-url]
 
 ## What's Included
 
