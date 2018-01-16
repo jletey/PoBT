@@ -69,14 +69,6 @@ Within the master branch, you'll find the following directories and files, logic
 
 ```
 master/
-├── assets/
-|   ├── css/
-|   |   ├── keen-dashboards.css       # Website Assets
-|   |   └── keen-static.css           # Website Assets
-|   ├── img/ 
-|   |   └── bg-bars.png               # Website Backround (will most likely change this)
-|   ├── js/
-|   |   └── keen-analytics.js         # Website Assets
 ├── docs/
 |   └── index.html                    # Documentation Home Page
 ├── src/
@@ -86,8 +78,6 @@ master/
 |   └── main.py                       # Main Python Program
 ├── .travis.yml                       # Travis CI Build File
 ├── README.md                         # README File
-├── _config.yml                       # Configuration File For Website (will most likely get rid of this)
-├── index.html                        # Homepage For This Repository
 ├── package.json                      # List Of Dependencies In JSON Form
 ├── requirements.txt                  # List Of Dependencies In TXT Form
 ├── run.sh                            # Shell Script That Runs My Code With My Data
