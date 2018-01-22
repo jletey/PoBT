@@ -13,7 +13,7 @@
     <br>
     <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects">Main Website</a>
     ·
-    <a href="https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects">GitHub Repository</a>
+    <a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects">GitHub Repository</a>
   </p>
 </p>
 
@@ -92,11 +92,11 @@ For more information on how to run my code, go to the [Quick Start](#quick-start
 
 <!-- Badges -->
 
-[travis-url]: https://travis-ci.org/JohnLetey/A-Study-of-Transcription-and-Its-Affects
-[travis-image]: https://img.shields.io/travis/JohnLetey/A-Study-of-Transcription-and-Its-Affects/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/johnletey/A-Study-of-Transcription-and-Its-Affects
+[travis-image]: https://img.shields.io/travis/johnletey/A-Study-of-Transcription-and-Its-Affects/master.svg?style=flat-square
 
-[issues-url]: https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/issues
-[issues-image]: https://img.shields.io/github/issues/JohnLetey/A-Study-of-Transcription-and-Its-Affects.svg?style=flat-square
+[issues-url]: https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/issues
+[issues-image]: https://img.shields.io/github/issues/johnletey/A-Study-of-Transcription-and-Its-Affects.svg?style=flat-square
 
 [coded-by-url]: https://github.com/johnletey
 [coded-by-image]: https://img.shields.io/badge/%3C%2F%3E%20by-John%20Letey-3085d6.svg?style=flat-square
