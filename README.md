@@ -98,5 +98,5 @@ For more information on how to run my code, go to the [Quick Start](#quick-start
 [issues-url]: https://github.com/JohnLetey/A-Study-of-Transcription-and-Its-Affects/issues
 [issues-image]: https://img.shields.io/github/issues/JohnLetey/A-Study-of-Transcription-and-Its-Affects.svg?style=flat-square
 
-[coded-by-url]: https://github.com/JohnLetey
+[coded-by-url]: https://github.com/johnletey
 [coded-by-image]: https://img.shields.io/badge/%3C%2F%3E%20by-John%20Letey-3085d6.svg?style=flat-square
