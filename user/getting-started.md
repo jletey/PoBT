@@ -1,24 +1,19 @@
 ---
 title: Getting started
 layout: en
-
 ---
 
-This is a very short guide to using Travis CI with your GitHub hosted code repository.
-If you're new to continuous integration or would like some more information on
-what Travis CI does, start with [Core Concepts for Beginners](/user/for-beginners)
-instead.
+This is a very short guide to using my research. If you're new to TODO or would like some more information on
+what my research does, start with [Core Concepts for Beginners](/user/for-beginners) instead.
 
 <div id="toc"></div>
 
 ## Prerequisites
 
-To start using Travis CI, make sure you have *all* of the following:
+To start using my research, make sure you have *all* of the following:
 
- * [GitHub](https://github.com/) login
- * Project [hosted as a repository](https://help.github.com/categories/importing-your-projects-to-github/) on GitHub
- * Working code in your project
- * Working build or test script
+ * I'm pretty sure you can view GitHub repos without a log in, but just in case : [GitHub](https://github.com/) login
+ * TODO
 
 ## To get started with Travis CI
 
