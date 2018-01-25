@@ -1,0 +1,57 @@
+---
+title: Travis CI User Documentation
+layout: en
+permalink: /
+no_header: true
+short_title: true
+---
+
+<section class="index-intro">
+  <figure>
+    <img src="images/ui/docs-desktop.svg" alt="Image of desktop">
+  </figure>
+  <h1>New around here? Let's get you going.</h1>
+  <p><a class="get-started-button" href="/user/getting-started">Getting Started</a></p>
+</section>
+
+<div class="row index-main">
+  <div class="columns large-6">
+    <section>
+      <h2>Already know the basics?</h2>
+      <ul>
+        <li><a href="/user/travis-lint">Validating .travis.yml files</a></li>
+        <li><a href="/user/customizing-the-build">Customizing your build</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Deployment Guides</h2>
+      <p>Learn how to deploy to your hosting provider using Travis CI.</p>
+      <ul>
+        <li><a href="/user/deployment/heroku/">Heroku</a></li>
+        <li><a href="/user/deployment/codedeploy/">AWS CodeDeploy</a></li>
+        <li><a href="/user/deployment/openshift/">OpenShift</a></li>
+        <li><a href="/user/deployment">more deployment guides</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Common Questions</h2>
+      <ul>
+        <li><a href="/user/customizing-the-build/#What-repository-providers-or-version-control-systems-can-I-use%3F">What repository providers can I use?</a></li>
+        <li><a href="/user/trusty-ci-environment/">Can I use Ubuntu Trusty for my builds?</a><li>
+        <li><a href="/user/notifications/#Changing-the-email-address-for-build-notifications">How do I change the notification email address?</a><li>
+        <li><a href="/user/ip-addresses/">What IP addresses do the builds use?</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="columns large-6">
+    <section>
+      <h2>Language-specific Guides</h2>
+      <p>Learn about using Travis CI with your favourite programming language.</p>
+      <div class="language-docs" >
+
+      {% include languages.html %}
+
+      </div>
+    </section>
+  </div>
+</div>
