@@ -12,7 +12,7 @@ what my research does, start with [Core Concepts for Beginners](/user/for-beginn
 
 To start using my research, make sure you have *all* of the following:
 
- * I'm pretty sure you can view GitHub repos without a log in, but just in case : [GitHub](https://github.com/) login
+ * [GitHub](https://github.com/) login
  * TODO
 
 ## To get started with Travis CI
