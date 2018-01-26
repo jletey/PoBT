@@ -1,5 +1,5 @@
 <ul class="list-language">
 {% for doc in site.data.docs %}
-  <li><a href="{{doc[1]}}">{{doc[0]}}</a></li>
+  <li><a href="{{doc.link}}">{{doc.name}}</a></li>
 {% endfor %}
 </ul>
