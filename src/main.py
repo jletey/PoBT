@@ -35,4 +35,5 @@ else:
     n = int(input('How many chromosomes do you want to throw away? '))
 # Get the data from the fasta file that I'm working with and take away two of those
 genes = Fasta(path + '/SGDv3.fasta')
-print(genes)
+print(type(genes))
+print(genes[0])
