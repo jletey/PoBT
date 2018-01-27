@@ -35,9 +35,10 @@ else:
     n = int(input('How many chromosomes do you want to throw away? '))
 # Get the data from the fasta file that I'm working with and take away two of those
 genes = Fasta(path + '/SGDv3.fasta')
-print(genes.keys())
-print(type(genes))
-print(genes[0])
+keys = genes.keys()
+for i in range(len(keys)):
+    if len(keys)-i <= 2:
+        del genes[keys[i]]
 # Get the amount of chromosomes
 # countCHR = fastaDF.count()
 # numOfCHR = countCHR['chromosome']
