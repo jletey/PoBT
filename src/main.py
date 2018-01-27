@@ -51,4 +51,4 @@ else:
     choice = str(input('Show the fasta data? [y/n] '))
 if choice == 'y':
     for key in keys[:len(keys)-n]:
-        print(genes[key][0:25])
+        print('The first 25 letters in', key, 'are -', genes[key][0:24])
