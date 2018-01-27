@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 ## Imports
+import sys
 from pyfaidx import Fasta
 ## Get the parameters when the user called to function
 args = list(sys.argv[1:])
