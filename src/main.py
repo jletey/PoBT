@@ -50,6 +50,5 @@ if len(args) > 0:
 else:
     choice = str(input('Show the fasta data? [y/n] '))
 if choice == 'y':
-    for key, v in genes.keys():
-        print(v)
+    for key in genes.keys():
         print(genes[key][0:25])
