@@ -2,7 +2,8 @@
 ## Imports
 import sys
 from pyfaidx import Fasta
-from pyfaidx import Tamo
+from get_pssm import get_pssm
+from output_of_pssm import output_of_pssm
 ## Get the parameters when the user called to function
 args = list(sys.argv[1:])
 ## Tell the user that all data will be grabbed from the data section
@@ -52,3 +53,4 @@ else:
 if choice == 'y':
     for chrom in chrs[:len(chrs)-n]:
         print('The first 25 letters in', key, 'are -', genes[chrom][0:24])
+## Calculate the hits
