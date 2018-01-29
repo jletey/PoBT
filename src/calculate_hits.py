@@ -17,16 +17,6 @@ def calculate_hits(chrFilename, CHR, PSSMFilename, TF, OutFilename):
     strongThreshold = 0.7
     # Open the output file
     fileID = open(OutFilename, 'w')
-    # Write to the output file
-    # fileID.write('# searching ' + CHR + '\n')
-    # fileID.write('# for transcription factor ' + TF + '\n')
-    # fileID.write('# weak threshold: ' + str(weakThreshold) + '\n')
-    # fileID.write('# strong threshold: ' + str(strongThreshold) + '\n')
-    # fileID.write('\n')
-    # fileID.write('# The following is the outputs of the program in the forwards direction. \n')
-    # fileID.write('# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n')
-    # fileID.write('# \n')
-    # fileID.write('# position  strength  type       \n')
     # Find the maximum possible probability
     maximum = 1
     for i in range(lenOfPSSM):
@@ -45,31 +35,11 @@ def calculate_hits(chrFilename, CHR, PSSMFilename, TF, OutFilename):
             else:
                 output = outputOfPSSM(PSSM, data[j:(j + lenOfPSSM)], maximum, lenOfPSSM)
                 end = j + lenOfPSSM
-            # out.append(output)
             if output >= weakThreshold:
                 if output < strongThreshold:
                     fileID.write(CHR + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'weak' + '\n')
-                    # fileID.write('  ' + str(j) + '     ' + str(output) + '     ' + ' ' + 'weak  ' + '\n')
-                    # weakAmount += 1
-                    # positionOfWeak.append(j)
                 else:
                     fileID.write(CHR + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'strong' + '\n')
-                    # fileID.write('  ' + str(j) + '     ' + str(output) + '     ' + ' ' + 'strong  ' + '\n')
-                    # strongAmount += 1
-                    # positionOfStrong.append(j)
-    # Output to the output file the amount of weak and strong sites for the forwards direction
-    # fileID.write('# \n')
-    # fileID.write('# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n')
-    # fileID.write('# \n')
-    # fileID.write('# The number of weak sites for the forwards direction is ' + str(weakAmount) + '\n')
-    # fileID.write('# The number of strong sites for the forwards direction is ' + str(strongAmount) + '\n')
-    # Write to the output file
-    # fileID.write('\n')
-    # fileID.write('\n')
-    # fileID.write('# The following is the outputs of the program in the reverse compliment direction. \n')
-    # fileID.write('# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n')
-    # fileID.write('# \n')
-    # fileID.write('# position  strength  type       \n')
     # Take the reverse compliment of the PSSM
     for i in range(4):
         PSSM[i] = PSSM[i][::-1]
@@ -97,24 +67,11 @@ def calculate_hits(chrFilename, CHR, PSSMFilename, TF, OutFilename):
             else:
                 output = outputOfPSSM(PSSM, data[j:(j + lenOfPSSM)], maximum, lenOfPSSM)
                 end = j + lenOfPSSM
-            # out.append(output)
             if output >= weakThreshold:
                 if output < strongThreshold:
                     fileID.write(CHR + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'weak' + '\n')
-                    # fileID.write('  ' + str(j) + '     ' + str(output) + '     ' + ' ' + 'weak  ' + '\n')
-                    # weakAmount += 1
-                    # positionOfWeak.append(j)
                 else:
                     fileID.write(CHR + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'strong' + '\n')
-                    # fileID.write('  ' + str(j) + '     ' + str(output) + '     ' + ' ' + 'strong  ' + '\n')
-                    # strongAmount += 1
-                    # positionOfStrong.append(j)
-    # Output to the output file the amount of weak and strong sites for the reverse compliment direction
-    # fileID.write('# \n')
-    # fileID.write('# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n')
-    # fileID.write('# \n')
-    # fileID.write('# The number of weak sites for the reverse compliment direction is ' + str(weakAmount) + '\n')
-    # fileID.write('# The number of strong sites for the reverse compliment direction is ' + str(strongAmount) + '\n')
     # Close the output file
     fileID.close()
     # Get the time at the end of the function
