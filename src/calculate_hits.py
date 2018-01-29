@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 ## Imports
 from time import time
-from pyfaidx import Fasta
+# from pyfaidx import Fasta
 from get_pssm import get_pssm
 from output_of_pssm import output_of_pssm
 ## Implementation of calculate_hits
-def calculate_hits(chrFilename, CHR, PSSMFilename, TF, OutFilename):
+def calculate_hits(chrData, CHR, PSSMFilename, TF, OutFilename):
     # Get the time at the begining of the function
     t_beg = time()
     # Get the chromosome
-    chrData = Fasta(chrFilename)[CHR]
+    # chrData = Fasta(chrFilename)[CHR]
     # Get the PSSM for the corresponding transcription factor
     PSSM, lenOfPSSM = get_pssm(PSSMFilename, TF)
     # Get the strong and weak thresholds
