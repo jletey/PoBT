@@ -2,6 +2,7 @@
 ## Imports
 import sys
 from pyfaidx import Fasta
+from pyfaidx import Tamo
 ## Get the parameters when the user called to function
 args = list(sys.argv[1:])
 ## Tell the user that all data will be grabbed from the data section
