@@ -54,4 +54,4 @@ if choice == 'y':
     for chrom in chrs[:len(chrs)-n]:
         print('The first 25 letters in', chrom, 'are -', genes[chrom][0:24])
 ## Calculate the hits
-print(calculate_hits(genes['chr1'], 'chr1', path + '/yeast.tamo', 'HSF1', 'hits files/HitsHSF1.gff'))
+print(calculate_hits(genes['chr1'], 'chr1', path + '/yeast.tamo', 'HSF1', 'hits\ files/HitsHSF1.gff'))
