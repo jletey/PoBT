@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 ## Imports
 import sys
+from time import time
 from pyfaidx import Fasta
-from get_pssm import get_pssm
-from output_of_pssm import output_of_pssm
+from calculate_hits import calculate_hits
 ## Get the parameters when the user called to function
 args = list(sys.argv[1:])
 ## Tell the user that all data will be grabbed from the data section
