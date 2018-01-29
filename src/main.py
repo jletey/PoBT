@@ -50,5 +50,5 @@ if len(args) > 0:
 else:
     choice = str(input('Show the fasta data? [y/n] '))
 if choice == 'y':
-    for chrom in chrs[:len(chrs)-n]
+    for chrom in chrs[:len(chrs)-n]:
         print('The first 25 letters in', key, 'are -', genes[chrom][0:24])
