@@ -52,5 +52,5 @@ else:
     choice = str(input('Show the fasta data? [y/n] '))
 if choice == 'y':
     for chrom in chrs[:len(chrs)-n]:
-        print('The first 25 letters in', key, 'are -', genes[chrom][0:24])
+        print('The first 25 letters in', chrom, 'are -', genes[chrom][0:24])
 ## Calculate the hits
