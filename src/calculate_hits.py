@@ -27,7 +27,7 @@ def calculate_hits(chrData, PSSMFilename, TF, OutFilename):
         maximum = maximum + maxForCollumn
     # Evaluate the chromosome with the PSSM and count how many strong and weak sites there are for the forwards direction
     for i in chrData.keys():
-        data = chrData[i]
+        data = str(chrData[i])
         for j in range(len(data)):
             if (j + lenOfPSSM) > len(data):
                 output = output_of_pssm(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(data))]), maximum, lenOfPSSM)
@@ -59,7 +59,7 @@ def calculate_hits(chrData, PSSMFilename, TF, OutFilename):
         maximum = maximum + maxForCollumn
     # Evaluate the chromosome with the PSSM and count how many strong and weak sites there are for the reverse compliment direction
     for i in chrData.keys():
-        data = chrData[i]
+        data = str(chrData[i])
         for j in range(len(data)):
             if (j + lenOfPSSM) > len(data):
                 output = output_of_pssm(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(data))]), maximum, lenOfPSSM)
