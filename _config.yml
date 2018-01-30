@@ -1,25 +1,11 @@
-# Dependencies
+safe: true
+lsi: false
 highlighter: rouge
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+jekyll-redirect-from: true
 plugins:
   - jekyll-redirect-from
+  - octopress-escape-code
 whitelist:
   - jekyll-redirect-from
-
-# Setup
-title: Biopython
-tagline: Python Tools for Computational Molecular Biology
-url: https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/
-#baseurl: /
-
-author:
-  name: Biopython Contributors
-  url: https://twitter.com/biopython
-
-# Custom variables for Hyde theme
-version: "1.70"
-github:
-  repo: https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects
+escape_code: true

@@ -1,23 +1,32 @@
----
-title: Biopython.org website README
-layout: default
----
+revel.github.io
+===============
 
-The git repository at <https://github.com/biopython/biopython.github.io/>
-produces the Biopython website at <https://biopython.org>
-using GitHub Pages (rendered using Jekyll, see
-<https://help.github.com/articles/using-jekyll-with-pages/> for details).
+[![Build Status](https://travis-ci.org/revel/revel.github.io.svg?branch=master)](https://travis-ci.org/revel/revel.github.io)
 
-Almost all of the content is under the URL prefix ``/wiki/`` because
-this was based on an automated conversion of the old MediaWiki website,
-using <https://github.com/peterjc/mediawiki_to_git_md> to turn all
-the changes in the MediaWiki XML export file into into markdown (using
-pandoc) as a git repository.
+Documentation for the [Revel framework](https://github.com/revel/revel)
 
-The old MediaWiki usernames were manually mapped to GitHub accounts.
-About 20 accounts on the wiki (mostly single contributions) could not
-be identified, but the old username is still logged in the git commits.
+This [jekyll](http://jekyllrb.com/) powered site is located at [revel.github.io](http://revel.github.io).
 
-Note the website content under ``/DIST/`` is hosted in a separate
-GitHub Pages project repository <https://github.com/biopython/DIST>
-covering the Biopython releases and assorted documentation files.
+To compile and view the site locally:
+
+```
+$ gem install jekyll kramdown jekyll-redirect-from octopress-escape-code
+$ git clone git@github.com:revel/revel.github.io.git
+$ cd revel.github.io
+$ jekyll serve
+```
+
+**Important**
+Due to a bug in some versions of jekyll, you may get a lot of console output such as
+```
+Regenerating: 97 files at 2015-01-17 22:46:09 ...done.
+Regenerating: 97 files at 2015-01-17 22:46:28 ...done.
+... snipped ...
+Regenerating: 97 files at 2015-01-17 22:47:44 ...done.
+Regenerating: 97 files at 2015-01-17 22:48:03 ...done.
+```
+
+In this case start jekyll with the 'destination' directory outside the tree, eg
+```
+$ jekyll serve -d ../revel_site_build
+```

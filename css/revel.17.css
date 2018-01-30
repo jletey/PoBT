@@ -1,0 +1,300 @@
+
+
+.navbar {
+        border-radius: 0;
+        margin-bottom: 0;
+}
+#main-logo {
+    width: 260px;
+    padding: 10px 0 0 20px;
+}
+#main-logo a {
+   font-family: Helvetica !important;
+   color: #CCCCCC;
+   font-size: 18pt;
+   font-weight: bold;
+}
+#main-logo a:hover {
+    text-decoration: none;
+    color: white;
+}
+#main-logo sup {
+   margin-top: 0;
+   padding: 0;
+}
+#main-logo sup a {
+   font-family: monospace !important;
+   color: #999999;
+   font-size: 8pt;
+   text-decoration: none;
+}
+
+
+/*top nav */
+li.dropdown-header {
+  font-weight: bold;  
+  
+}
+
+/* hero is the big gopher banner on index.html */
+.hero-unit {
+  background-color: #222;
+  margin-top:0;
+  min-width: 940px;
+  color:#ccc;
+  padding-top:0px;
+  border-bottom:1px solid #375EAB;
+    font-family: Helvetica;
+}
+.hero-unit h1 {
+    font-weight: bold;
+}
+.hero-img {
+  float:left;
+  margin-left: 100px;
+}
+
+.hero-text {
+  margin-left:200px;
+  padding-top:200px;
+  padding-bottom:150px;
+}
+
+/************************************************/
+/* Left navigation */
+.leftnav {
+    
+    margin-top: 20px;
+}
+.leftnav .nav-header {
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-size: 12pt;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.leftnav .nav li  a {
+    padding: 3px 1.5em;
+    color: #444 !important;
+    font-size: 1em;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+.leftnav .nav li  a:hover {
+    border-left: 3px solid #ddd;
+    border-right: 3px solid #ddd;
+}
+.leftnav .nav li.active a {
+    font-weight: 800;
+    border-left: 3px solid;
+    border-right: 3px solid;
+}
+
+/************************************************/
+/** main content */
+.main {
+}
+.main p, .main li {
+  line-height: 1.5em;
+  margin-left: 15px;
+  margin-right: 30px;
+}
+
+.main a {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+.main a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+
+
+/*********************/
+/* Link decorators */
+
+/* golang.org and base packages */
+.main a[href^="https://www.golang.org"],
+.main a[href^="http://www.golang.org"],
+.main a[href^="http://golang.org"],
+.main a[href^="https://golang.org"]
+{ 
+  color: #222222; 
+  background-color: #CBFFFD !important;
+  font-family: monospace;
+  background: url(/img/gopher-link.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding-right: 12px;
+}
+/* godoc.org */
+.deadmain a[href^="https://godoc.org"] code { 
+    color: #375EAB; 
+    background-color: black !important;
+    font-family: monospace;
+    ssbackground: url(/img/godoc.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-right: 16px;
+}
+
+/* godoc.org + revel */
+.main a[href^="https://godoc.org/github.com/revel"] { 
+	color: #535353 !important; 
+	background-color: #E9F5FF !important;
+	font-family: monospace;
+	font-weight: bold;
+	/* background: url(/img/godoc.png);
+	background-position: top right;
+	background-repeat: no-repeat; padding-right: 16px; */
+	
+}
+
+.main code {
+    deadcolor: green;
+    background: 0;
+    border: 0;
+    font-family: monospace
+}
+
+.main a code {
+    color: #196497;
+    text-decoration: none;
+    deadbackground-color: red !important;
+}
+
+.main a.btn {
+    text-decoration: none;
+     color: white;
+}
+
+
+/************************************************/
+/* page header and imporve button */
+.page-header {
+    margin: 0 0 40px;
+    position: relative;
+}
+
+.page-header h1 {
+    font-size: 5em;
+}
+.improve-page {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.revel-godoc-bar {
+  margin-top: 50px;
+}
+.revel-godoc-bar h6 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.revel-github-bar {
+  margin: 0;
+}
+.revel-github-bar h6 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.main h2, .main h3, .main h4 {
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+}
+.main h2 {
+    font-size: 1.4em;
+    font-weight:800;
+    padding: .5em;
+    margin: 2em 0 1em;
+    border-left: 7px solid #ddd;
+}
+
+.main h3 {
+    font-size: 1.2em;
+    padding: .5em;
+    margin: 1.7em 0 1em;
+    border-left: 3px solid #ddd;
+}
+
+.main h4 {
+    font-size: 1.1em;
+    padding: .3em;
+    margin: 1.5em 0 .8em;
+}
+
+/* uses mainly on appconf */
+.main h4 code {
+    font-weight: 800;
+    color: #992086 !important;
+    text-transform: initial;
+}
+
+.alert {
+    margin-left: 30px;
+    margin-right: 40px;
+} 
+
+
+/* pygments and code */
+
+.highlight pre, pre {
+    border: none;
+    font-size: 12px;   
+    color: #fff;
+    background-color: #1116;
+    box-shadow: 10px 10px 10px -8px rgba(158,158,158,1);
+    margin: 10px 30px 10px 30px;
+    border-radius: 5px;
+    font-family: monospace;
+    white-space: pre;
+}
+/* Fix go code so types are visible */
+.highlight pre code.language-go, pre code.language-go, div.language-go div pre code {
+    background-color: #111;
+    display: block;
+}
+.highlight .kd {
+    color: #E4438A;   
+}
+.highlight .nx {
+    color: #21922F;
+    font-weight: bold;
+}
+.highlight .nb {
+    font-weight: bold;
+}
+.highlight .c1 {
+    color: #111111;
+}
+.highlight .kc {
+    color: #92214E;
+}
+.highlight .language-htmldjango .nv {
+     color: #219277;
+    font-weight: bold;
+}
+
+
+/************************************************/
+
+footer {
+    border-top: 1px solid #dddddd;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #dddddd;
+}
