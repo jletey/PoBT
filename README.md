@@ -8,7 +8,7 @@
   <p align="center">
     ADD NICE DESCRIPTION HERE
     <br>
-    <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/docs/docs_home.html"><strong>Explore the docs »</strong></a>
+    <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/docs"><strong>Explore the docs »</strong></a>
     <br>
     <br>
     <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects">Main Website</a>
@@ -75,8 +75,6 @@ Within the master branch, you'll find the following directories and files, logic
 
 ```
 master/
-├── docs/
-|   └── index.html                    # Documentation Home Page
 ├── src/
 |   ├── Data/
 |   |   ├── SGDv3.fasta               # FASTA Data File
@@ -106,3 +104,5 @@ For more information on how to run my code, go to the [Quick Start](#quick-start
 
 [coded-by-url]: https://github.com/johnletey
 [coded-by-image]: https://img.shields.io/badge/%3C%2F%3E%20by-John%20Letey-3085d6.svg?style=flat-square
+
+<!-- end Badges -->
