@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <link rel="stylesheet" href="../assets/custom.css?t=202a34cf">
+    <script src="../assets/script.js?t=36f3d457"></script>
+    <title>Configuration - docpress</title>
+    <meta name="viewport" content="width=device-width">
+    <script>if (false || window.location.hostname.indexOf("docpress.github.io") === window.location.hostname.length - 18) {
+        (function(d,o,c,p,r,e,s){d['GoogleAnalyticsObject']=r;d[r]=d[r]||function(){(d[r].q=d[r].q||[]).push(arguments)},d[r].l=1*new Date();e=o.createElement(c),s=o.getElementsByTagName(c)[0];e.async=1;e.src=p;s.parentNode.insertBefore(e,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create',"UA-70057942-1",'auto')
+      }
+    </script>
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">docpress</a>
+            </li>
+            <li class="menu-item -level-1"><a class="link title  link-showcase" href="../showcase.html">Showcase</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Getting started</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedquickstart" href="../getting-started/quickstart.html">Quick-start guide</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedmore-pages" href="../getting-started/more-pages.html">Writing more pages</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedimages-and-linking" href="../getting-started/images-and-linking.html">Images and linking</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Customization</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title -active link-customizationconfig" href="../customization/config.html">Configuration</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-example" href="#example">Example</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-available-configuration" href="#available-configuration">Available configuration</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationcss" href="../customization/css.html">Custom CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationscripts" href="../customization/scripts.html">Custom Scripts</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationplugins" href="../customization/plugins.html">Using plugins</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationmarkdown" href="../customization/markdown.html">Markdown configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationanalytics" href="../customization/analytics.html">Google Analytics</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationdisqus" href="../customization/disqus.html">Disqus</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Advanced</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-advancedgh-pages" href="../advanced/gh-pages.html">Automating GitHub pages</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-advancedhacking" href="../advanced/hacking.html">Hacking Docpress</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-customizationconfig">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/docpress/docpress" data-title="docpress/docpress">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="configuration">Configuration</h1>
+<p>To set configuration, create a file called <code>docpress.json</code> inside your project&#x2019;s <code>docs/</code>. Alternatiely, there are also these 2 ways to set configuration:</p>
+<ul>
+<li>Create a file called <code>docpress.json</code> in your project&#x2019;s root.</li>
+<li>In your project&#x2019;s <code>package.json</code>, make a new key called <code>docpress</code>.</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>Here&#x2019;s an example <code>docpress.json</code>:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;docs&quot;</span>: <span class="pl-s">&quot;docs&quot;</span>,
+  <span class="hljs-attr">&quot;github&quot;</span>: <span class="pl-s">&quot;rstacruz/onmount&quot;</span>
+}
+</code></pre>
+<p>Or in <code>package.json</code>:</p>
+<pre><code class="lang-js">{
+  <span class="pl-s">&quot;name&quot;</span>: <span class="pl-s">&quot;myproject&quot;</span>,
+  <span class="pl-s">&quot;version&quot;</span>: <span class="pl-s">&quot;1.0.0&quot;</span>,
+  <span class="pl-c">/* ... */</span>
+  <span class="pl-s">&quot;docpress&quot;</span>: {
+    <span class="pl-s">&quot;github&quot;</span>: <span class="pl-s">&quot;rstacruz/myproject&quot;</span>
+  }
+}
+</code></pre>
+<h2 id="available-configuration">Available configuration</h2>
+<table class="wide">
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>docs</strong></td>
+<td><code>&quot;docs&quot;</code></td>
+<td>The documents folder to parse. Defaults to <code>&quot;docs&quot;</code>. This option is only available if it&#x2019;s defined on <code>docpress.json</code> (in the project root) or under <em>docpress</em> in <code>package.json</code>.</td>
+</tr>
+<tr>
+<td><strong>dist</strong></td>
+<td><code>&quot;_docpress&quot;</code></td>
+<td>The folder builds are saved to. Defaults to <code>&quot;_docpress&quot;</code>. This option is only available if it&#x2019;s defined on <code>docpress.json</code> (in the project root) or under <em>docpress</em> in <code>package.json</code>.</td>
+</tr>
+<tr>
+<td><strong>github</strong></td>
+<td><em>None</em></td>
+<td>The repo slug (<code>user/repo</code>) for the project. If set, <code>docpress-core</code> will add a link to GitHub from the generated page.</td>
+</tr>
+<tr>
+<td><strong>css</strong></td>
+<td><em>None</em></td>
+<td>CSS resources to load. See <a href="css.html">Custom CSS</a> for details.</td>
+</tr>
+<tr>
+<td><strong>googleAnalytics</strong></td>
+<td><em>None</em></td>
+<td><a href="analytics.html">Google Analytics</a> support.</td>
+</tr>
+<tr>
+<td><strong><a href="http://googleAnalytics.id">googleAnalytics.id</a></strong></td>
+<td><em>None</em></td>
+<td>Google Analytics ID.</td>
+</tr>
+<tr>
+<td><strong>googleAnalytics.domain</strong></td>
+<td><em>None</em></td>
+<td>Restrict Google Analytics only to this domain.</td>
+</tr>
+<tr>
+<td><strong>plugins</strong></td>
+<td>&#x2026;</td>
+<td>List of plugins. See <a href="plugins.html">Using plugins</a> for details.</td>
+</tr>
+<tr>
+<td><strong>markdown</strong></td>
+<td>&#x2026;</td>
+<td><a href="https://www.npmjs.com/package/markdown-it">markdown-it</a> options and plugins. See <a href="markdown.html">Markdown configuration</a> for details.</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../getting-started/images-and-linking.html"><span class="title">Images and linking</span></a></div>
+          <div class="right"><a href="../customization/css.html"><span class="label">Next: </span><span class="title">Custom CSS</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

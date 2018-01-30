@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <link rel="stylesheet" href="../assets/custom.css?t=202a34cf">
+    <script src="../assets/script.js?t=36f3d457"></script>
+    <title>Writing more pages - docpress</title>
+    <meta name="viewport" content="width=device-width">
+    <script>if (false || window.location.hostname.indexOf("docpress.github.io") === window.location.hostname.length - 18) {
+        (function(d,o,c,p,r,e,s){d['GoogleAnalyticsObject']=r;d[r]=d[r]||function(){(d[r].q=d[r].q||[]).push(arguments)},d[r].l=1*new Date();e=o.createElement(c),s=o.getElementsByTagName(c)[0];e.async=1;e.src=p;s.parentNode.insertBefore(e,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create',"UA-70057942-1",'auto')
+      }
+    </script>
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">docpress</a>
+            </li>
+            <li class="menu-item -level-1"><a class="link title  link-showcase" href="../showcase.html">Showcase</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Getting started</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedquickstart" href="../getting-started/quickstart.html">Quick-start guide</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-getting-startedmore-pages" href="../getting-started/more-pages.html">Writing more pages</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-create-your-toc" href="#create-your-toc">Create your TOC</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-setting-the-home-page" href="#setting-the-home-page">Setting the home page</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-nesting" href="#nesting">Nesting</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedimages-and-linking" href="../getting-started/images-and-linking.html">Images and linking</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Customization</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-customizationconfig" href="../customization/config.html">Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationcss" href="../customization/css.html">Custom CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationscripts" href="../customization/scripts.html">Custom Scripts</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationplugins" href="../customization/plugins.html">Using plugins</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationmarkdown" href="../customization/markdown.html">Markdown configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationanalytics" href="../customization/analytics.html">Google Analytics</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationdisqus" href="../customization/disqus.html">Disqus</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Advanced</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-advancedgh-pages" href="../advanced/gh-pages.html">Automating GitHub pages</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-advancedhacking" href="../advanced/hacking.html">Hacking Docpress</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-getting-startedmore-pages">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/docpress/docpress" data-title="docpress/docpress">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="writing-more-pages">Writing more pages</h1>
+<p>You can create a Table of Contents page to list down pages in your site. All pages must live inside the <code>docs/</code> folder&#x2014;Docpress only looks for files in the project root (eg, <em>/README.md</em>) and the <code>docs/</code> folder (eg, <em>/docs/Introduction.md</em>).</p>
+<h2 id="create-your-toc">Create your TOC</h2>
+<p>Create a table of contents as <code>docs/README.md</code>. This is the table of contents: an unordered list of pages to link. Here&#x2019;s an example that will only have one file (your main README).</p>
+<h5 class="file-heading" id="docsreadme.md">docs/README.md</h5>
+<pre><code class="lang-md"><span class="hljs-section">Documentation
+=============</span>
+
+<span class="hljs-bullet">* </span>[<span class="pl-s">Your project</span>](<span class="hljs-link">../README.md</span>)
+</code></pre>
+<h2 id="setting-the-home-page">Setting the home page</h2>
+<p>The first file in the TOC is <em>always</em> going to be the home page. Its title in the TOC is used as the site&#x2019;s main title.</p>
+<h2 id="nesting">Nesting</h2>
+<p>To organize your pages into chapters, you can create sub-lists by indenting items that are under a certain parent. You can nest as far as you want, but it&#x2019;s only recommended to nest just one level down.</p>
+<h5 id="docsreadme.md"><code class="file-heading">docs/README.md</code></h5>
+<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="pl-s">Your project</span>](<span class="hljs-link">../README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">Introduction</span>](<span class="hljs-link">intro/README.md</span>)
+  * [<span class="pl-s">Getting started</span>](<span class="hljs-link">intro/getting-started.md</span>)
+  * [<span class="pl-s">Installation</span>](<span class="hljs-link">intro/install.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">Installation</span>](<span class="hljs-link">installation/README.md</span>)
+  * [<span class="pl-s">Mac OS X</span>](<span class="hljs-link">installation/osx.md</span>)
+  * [<span class="pl-s">Windows</span>](<span class="hljs-link">installation/windows.md</span>)
+</code></pre>
+<h4 id="non-links">Non-links</h4>
+<p>You don&#x2019;t need to link all pages&#x2014;you can create items that are not links. Great for headings or for pages that are yet to be written.</p>
+<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="pl-s">Your project</span>](<span class="hljs-link">../README.md</span>)
+<span class="hljs-bullet">* </span>Introduction
+  * [<span class="pl-s">Getting started</span>](<span class="hljs-link">intro/getting-started.md</span>)
+  * [<span class="pl-s">Installation</span>](<span class="hljs-link">intro/install.md</span>)
+<span class="hljs-bullet">* </span>Installation
+  * [<span class="pl-s">Mac OS X</span>](<span class="hljs-link">installation/osx.md</span>)
+  * [<span class="pl-s">Windows</span>](<span class="hljs-link">installation/windows.md</span>)
+</code></pre>
+<h4 id="relative-and-absolute-paths">Relative and absolute paths</h4>
+<p>Links in the TOC can be relative or absolute. In this example, both links are equivalent.</p>
+<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="pl-s">Your project</span>](<span class="hljs-link">../README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">Your project</span>](<span class="hljs-link">/README.md</span>)
+</code></pre>
+<p class="pull-box">Your Docpress site is growing! Why not add some images?
+<a href="images-and-linking.html">Continue &#x2192;</a></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../getting-started/quickstart.html"><span class="title">Quick-start guide</span></a></div>
+          <div class="right"><a href="../getting-started/images-and-linking.html"><span class="label">Next: </span><span class="title">Images and linking</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

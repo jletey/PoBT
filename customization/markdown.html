@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <link rel="stylesheet" href="../assets/custom.css?t=202a34cf">
+    <script src="../assets/script.js?t=36f3d457"></script>
+    <title>Markdown configuration - docpress</title>
+    <meta name="viewport" content="width=device-width">
+    <script>if (false || window.location.hostname.indexOf("docpress.github.io") === window.location.hostname.length - 18) {
+        (function(d,o,c,p,r,e,s){d['GoogleAnalyticsObject']=r;d[r]=d[r]||function(){(d[r].q=d[r].q||[]).push(arguments)},d[r].l=1*new Date();e=o.createElement(c),s=o.getElementsByTagName(c)[0];e.async=1;e.src=p;s.parentNode.insertBefore(e,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create',"UA-70057942-1",'auto')
+      }
+    </script>
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">docpress</a>
+            </li>
+            <li class="menu-item -level-1"><a class="link title  link-showcase" href="../showcase.html">Showcase</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Getting started</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedquickstart" href="../getting-started/quickstart.html">Quick-start guide</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedmore-pages" href="../getting-started/more-pages.html">Writing more pages</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedimages-and-linking" href="../getting-started/images-and-linking.html">Images and linking</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Customization</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-customizationconfig" href="../customization/config.html">Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationcss" href="../customization/css.html">Custom CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationscripts" href="../customization/scripts.html">Custom Scripts</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationplugins" href="../customization/plugins.html">Using plugins</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-customizationmarkdown" href="../customization/markdown.html">Markdown configuration</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-available-settings" href="#available-settings">Available settings</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-plugins" href="#plugins">Plugins</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-installing-markdown-plugins" href="#installing-markdown-plugins">Installing Markdown plugins</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-bundled-plugins" href="#bundled-plugins">Bundled plugins</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationanalytics" href="../customization/analytics.html">Google Analytics</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-customizationdisqus" href="../customization/disqus.html">Disqus</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Advanced</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-advancedgh-pages" href="../advanced/gh-pages.html">Automating GitHub pages</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-advancedhacking" href="../advanced/hacking.html">Hacking Docpress</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-customizationmarkdown">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/docpress/docpress" data-title="docpress/docpress">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="markdown-configuration">Markdown configuration</h1>
+<p>You can customize how Docpress renders your Markdown content to HTML. Place your configuration inside the <code>markdown</code> setting.</p>
+<h5 id="docpress.json"><code class="file-heading">docpress.json</code></h5>
+<pre><code class="lang-js">{
+  <span class="pl-s">&quot;markdown&quot;</span>: {
+    <span class="pl-s">&quot;typographer&quot;</span>: <span class="pl-c1">true</span>
+  }
+}
+</code></pre>
+<h2 id="available-settings">Available settings</h2>
+<p>All of <a href="https://www.npmjs.com/package/markdown-it">markdown-it</a> settings are supported.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>html</code></td>
+<td><em>true</em></td>
+<td>Enable HTML tags</td>
+</tr>
+<tr>
+<td><code>xhtmlOut</code></td>
+<td><em>false</em></td>
+<td>Use <code>/</code> to close tags (<code>&lt;br /&gt;</code>)</td>
+</tr>
+<tr>
+<td><code>breaks</code></td>
+<td><em>false</em></td>
+<td>Convert new lines in paragraphs to line breaks</td>
+</tr>
+<tr>
+<td><code>langPrefix</code></td>
+<td><em>&#x201C;lang-&#x201D;</em></td>
+<td>CSS language prefix for fenced blocks</td>
+</tr>
+<tr>
+<td><code>linkify</code></td>
+<td><em>true</em></td>
+<td>Auto-convert URLs to links</td>
+</tr>
+<tr>
+<td><code>typographer</code></td>
+<td><em>true</em></td>
+<td>Replace quotes and such</td>
+</tr>
+<tr>
+<td><code>quotes</code></td>
+<td><em>&apos;&#x201C;&#x201D;&#x2018;&#x2019;</em></td>
+<td>Quotes to use for <code>typograher</code> setting</td>
+</tr>
+<tr>
+<td><code>highlight</code></td>
+<td><em>Function</em></td>
+<td>Syntax highlighting function (uses highlight.js by default)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="plugins">Plugins</h2>
+<p>You can also put Markdown-it plugins under the <code>markdown.plugins</code> option. These will allow you to customize Markdown parsing behavior through npm packages; search npm for &#x201C;<a href="https://www.npmjs.com/search?q=markdown-it">markdown-it</a>&#x201D; to see available plugins.</p>
+<h5 id="docpress.json"><code class="file-heading">docpress.json</code></h5>
+<pre><code class="lang-js">{
+  <span class="pl-s">&quot;markdown&quot;</span>: {
+    <span class="pl-s">&quot;plugins&quot;</span>: {
+      <span class="pl-s">&quot;decorate&quot;</span>: {}
+    }
+  }
+}
+</code></pre>
+<p>The names (<code>decorate</code> in the example) correspond to an npm package prefixed by <code>markdown-it-</code>. For instance, to load the <a href="https://www.npmjs.com/package/markdown-it-emoji">markdown-it-emoji</a> plugin, use:</p>
+<pre><code class="lang-js"><span class="pl-s">&quot;emoji&quot;</span>: {}
+</code></pre>
+<p>The value (<code>{}</code> in the example) are options to be passed onto the plugin. Use <code>{}</code> when you don&#x2019;t want to pass any options.</p>
+<h2 id="installing-markdown-plugins">Installing Markdown plugins</h2>
+<p>To use Markdown plugins, be sure to install them via npm first.</p>
+<pre><code class="lang-sh">npm init  <span class="pl-c"># if you don&apos;t have package.json</span>
+npm install --save --save-exact markdown-it-emoji
+</code></pre>
+<h2 id="bundled-plugins">Bundled plugins</h2>
+<p>Some officially-endorsed plugins are bundled into <code>docpress-core</code> already. You can use them without installing via npm.</p>
+<ul>
+<li><strong>decorate</strong> (<a href="https://www.npmjs.com/package/markdown-it-decorate">markdown-it-decorate</a>) &#x2013; Enables custom class names.</li>
+</ul>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../customization/plugins.html"><span class="title">Using plugins</span></a></div>
+          <div class="right"><a href="../customization/analytics.html"><span class="label">Next: </span><span class="title">Google Analytics</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
