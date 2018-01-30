@@ -76,10 +76,15 @@ Within the master branch, you'll find the following directories and files, logic
 ```
 master/
 ├── src/
-|   ├── Data/
+|   ├── data/
 |   |   ├── SGDv3.fasta               # FASTA Data File
 |   |   └── yeast.tamo                # TAMO Data File
+|   ├── hits/
+|   |   └── TODO
+|   └── calculate_hits.py             # 
+|   └── get_pssm.py                   # 
 |   └── main.py                       # Main Python Program
+|   └── output_of_pssm.py             # 
 ├── .travis.yml                       # Travis CI Build File
 ├── README.md                         # README File
 ├── package.json                      # List Of Dependencies In JSON Form
