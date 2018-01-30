@@ -29,9 +29,9 @@ def calculate_hits(chrData, CHR, PSSMFilename, TF, OutFilename):
     for i in chrData.keys():
         data = chrData[i]
         for j in range(len(data)):
-            if (j + lenOfPSSM) > len(chrData):
+            if (j + lenOfPSSM) > len(data):
                 output = outputOfPSSM(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(chrData))]), maximum, lenOfPSSM)
-                end = len(chrData)
+                end = len(data)
             else:
                 output = outputOfPSSM(PSSM, data[j:(j + lenOfPSSM)], maximum, lenOfPSSM)
                 end = j + lenOfPSSM
@@ -61,9 +61,9 @@ def calculate_hits(chrData, CHR, PSSMFilename, TF, OutFilename):
     for i in chrData.keys():
         data = chrData[i]
         for j in range(len(data)):
-            if (j + lenOfPSSM) > len(chrData):
+            if (j + lenOfPSSM) > len(data):
                 output = outputOfPSSM(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(chrData))]), maximum, lenOfPSSM)
-                end = len(chrData)
+                end = len(data)
             else:
                 output = outputOfPSSM(PSSM, data[j:(j + lenOfPSSM)], maximum, lenOfPSSM)
                 end = j + lenOfPSSM
