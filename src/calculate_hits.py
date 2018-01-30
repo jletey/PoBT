@@ -37,9 +37,9 @@ def calculate_hits(chrData, PSSMFilename, TF, OutFilename):
                 end = j + lenOfPSSM
             if output >= weakThreshold:
                 if output < strongThreshold:
-                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'weak' + '\n')
+                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output) + '\t' + '+' + '\t' + '.' + '\t' + 'weak' + '\n')
                 else:
-                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'strong' + '\n')
+                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output) + '\t' + '+' + '\t' + '.' + '\t' + 'strong' + '\n')
     # Take the reverse compliment of the PSSM
     for i in range(4):
         PSSM[i] = PSSM[i][::-1]
@@ -69,9 +69,9 @@ def calculate_hits(chrData, PSSMFilename, TF, OutFilename):
                 end = j + lenOfPSSM
             if output >= weakThreshold:
                 if output < strongThreshold:
-                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'weak' + '\n')
+                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output) + '\t' + '+' + '\t' + '.' + '\t' + 'weak' + '\n')
                 else:
-                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'strong' + '\n')
+                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output) + '\t' + '+' + '\t' + '.' + '\t' + 'strong' + '\n')
     # Close the output file
     fileID.close()
     # Get the time at the end of the function
