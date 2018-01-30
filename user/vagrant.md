@@ -1,5 +1,0 @@
----
-title: Vagrant
-layout: nodocs
-
----

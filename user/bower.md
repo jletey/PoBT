@@ -1,5 +1,0 @@
----
-title: Bower
-layout: nodocs
-
----

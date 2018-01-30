@@ -1,5 +1,0 @@
----
-title: Angular
-layout: nodocs
-
----
