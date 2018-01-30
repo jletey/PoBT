@@ -30,10 +30,10 @@ def calculate_hits(chrData, CHR, PSSMFilename, TF, OutFilename):
         data = chrData[i]
         for j in range(len(data)):
             if (j + lenOfPSSM) > len(data):
-                output = outputOfPSSM(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(chrData))]), maximum, lenOfPSSM)
+                output = output_of_pssm(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(chrData))]), maximum, lenOfPSSM)
                 end = len(data)
             else:
-                output = outputOfPSSM(PSSM, data[j:(j + lenOfPSSM)], maximum, lenOfPSSM)
+                output = output_of_pssm(PSSM, data[j:(j + lenOfPSSM)], maximum, lenOfPSSM)
                 end = j + lenOfPSSM
             if output >= weakThreshold:
                 if output < strongThreshold:
@@ -62,10 +62,10 @@ def calculate_hits(chrData, CHR, PSSMFilename, TF, OutFilename):
         data = chrData[i]
         for j in range(len(data)):
             if (j + lenOfPSSM) > len(data):
-                output = outputOfPSSM(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(chrData))]), maximum, lenOfPSSM)
+                output = output_of_pssm(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(chrData))]), maximum, lenOfPSSM)
                 end = len(data)
             else:
-                output = outputOfPSSM(PSSM, data[j:(j + lenOfPSSM)], maximum, lenOfPSSM)
+                output = output_of_pssm(PSSM, data[j:(j + lenOfPSSM)], maximum, lenOfPSSM)
                 end = j + lenOfPSSM
             if output >= weakThreshold:
                 if output < strongThreshold:
