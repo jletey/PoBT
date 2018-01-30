@@ -17,7 +17,7 @@
   </p>
 </p>
 
-## Table of contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Quick Start](#quick-start)
