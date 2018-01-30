@@ -43,9 +43,15 @@ CONTINUE WRITING OVERVIEW
 pip install -r requirements.txt
 ```
    
-**Using my data (this is still a work in progress)**
+**Running code on my data (this is still a work in progress)**
 
-To use my data, run the following command:
+To easily run code on my data, simply run this command:
+
+```sh
+bash run.sh
+```
+
+But, to get a more interactive and visual experience, run the following command:
     
 ```sh
 python3 run_server.py
