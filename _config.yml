@@ -13,7 +13,7 @@ whitelist:
 title: Biopython
 tagline: Python Tools for Computational Molecular Biology
 url: https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/
-baseurl: /
+#baseurl: /
 
 author:
   name: Biopython Contributors
