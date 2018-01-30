@@ -5,7 +5,7 @@ from time import time
 from get_pssm import get_pssm
 from output_of_pssm import output_of_pssm
 ## Implementation of calculate_hits
-def calculate_hits(chrData, CHR, PSSMFilename, TF, OutFilename):
+def calculate_hits(chrData, PSSMFilename, TF, OutFilename):
     # Get the time at the begining of the function
     t_beg = time()
     # Get the chromosome
@@ -30,16 +30,16 @@ def calculate_hits(chrData, CHR, PSSMFilename, TF, OutFilename):
         data = chrData[i]
         for j in range(len(data)):
             if (j + lenOfPSSM) > len(data):
-                output = output_of_pssm(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(chrData))]), maximum, lenOfPSSM)
+                output = output_of_pssm(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(data))]), maximum, lenOfPSSM)
                 end = len(data)
             else:
                 output = output_of_pssm(PSSM, data[j:(j + lenOfPSSM)], maximum, lenOfPSSM)
                 end = j + lenOfPSSM
             if output >= weakThreshold:
                 if output < strongThreshold:
-                    fileID.write(CHR + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'weak' + '\n')
+                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'weak' + '\n')
                 else:
-                    fileID.write(CHR + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'strong' + '\n')
+                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'strong' + '\n')
     # Take the reverse compliment of the PSSM
     for i in range(4):
         PSSM[i] = PSSM[i][::-1]
@@ -62,16 +62,16 @@ def calculate_hits(chrData, CHR, PSSMFilename, TF, OutFilename):
         data = chrData[i]
         for j in range(len(data)):
             if (j + lenOfPSSM) > len(data):
-                output = output_of_pssm(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(chrData))]), maximum, lenOfPSSM)
+                output = output_of_pssm(PSSM, data[j:] + str([' ' for k in range(j + lenOfPSSM - 1 - len(data))]), maximum, lenOfPSSM)
                 end = len(data)
             else:
                 output = output_of_pssm(PSSM, data[j:(j + lenOfPSSM)], maximum, lenOfPSSM)
                 end = j + lenOfPSSM
             if output >= weakThreshold:
                 if output < strongThreshold:
-                    fileID.write(CHR + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'weak' + '\n')
+                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'weak' + '\n')
                 else:
-                    fileID.write(CHR + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'strong' + '\n')
+                    fileID.write(str(i) + '\t' + TF + '\t' + 'hit' + '\t' + str(j) + '\t' + str(end) + '\t' + str(output1) + '\t' + '+' + '\t' + '.' + '\t' + 'strong' + '\n')
     # Close the output file
     fileID.close()
     # Get the time at the end of the function
