@@ -1,6 +1,0 @@
-skbio.util.assert_data_frame_almost_equal
-=========================================
-
-.. currentmodule:: skbio.util
-
-.. autofunction:: assert_data_frame_almost_equal

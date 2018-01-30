@@ -1,6 +1,0 @@
-skbio.tree.MissingNodeError
-===========================
-
-.. currentmodule:: skbio.tree
-
-.. autoexception:: MissingNodeError

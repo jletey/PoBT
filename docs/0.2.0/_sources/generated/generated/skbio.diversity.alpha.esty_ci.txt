@@ -1,6 +1,0 @@
-skbio.diversity.alpha.esty_ci
-=============================
-
-.. currentmodule:: skbio.diversity.alpha
-
-.. autofunction:: esty_ci

@@ -1,6 +1,0 @@
-skbio.tree.NoLengthError
-========================
-
-.. currentmodule:: skbio.tree
-
-.. autoexception:: NoLengthError

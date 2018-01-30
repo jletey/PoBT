@@ -1,6 +1,0 @@
-skbio.alignment.local_pairwise_align_protein
-============================================
-
-.. currentmodule:: skbio.alignment
-
-.. autofunction:: local_pairwise_align_protein

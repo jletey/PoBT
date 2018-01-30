@@ -1,6 +1,0 @@
-skbio.util.cardinal_to_ordinal
-==============================
-
-.. currentmodule:: skbio.util
-
-.. autofunction:: cardinal_to_ordinal

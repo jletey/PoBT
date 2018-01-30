@@ -1,6 +1,0 @@
-skbio.diversity.alpha.brillouin_d
-=================================
-
-.. currentmodule:: skbio.diversity.alpha
-
-.. autofunction:: brillouin_d

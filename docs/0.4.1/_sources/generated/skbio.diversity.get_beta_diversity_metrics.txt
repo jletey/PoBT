@@ -1,6 +1,0 @@
-skbio.diversity.get_beta_diversity_metrics
-==========================================
-
-.. currentmodule:: skbio.diversity
-
-.. autofunction:: get_beta_diversity_metrics

@@ -1,6 +1,0 @@
-skbio.util.safe_md5
-===================
-
-.. currentmodule:: skbio.util
-
-.. autofunction:: safe_md5
