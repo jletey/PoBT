@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../../
+cd ../
 ls
 
 # pip3 install -r ../requirements.txt
