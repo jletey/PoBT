@@ -40,7 +40,7 @@ CONTINUE WRITING OVERVIEW
 2. Install requirements:
 
 ```sh
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
    
 **Running code on my data (this is still a work in progress)**
