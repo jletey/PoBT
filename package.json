@@ -13,6 +13,7 @@
     "url": "https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/issues"
   },
   "dependencies": {
-    "pyfaidx": "0.5.2"
+    "pyfaidx": "0.5.2",
+    "docpress": ""
   }
 }
