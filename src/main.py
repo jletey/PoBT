@@ -4,6 +4,7 @@ import sys
 from time import time
 from pyfaidx import Fasta
 from calculate_hits import calculate_hits
+from hist import hist
 ## Get the parameters when the user called to function
 args = list(sys.argv[1:])
 ## Tell the user that all data will be grabbed from the data section
