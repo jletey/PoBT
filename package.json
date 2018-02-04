@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "pyfaidx": "0.5.2",
-    "biopython": "",
+    "biopython": "1.70",
     "docpress": ""
   }
 }
