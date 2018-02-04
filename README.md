@@ -8,7 +8,7 @@
   <p align="center">
     ADD NICE DESCRIPTION HERE
     <br>
-    <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/docs"><strong>Explore the docs »</strong></a>
+    <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/documentation/home.html"><strong>Explore the docs »</strong></a>
     <br>
     <br>
     <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects">Main Website</a>
