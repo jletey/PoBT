@@ -5,15 +5,8 @@ from read_gff import read_gff
 def plot_hist(InFilename, HitsInFilename, PicFile):
     # Get the time at the begining of the function
     t_beg = time()
-    # Open the input file that holds the hits
-    fileID = open(HitsInFilename, 'r')
-    # Initialize the list that will hold the input
-    data = []
-    # Read in the input file
-    line = fileID.readline()
-    while line:
-        data.append(line[:len(line)-1])
-        line = fileID.readline()
+    # Get the data from the GFF file
+    data = read_gff(HitsInFilename)
     # Parse the input
     weakSites = []
     strongSites = []
