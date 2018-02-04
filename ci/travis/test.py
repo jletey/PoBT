@@ -4,7 +4,7 @@ import unittest
 ## Implementation of test_get_pssm
 def test_get_pssm(self):
     # Import get_pssm
-    from 'src/get_pssm' import get_pssm
+    from 'src/get_pssm.py' import get_pssm
 ## Test my code
 test_code = unittest.TestSuite()
 test_code.addTest(test_get_pssm)
