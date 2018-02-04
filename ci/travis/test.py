@@ -2,7 +2,7 @@
 ## Imports
 import unittest
 ## Implementation of test_get_pssm
-def test_get_pssm():
+def test_get_pssm(self):
     # Import get_pssm
     from get_pssm import get_pssm
 ## Test my code
