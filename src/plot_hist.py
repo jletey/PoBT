@@ -1,4 +1,8 @@
-def hist(InFilename, HitsInFilename, PicFile):
+#!/usr/bin/env python3
+## Imports
+from read_gff import read_gff
+## Implementation of plot_hist
+def plot_hist(InFilename, HitsInFilename, PicFile):
     # Get the time at the begining of the function
     t_beg = time()
     # Open the input file that holds the hits
