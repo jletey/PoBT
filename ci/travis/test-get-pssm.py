@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 ## Imports
-from src/get_pssm import src/get_pssm
+import unittest
 ## Test get_pssm
-get_pssm('src/data/yeast.tamo', 'HSF1')
+test_get_pssm = unittest.TestSuite()
+runner = unittest.TextTestRunner(verbosity=2).run(test_get_pssm)
