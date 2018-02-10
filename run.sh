@@ -2,4 +2,4 @@
 echo "Running Code"
 echo "----------------------"
 printf "\n"
-python src/main.py n src/data 2 y y src/hit\ files
+python src/main.py src/data 2 y src/hit\ files
