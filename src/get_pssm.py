@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 ## Implementation of get_pssm
 def get_pssm(filename, TF):
+    """
+        Given a specific transcription factor, get its corresponding pssm 
+
+        :param filename: the name of the file that contains the pssm's
+        :param TF: the specific transcription factor we want to get the pssm for 
+    """
     # Open the tamo file
     fileID = open(filename, 'r')
     # Read in the tamo file
