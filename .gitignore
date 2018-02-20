@@ -1,2 +1,4 @@
 # Ignore any Microsoft Word documents that we don't need
 ~$*.docx
+# Ignore my personal list of todos for the project
+~.todo
