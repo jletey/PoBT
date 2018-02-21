@@ -67,10 +67,11 @@ TODO
 
 <img src="https://cdn.travis-ci.org/images/favicon-c566132d45ab1a9bcae64d8d90e4378a.svg" width=24 height=24/> [![Travis Build Status][travis-image]][travis-url] <img src="https://circleci.com/favicon.ico" width=24 height=24/> [![Circle Build Status][circle-image]][circle-url] <img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> [![GitHub Issues][issues-image]][issues-url] 
 
-<!-- [![Coded by John Letey][coded-by-image]][coded-by-url] -->
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/johnletey/A-Study-of-Transcription-and-Its-Affects-Demo/master)
 
-<!-- <img src="https://appveyor.com/favicon.ico" width=24 height=24/>
-[![Appveyor Build Status][appveyor-image]][appveyor-url] -->
+<!-- <img src="https://ci.appveyor.com/favicon.ico" width=24 height=24/> [![Appveyor Build Status][appveyor-image]][appveyor-url] -->
+
+<!-- [![Coded by John Letey][coded-by-image]][coded-by-url] -->
 
 ## What's Included
 
@@ -88,12 +89,15 @@ master/
 |   └── get_pssm.py                   # 
 |   └── main.py                       # Main Python Program
 |   └── output_of_pssm.py             # 
+├── .gitignore                        # My GitHub Ignore File
 ├── .travis.yml                       # Travis CI Build File
 ├── README.md                         # README File
+├── circle.yml                        # Circle CI Build File
 ├── package.json                      # List Of Dependencies In JSON Form
 ├── requirements.txt                  # List Of Dependencies In TXT Form
 ├── run.sh                            # Shell Script That Runs My Code With My Data
-└── run_server.py                     # Runs My Code On A Server
+├── run_server.py                     # Runs My Code On A Server
+└── thingstodo.todo                   # List Of Things Todo
 ```
 
 For more information on how to run my code, go to the [Quick Start](#quick-start) section.
@@ -102,13 +106,13 @@ For more information on how to run my code, go to the [Quick Start](#quick-start
 
 * TODO
 
-<!-- Badges -->
+<!-- begin Badges -->
 
 [travis-url]: https://travis-ci.org/johnletey/A-Study-of-Transcription-and-Its-Affects
 [travis-image]: https://img.shields.io/travis/johnletey/A-Study-of-Transcription-and-Its-Affects/master.svg?style=flat-square
 
-<!-- [appveyor-url]: 
-[appveyor-image]: https://img.shields.io/appveyor/johnletey/A-Study-of-Transcription-and-Its-Affects/master.svg?style=flat-square -->
+<!-- [appveyor-url]: https://ci.appveyor.com/project/johnletey/A-Study-of-Transcription-and-Its-Affects
+[appveyor-image]: https://ci.appveyor.com/api/projects/status/?svg=true?style=flat-square -->
 
 [circle-url]: https://circleci.com/gh/johnletey/A-Study-of-Transcription-and-Its-Affects
 [circle-image]: https://img.shields.io/circleci/project/github/johnletey/A-Study-of-Transcription-and-Its-Affects/master.svg?style=flat-square
@@ -116,7 +120,7 @@ For more information on how to run my code, go to the [Quick Start](#quick-start
 [issues-url]: https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/issues
 [issues-image]: https://img.shields.io/github/issues/johnletey/A-Study-of-Transcription-and-Its-Affects.svg?style=flat-square
 
-[coded-by-url]: https://github.com/johnletey
-[coded-by-image]: https://img.shields.io/badge/%3C%2F%3E%20by-John%20Letey-3085d6.svg?style=flat-square
+<!-- [coded-by-url]: https://github.com/johnletey
+[coded-by-image]: https://img.shields.io/badge/%3C%2F%3E%20by-John%20Letey-3085d6.svg?style=flat-square -->
 
 <!-- end Badges -->
