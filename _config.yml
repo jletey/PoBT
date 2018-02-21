@@ -1,0 +1,49 @@
+title: A Study of Transcription and Its Affects
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+permalink: ':title/'
+baseurl: "/A-Study-of-Transcription-and-Its-Affects"
+url: "https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects"
+
+# Banner settings
+video: mountains.mp4 # add banner video. Add your video file to the folder video
+banner-title: John Letey
+banner-desc: My personal blog
+
+# Author settings
+author-pic: profile-pic.jpg
+author-name: John Letey
+about-author: Currently studying at The University of Colorado at Boulder 
+  double majoring in Computer Science and Mathematics. 
+  Planning on applying to the University of Cambridge’s Computer Science Tripos,
+  matriculation Fall 2019.
+email: john.letey@colorado.edu
+phone: (303)-350-9494
+website: https://johnletey.github.io
+
+# Social link
+github_url: https://github.com/johnletey
+
+# Disqus
+discus_identifier: mr-brown # add your discus identifier
+
+# Newsletter
+mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Tracker
+analytics:
+
+# Paginate
+paginate: 12
+paginate_path: /page:num/
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
