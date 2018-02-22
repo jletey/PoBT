@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "get_pssm documentation"
+img: first-post.jpg
 date: 2018-02-22 11:30:00
 ---
 # get_pssm
