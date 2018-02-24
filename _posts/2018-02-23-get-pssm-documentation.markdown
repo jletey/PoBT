@@ -2,7 +2,7 @@
 layout: post
 title: "get_pssm documentation"
 img: get_pssm_header.png
-date: 2018-02-23 16:57:00
+date: 2018-02-23
 description: get_pssm documentation
 tag: [Documentation, get_pssm]
 ---
