@@ -1,48 +1,54 @@
+# Site settings
 title: A Study of Transcription and Its Affects
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-permalink: ':title/'
-baseurl: "/A-Study-of-Transcription-and-Its-Affects"
-url: "https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects"
-
-# Banner settings
-video: mountains.mp4 # add banner video. Add your video file to the folder video
-banner-title: A Study of Transcription and Its Affects
-
-# Author settings
-author-pic: profile-pic.jpg
-author-name: John Letey
-about-author: Currently studying at The University of Colorado at Boulder 
-  double majoring in Computer Science and Mathematics. 
-  Planning on applying to the University of Cambridge’s Computer Science Tripos,
-  matriculation Fall 2019.
 email: john.letey@colorado.edu
-phone: (303)-350-9494
-website: https://johnletey.github.io
+description: The website for a research project worked on by John Letey and David Knox that studied transcription and its affects.
 
-# Social link
-github_url: https://github.com/johnletey
+baseurl: "/A-Study-of-Transcription-and-Its-Affects"
+url: https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects
+git_address: https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects
+git_edit_address: https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/blob/gh-pages
 
-# Disqus
-discus_identifier: mr-brown # add your discus identifier
-
-# Newsletter
-mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-
-# Tracker
-analytics:
-
-# Paginate
-paginate: 12
-paginate_path: /page:num/
+# theme options from https://bootswatch.com/
+# comment out this to use default Bootstrap
+bootwatch: paper
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-paginate
+highlighter: rouge
+gems:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
   - jekyll-sitemap
 
-include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+timezone: Europe/Berlin
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    sectionid: blog
+
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true

@@ -1,8 +1,10 @@
-<footer class="main_footer">
-  <div class="wrapper">
-    {% include social_footer.html %}
-    <div class="copyright">
-      <p>&copy; {{site.time | date: '%Y'}} All rights reserved. Design by <a href="https://johnletey.github.io" target="_blank">John Letey</a></p>
+<footer class="footer">
+    <div class="container">
+
+        <p class="text-center">
+            {{ site.title }} {{ site.time | date: '%Y' }} |
+            Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a>
+        </p>
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
     </div>
-  </div>
-</footer> <!-- End Section Footer -->
+</footer>
