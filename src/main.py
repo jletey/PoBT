@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# title      Main Script                                                           +
+# project    A-Study-of-Transcription-and-Its-Affects                              +
+# repository https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects +
+# author     John Letey                                                            +
+# email      john.letey@colorado.edu                                               +
+# copyright  Copyright (C) 2018                                                    +
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ## Imports
 import sys
 from time import time

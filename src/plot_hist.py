@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# title      Plot Histogram Script                                                 +
+# project    A-Study-of-Transcription-and-Its-Affects                              +
+# repository https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects +
+# author     John Letey                                                            +
+# email      john.letey@colorado.edu                                               +
+# copyright  Copyright (C) 2018                                                    +
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ## Imports
 from read_gff import read_gff
 ## Implementation of plot_hist

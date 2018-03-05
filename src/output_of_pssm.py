@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# title      Output of PSSM Script                                                 +
+# project    A-Study-of-Transcription-and-Its-Affects                              +
+# repository https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects +
+# author     John Letey                                                            +
+# email      john.letey@colorado.edu                                               +
+# copyright  Copyright (C) 2018                                                    +
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ## Implementation of output_of_pssm
 def output_of_pssm(PSSM, sequence, maximum, lenOfPSSM):
     # Go through the PSSM and calculate the output for the given sequence
