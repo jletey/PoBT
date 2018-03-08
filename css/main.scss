@@ -4,20 +4,10 @@
 @charset "utf-8";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-
-
-
 @import
-  {% if site.bootwatch %}
-    "bootswatch/{{site.bootwatch | downcase}}/variables",
-  {% endif %}
-
+  "variables",
   "bootstrap",
-
-  {% if site.bootwatch %}
-    "bootswatch/{{site.bootwatch | downcase}}/bootswatch",
-  {% endif %}
-
+  "bootswatch",
   "syntax-highlighting",
   "typeahead"
 ;
@@ -27,19 +17,9 @@ html {
   min-height: 100%;
 }
 body {
-  padding-top: $navbar-height + $navbar-margin-bottom;
+  padding-top: 87px;
   margin-bottom: 46px;
 }
-
-.navbar-brand{
-  img{
-    margin: -$navbar-padding-vertical 0;
-    height: $navbar-height;
-    padding: 10px 0;
-  }
-}
-
-
 .header-container {
   background-color: black;
   color: #fff;
@@ -63,8 +43,23 @@ body {
     max-width: 80%;
   }
 }
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
 .navbar-container {
   font-size: 16px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar a {
+  color: #fff !important;
+}
+.navbar a:hover {
+  color: #aaa !important;
+}
+.navbar .active a {
+  background-color: transparent !important;
 }
 .page-content {
   padding-bottom: 20px;
@@ -76,7 +71,6 @@ body {
   height: 46px;
   padding-top: 10px;
   background-color: $gray-lighter;
-  color: $gray-dark;
 }
 
 .post-list-container {
@@ -93,4 +87,11 @@ body {
 }
 .navbar-form .has-feedback .form-control-feedback{
   top:10px
+}
+.logos img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.impact p {
+  text-align: justify;
 }
