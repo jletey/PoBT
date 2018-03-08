@@ -68,6 +68,9 @@ body {
 .navbar .active a {
   background-color: transparent !important;
 }
+.navbar-logo:hover {
+  color: #aaa !important;
+}
 .page-content {
   padding-bottom: 20px;
 }
