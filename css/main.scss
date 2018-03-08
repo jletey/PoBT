@@ -42,16 +42,26 @@ body {
 
 .header-container {
   background-color: black;
-  // background: url('../img/bg.jpg') no-repeat 50% 0;
   color: #fff;
+  margin-top: -37px;
+  padding-top: 74px;
+  text-align: center;
 
   h1 {
     color: #fff;
   }
-  // background-attachment: fixed;
-  background-size: cover;
-  background-position: center 36%;
-  margin-top: -37px;
+
+
+  p {
+    padding-top: 20px;
+  }
+
+  .logo {
+    height: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 80%;
+  }
 }
 .navbar-container {
   font-size: 16px;
