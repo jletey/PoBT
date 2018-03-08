@@ -1,7 +1,7 @@
 ---
 title: Quick Start
 permalink: /docs/quick_start/
-redirect_from: /docs/index.html
+redirect_from: /docs/quick_start.html
 ---
 
 **Installing Dependencies**
