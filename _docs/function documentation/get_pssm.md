@@ -1,5 +1,5 @@
 ---
-title: get_pssm function documentation
+title: get_pssm documentation
 permalink: /docs/get_pssm/
 redirect_from: /docs/index.html
 ---
