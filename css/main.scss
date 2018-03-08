@@ -5,9 +5,16 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "variables",
+  {% if site.bootwatch %}
+    "bootswatch/{{site.bootwatch | downcase}}/variables",
+  {% endif %}
+
   "bootstrap",
-  "bootswatch",
+
+  {% if site.bootwatch %}
+    "bootswatch/{{site.bootwatch | downcase}}/bootswatch",
+  {% endif %}
+
   "syntax-highlighting",
   "typeahead"
 ;
