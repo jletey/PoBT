@@ -9,3 +9,7 @@ redirect_from: /docs/index.html
 I implemented my `get_pssm` function to make it easier to get a specific PSSM for a specific transcription factor.
 
 ## Usage
+
+Here's the header for the function:
+
+![get_pssm header](https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/blob/gh-pages/img/get_pssm_header.png?raw=true)
