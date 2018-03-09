@@ -21,9 +21,9 @@
     <path clip-path="url(#iconic-size-lg-dna-clip-0)" stroke="#FFF" stroke-width="2" class="iconic-dna-base iconic-dna-base-top iconic-dna-base-top-3 iconic-property-stroke" fill="none" d="M4 25h68" />
     <path clip-path="url(#iconic-size-lg-dna-clip-0)" stroke="#FFF" stroke-width="2" class="iconic-dna-base iconic-dna-base-top iconic-dna-base-top-2 iconic-property-stroke" fill="none" d="M4 17h68" />
     <path clip-path="url(#iconic-size-lg-dna-clip-0)" stroke="#FFF" stroke-width="2" class="iconic-dna-base iconic-dna-base-top iconic-dna-base-top-1 iconic-property-stroke" fill="none" d="M4 9h68" />
-    <path clip-path="url(#iconic-size-lg-dna-clip-0)" stroke="#91F200" stroke-width="8" stroke-linecap="round" d="M38 64.25l18.337 14.45c9.71 5.766 15.663 16.222 15.663 27.515v17.784M4 4v18.284c0 11.293 3.952 21.75 13.663 27.515l20.337 14.45" class="iconic-dna-backbone iconic-dna-backbone-left iconic-property-stroke"
+    <path clip-path="url(#iconic-size-lg-dna-clip-0)" stroke="#1F8AEE" stroke-width="8" stroke-linecap="round" d="M38 64.25l18.337 14.45c9.71 5.766 15.663 16.222 15.663 27.515v17.784M4 4v18.284c0 11.293 3.952 21.75 13.663 27.515l20.337 14.45" class="iconic-dna-backbone iconic-dna-backbone-left iconic-property-stroke"
     fill="none" />
-    <path stroke="#91F200" stroke-width="8" stroke-linecap="round" d="M72 4v18.284c0 11.293-5.952 21.75-15.663 27.515l-38.674 28.9c-9.71 5.766-13.663 16.222-13.663 27.515v17.784" class="iconic-dna-backbone iconic-dna-backbone-right iconic-property-stroke"
+    <path stroke="#1F8AEE" stroke-width="8" stroke-linecap="round" d="M72 4v18.284c0 11.293-5.952 21.75-15.663 27.515l-38.674 28.9c-9.71 5.766-13.663 16.222-13.663 27.515v17.784" class="iconic-dna-backbone iconic-dna-backbone-right iconic-property-stroke"
     fill="none" />
   </g>
 </svg>
