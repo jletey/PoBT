@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # title      Read GFF File Script                                                  +
 # project    A-Study-of-Transcription-and-Its-Affects                              +

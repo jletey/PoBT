@@ -77,11 +77,12 @@ __summary_validation_error() {
 }
 
 __install_requirements() {
-    __log_info "Checking to see if the requirements file is valid"    
+    __log_info "Checking to see if the requirements file is valid"
     __validate_file
     __log_info "Installing the project requirements"
     pip install -q -r $REQUIREMENTS_FILE
     # pip3 install -q -r $REQUIREMENTS_FILE
+    __log_success "Project requirements successfully installed"
 }
 
 __validate_file() {
@@ -112,5 +113,7 @@ while true; do
 done
 
 __install_requirements
+__log_info "Running my code which will calculate hits and plot histograms"
+python src/main.py src/data 2 n src/hits/
 __cleanup
 exit 0
