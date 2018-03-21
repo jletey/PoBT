@@ -8,11 +8,13 @@
 # copyright  Copyright (C) 2018                                                    +
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ## Imports
-from Bio import SeqIO
+# from Bio import SeqIO
 ## Implementation of read_gff
 def read_gff(gff_filename):
-    with open(gff_filename) as gff_file:
-        seq = []
-        for seq_record in SeqIO.parse(gff_file, 'gff'):
-            seq.append(str(seq_record.seq))
+    seq = []
+    fileID = open(gff_filename, 'r')
+    line = fileID.readline().split('\n')[0]
+    while line:
+        seq.append(line.split('\t'))
+        line = fileID.readline().split('\n')[0]
     return seq

@@ -27,11 +27,13 @@
 
 ## Overview
 
-Transcription is the process of converting DNA into RNA. There are molecules called transcription factors, which, their whole point of existence is to bind to DNA. Transcription factors have a certain sequence they're looking for on the DNA (such as `AAAA`, `ACAC`, etc). Luckily, biologists have mapped out a probability matrix, a PSSM (**P**osition **S**pecific **S**coring **M**atrix), which when you plug in a string, of a certain length, from the DNA, it outputs a probability of the transcription factor binding to that string you plugged in. From the DNA (represented in chromosomes) and each transcription factor's unique PSSMs, you can calculate strong and weak hits. 
+Transcription is the process of converting DNA into RNA. There are molecules called transcription factors, which, their whole point of existence is to bind to DNA. Transcription factors have a certain sequence they're looking for on the DNA (such as `AAAA`, `ACAC`, etc). Luckily, biologists have mapped out a probability matrix, a PSSM (**P**osition **S**pecific **S**coring **M**atrix), which when you plug in a string, of a certain length, from the DNA, it outputs a probability of the transcription factor binding to that string you plugged in. From the DNA (represented in chromosomes) and each transcription factor's unique PSSMs, you can calculate strong and weak hits.
 
 CONTINUE WRITING OVERVIEW
 
 ## Quick Start
+
+Please see the [notes and warnings](#notes-and-warnings) section before proceeding! Note that, if you want to do all of the following by hand, go for it... but if you're lazy, just simply run `bash run.sh`.
 
 **Installing Dependencies**
 
@@ -40,23 +42,23 @@ CONTINUE WRITING OVERVIEW
 2. Install requirements:
 
 ```sh
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
-   
+
 **Running code on my data (this is still a work in progress)**
 
 To easily run code on my data, simply run this command:
 
 ```sh
-bash run.sh
+python src/main.py src/data 2 n src/hits/
 ```
 
 But, to get a more interactive and visual experience, run the following command:
-    
+
 ```sh
-python3 run_server.py
+python run_server.py
 ```
-    
+
 Then, open up `localhost:9000` in your favorite browser.
 
 **Running on your own data**
@@ -65,9 +67,9 @@ TODO
 
 ## Status
 
-<img src="https://cdn.travis-ci.org/images/favicon-c566132d45ab1a9bcae64d8d90e4378a.svg" width=24 height=24/> [![Travis Build Status][travis-image]][travis-url] <img src="https://circleci.com/favicon.ico" width=24 height=24/> [![Circle Build Status][circle-image]][circle-url] <img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> [![GitHub Issues][issues-image]][issues-url] 
+<img src="https://cdn.travis-ci.org/images/favicon-c566132d45ab1a9bcae64d8d90e4378a.svg" width=24 height=24/> [![Travis Build Status][travis-image]][travis-url] <img src="https://circleci.com/favicon.ico" width=24 height=24/> [![Circle Build Status][circle-image]][circle-url] <img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> [![GitHub Issues][issues-image]][issues-url]
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/johnletey/A-Study-of-Transcription-and-Its-Affects-Demo/master)
+<!-- [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/johnletey/A-Study-of-Transcription-and-Its-Affects-Demo/master) -->
 
 <!-- <img src="https://ci.appveyor.com/favicon.ico" width=24 height=24/> [![Appveyor Build Status][appveyor-image]][appveyor-url] -->
 
@@ -85,10 +87,10 @@ master/
 |   |   └── yeast.tamo                # TAMO Data File
 |   ├── hits/
 |   |   └── TODO
-|   └── calculate_hits.py             # 
-|   └── get_pssm.py                   # 
+|   └── calculate_hits.py             #
+|   └── get_pssm.py                   #
 |   └── main.py                       # Main Python Program
-|   └── output_of_pssm.py             # 
+|   └── output_of_pssm.py             #
 ├── .gitignore                        # My GitHub Ignore File
 ├── .travis.yml                       # Travis CI Build File
 ├── README.md                         # README File
@@ -104,7 +106,7 @@ For more information on how to run my code, go to the [Quick Start](#quick-start
 
 ## Notes and Warnings
 
-* TODO
+* To calculate all the hits for every transcription factor, my code takes 497.2 minutes to run... which is equivalent to 8.3 hours. Note that on average, it takes [FILL IN] minutes to run on a specific transcription factor.
 
 <!-- begin Badges -->
 

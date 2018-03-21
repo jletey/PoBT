@@ -35,5 +35,22 @@ numOfCHR = len(chrs)
 if show_fasta_data == 'y':
     for chrom in chrs[:len(chrs)-n]:
         print('The first 5 letters in', chrom, 'are -', genes[chrom][0:5])
-## Calculate the hits
-print(calculate_hits(genes, chrs[:len(chrs)-n], data_path + '/yeast.tamo', 'HSF1', 'src/hits/HitsHSF1.gff'))
+## Calculate the hits and the hists
+# Get all of the possible transcription factors
+tamoData = []
+fileID = open(data_path + '/yeast.tamo', 'r')
+line = fileID.readline()
+while line:
+    tamoData.append(line[:len(line)-1])
+    line = fileID.readline()
+tfList = []
+for i in range(124):
+    line = tamoData[19 + 42*i - 1]
+    tfList.append(line[9:])
+# Go through each transcription factor and calculate all the hits for that specific one
+for tf in tfList:
+    print('It took', calculate_hits(genes, chrs[:len(chrs)-n], data_path + '/yeast.tamo', tf, 'src/hits/Hits'+tf+'.gff')/60, 'minutes to calculate the hits for transcription factor', tf)
+# Go through each transcription factor and plot a histogram for that specific one
+for tf in tfList:
+    print(tf)
+    plot_hist('src/hits/Hits'+tf+'.gff', 'src/hists/Hist'+tf+'.png')

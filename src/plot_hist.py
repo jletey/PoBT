@@ -8,14 +8,15 @@
 # copyright  Copyright (C) 2018                                                    +
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ## Imports
+from time import time
 from read_gff import read_gff
 ## Implementation of plot_hist
-def plot_hist(InFilename, HitsInFilename, PicFile):
+def plot_hist(HitsInFilename, PicFile):
     # Get the time at the begining of the function
     t_beg = time()
     # Get the data from the GFF file
     data = read_gff(HitsInFilename)
-    print(data)
+    print(data[0])
 #     # Sort the lists holding the hits
 #     weakSites = list(set(weakSites))
 #     weakSites.sort()
