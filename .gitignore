@@ -104,5 +104,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# No Microsoft Word autosave documents
-*~$*.docx
+# ignore all awful tex files
+*.aux
+*.log
+*.out
