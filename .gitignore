@@ -104,7 +104,9 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# ignore all awful tex files
+# ignore tex files
 *.aux
 *.log
 *.out
+*.tex
+*.sty
