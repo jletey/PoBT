@@ -6,9 +6,10 @@
   <h1 align="center">A Study of Transcription and Its Affects</h1>
 
   <p align="center">
-    ADD NICE DESCRIPTION HERE
+    Research project investigating hits calculated from yeast chromosomes and PSSMs and their correlations to each other. Transcription clusters and PSSMs have information about the transcription process, so modeling it can help us understand more about transcription. We hypothesized that the histogram of hits contains a pattern of having a peak around 30. We were able to prove this [INSERT ACCURACY HERE]% of the time.
     <br>
-    <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/docs/home/"><strong>Explore the docs »</strong></a>
+    <br>
+    <!-- <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/docs/home/"><strong>Explore the docs »</strong></a> -->
     <br>
     <br>
     <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects">Main Website</a>
