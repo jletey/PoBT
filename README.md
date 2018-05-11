@@ -14,6 +14,8 @@
     <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects">Main Website</a>
     ·
     <a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects">GitHub Repository</a>
+    ·
+    <a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf">Paper Download</a>
   </p>
 </p>
 
