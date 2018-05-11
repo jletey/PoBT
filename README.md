@@ -11,7 +11,7 @@
 <!--     <br> -->
     <!-- <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/docs/home/"><strong>Explore the docs »</strong></a> -->
 <!--     <br> -->
-    <br>
+<!--     <br> -->
     <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects">Main Website</a>
     ·
     <a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects">GitHub Repository</a>
