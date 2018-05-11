@@ -6,11 +6,11 @@
   <h1 align="center">A Study of Transcription and Its Affects</h1>
 
   <p align="center">
-    Research project investigating hits calculated from yeast chromosomes and PSSMs and their correlations to each other. Transcription clusters and PSSMs have information about the transcription process, so modeling it can help us understand more about transcription. We hypothesized that the histogram of hits contains a pattern of having a peak around 30. We were able to prove this [INSERT ACCURACY HERE]% of the time.
-    <br>
-    <br>
+<!--     Research project investigating hits calculated from yeast chromosomes and PSSMs and their correlations to each other. Transcription clusters and PSSMs have information about the transcription process, so modeling it can help us understand more about transcription. We hypothesized that the histogram of hits contains a pattern of having a peak around 30. We were able to prove this [INSERT ACCURACY HERE]% of the time. -->
+<!--     <br> -->
+<!--     <br> -->
     <!-- <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/docs/home/"><strong>Explore the docs »</strong></a> -->
-    <br>
+<!--     <br> -->
     <br>
     <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects">Main Website</a>
     ·
@@ -22,17 +22,17 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
+<!-- - [Overview](#overview) -->
 - [Quick Start](#quick-start)
 - [Status](#status)
 - [What's Included](#whats-included)
 - [Notes and Warnings](#notes-and-warnings)
 
-## Overview
+<!-- ## Overview -->
 
-Transcription is the process of converting DNA into RNA. There are molecules called transcription factors, which, their whole point of existence is to bind to DNA. Transcription factors have a certain sequence they're looking for on the DNA (such as `AAAA`, `ACAC`, etc). Luckily, biologists have mapped out a probability matrix, a PSSM (**P**osition **S**pecific **S**coring **M**atrix), which when you plug in a string, of a certain length, from the DNA, it outputs a probability of the transcription factor binding to that string you plugged in. From the DNA (represented in chromosomes) and each transcription factor's unique PSSMs, you can calculate strong and weak hits.
+<!-- Transcription is the process of converting DNA into RNA. There are molecules called transcription factors, which, their whole point of existence is to bind to DNA. Transcription factors have a certain sequence they're looking for on the DNA (such as `AAAA`, `ACAC`, etc). Luckily, biologists have mapped out a probability matrix, a PSSM (**P**osition **S**pecific **S**coring **M**atrix), which when you plug in a string, of a certain length, from the DNA, it outputs a probability of the transcription factor binding to that string you plugged in. From the DNA (represented in chromosomes) and each transcription factor's unique PSSMs, you can calculate strong and weak hits. -->
 
-CONTINUE WRITING OVERVIEW
+<!-- CONTINUE WRITING OVERVIEW -->
 
 ## Quick Start
 
