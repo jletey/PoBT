@@ -1,0 +1,8 @@
+- title: Getting Started
+  docs:
+  - home
+  - quick start
+
+- title: Function Documentation
+  docs:
+  - get_pssm

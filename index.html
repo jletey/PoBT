@@ -1,38 +1,75 @@
 ---
-layout: page
+layout: default
 ---
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta" style="margin-bottom:5px">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
-	<div class="notepad-index-post-tags" style="">
-		{% for tag in post.tags %}<a href="{{ site.baseurl }}/search/index.html#{{ tag | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
-	</div>
+
+<div class="header-container jumbotron">
+    <div class="container">
+            <img class="logo" src="{{ site.baseurl }}/img/logo-homepage.svg">
+            <h1>A Study of Transcription and Its Affects</h1>
+            <!-- <p>A research project worked on by John Letey and David Knox that studied transcription and its affects.</p> -->
+            <!-- <p><a class="btn btn-primary btn-lg" href="{{ "/docs/home/" | prepend: site.baseurl }}" role="button">Read the docs</a></p> -->
+    </div>
 </div>
+
+<div class="row">
+    <div class="col-md-3"> </div>
+    <div class="col-md-6" style="text-align: center;">
+        <h3 class="header-light regular-pad"><a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf">Paper Download</a></h3>
+            <p style="text-align: justify">
+                <!-- A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth. -->
+            </p>
+    </div>
+    <div class="col-md-3"> </div>
+</div>
+
 <hr>
-{% endfor %}
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
 
+<!-- <div class="container">
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="header-light regular-pad">What is Jekyll?</h2>
+            <blockquote>
+              <p>Jekyll is a simple, blog-aware, static site generator. It takes a template
+              directory containing raw text files in various formats, runs it through
+              a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>)
+              and our <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> renderer, and
+              spits out a complete, ready-to-publish static website suitable
+              for serving with your favorite web server. Jekyll also happens to be the engine
+              behind <a href="https://pages.github.com">GitHub Pages</a>, which means you can use Jekyll
+              to host your project’s page, blog, or website from GitHub’s servers <strong>for
+              free</strong>.</p>
+            </blockquote>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="img/jekyll-dark.png" alt="" class="img-responsive">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Easy to install and publish</h3>
+            <p>Get started by cloning source into GitHub account of your project. Thanks to <a href="https://pages.github.com">GitHub Pages</a>,
+              it will be automatically compiled and published under your project's subdomain on `github.io`.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-cogs" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Modular Styling and Templating</h3>
+            <p>This template uses <a href="https://github.com/twbs/bootstrap-sass">bootstrap-sass</a> along with <a href="https://bootswatch.com/">Bootwatch themes</a>.
+            You can change the theme or write your custom by overwriting bootstrap sass variables for a different color set, font options, etc.</p>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Git-based source control</h3>
+            <p>Leverage from Git version control system by
+              maintaining your documentation along with the source code; publish the page when you merge to the master branch.</p>
+        </div>
+    </div>
+
+
+</div> -->
