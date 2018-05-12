@@ -1,75 +1,232 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="header-container jumbotron">
-    <div class="container">
-            <img class="logo" src="{{ site.baseurl }}/img/logo-homepage.svg">
-            <h1>A Study of Transcription and Its Affects</h1>
-            <!-- <p>A research project worked on by John Letey and David Knox that studied transcription and its affects.</p> -->
-            <!-- <p><a class="btn btn-primary btn-lg" href="{{ "/docs/home/" | prepend: site.baseurl }}" role="button">Read the docs</a></p> -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="gridstack.js is a jQuery plugin for widget layout">
+    <meta name="keywords" content="gridstack, jquery, grid, layout, drag-n-drop, widgets, js, javascript">
+    <meta name="author" content="John Letey">
+
+    <title>A Study of Transcription and Its Affects</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link href="freelancer/css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel='stylesheet' type='text/css'>
+
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="assets/gridstack.css" rel="stylesheet">
+    <link href="gridstack-demo.css" rel="stylesheet">
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://gridstackjs.com/"><span class="fa fa-th"></span> A Study of Transcription and Its Affects</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#demo">Demo</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#usage">Usage</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/gridstack/gridstack.js/issues">Issues</a>
+                    </li> -->
+                    <li>
+                        <a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="paper/index.html">Paper</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">A Study of Transcription and Its Affects</span>
+                        <!-- <hr class="star-light"> -->
+                        <!-- <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column
+                        grid. It allows you to build draggable responsive bootstrap v3 friendly layouts.
+                        It also works great with <a href="http://knockoutjs.com">knockout.js</a> and touch devices.</p>
+
+                        <p>Inspired by <a href="http://gridster.net">gridster.js</a>. Built with love.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <section id="demo" class="darklue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Demo</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+
+            <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
+                <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">1</div></div>
+                <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4"><div class="grid-stack-item-content">2</div></div>
+                <div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes"><div class="grid-stack-item-content"> <span class="fa fa-hand-o-up"></span> Drag me! </div></div>
+                <div class="grid-stack-item" data-gs-x="10" data-gs-y="0" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">4</div></div>
+                <div class="grid-stack-item" data-gs-x="0" data-gs-y="2" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">5</div></div>
+                <div class="grid-stack-item" data-gs-x="2" data-gs-y="2" data-gs-width="2" data-gs-height="4"><div class="grid-stack-item-content">6</div></div>
+                <div class="grid-stack-item" data-gs-x="8" data-gs-y="2" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">7</div></div>
+                <div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">8</div></div>
+                <div class="grid-stack-item" data-gs-x="4" data-gs-y="4" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">9</div></div>
+                <div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">10</div></div>
+                <div class="grid-stack-item" data-gs-x="10" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">11</div></div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Portfolio Grid Section -->
+    <!-- <section id="usage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Usage</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+
+            <h3>Basic Usage</h3>
+
+            <pre><code class="html">
+&lt;div class=&quot;grid-stack&quot;&gt;
+    &lt;div class=&quot;grid-stack-item&quot;
+        data-gs-x=&quot;0&quot; data-gs-y=&quot;0&quot;
+        data-gs-width=&quot;4&quot; data-gs-height=&quot;2&quot;&gt;
+            &lt;div class=&quot;grid-stack-item-content&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-stack-item&quot;
+        data-gs-x=&quot;4&quot; data-gs-y=&quot;0&quot;
+        data-gs-width=&quot;4&quot; data-gs-height=&quot;4&quot;&gt;
+            &lt;div class=&quot;grid-stack-item-content&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(function () {
+    var options = {
+        cellHeight: 80,
+        verticalMargin: 10
+    };
+    $('.grid-stack').gridstack(options);
+});
+&lt;/script&gt;
+            </code></pre>
+
+            <p>For more samples and documentation please visit <a href="https://github.com/gridstack/gridstack.js">https://github.com/gridstack/gridstack.js</a>.</p>
+
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; John Letey 2018
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-md-3"> </div>
-    <div class="col-md-6" style="text-align: center;">
-        <h3 class="header-light regular-pad"><a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf">Paper Download</a></h3>
-            <p style="text-align: justify">
-                <!-- A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth. -->
-            </p>
-    </div>
-    <div class="col-md-3"> </div>
-</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
 
-<hr>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="freelancer/js/classie.js"></script>
+    <script src="freelancer/js/cbpAnimatedHeader.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-<!-- <div class="container">
+    <!-- Custom Theme JavaScript -->
+    <script src="freelancer/js/freelancer.js"></script>
 
-    <div class="row">
-        <div class="col-md-6">
-            <h2 class="header-light regular-pad">What is Jekyll?</h2>
-            <blockquote>
-              <p>Jekyll is a simple, blog-aware, static site generator. It takes a template
-              directory containing raw text files in various formats, runs it through
-              a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>)
-              and our <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> renderer, and
-              spits out a complete, ready-to-publish static website suitable
-              for serving with your favorite web server. Jekyll also happens to be the engine
-              behind <a href="https://pages.github.com">GitHub Pages</a>, which means you can use Jekyll
-              to host your project’s page, blog, or website from GitHub’s servers <strong>for
-              free</strong>.</p>
-            </blockquote>
-        </div>
-        <div class="col-md-6 text-center">
-            <img src="img/jekyll-dark.png" alt="" class="img-responsive">
-        </div>
-    </div>
+    <script src="dist/gridstack.js"></script>
+    <script src="dist/gridstack.jQueryUI.js"></script>
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+        $(function () {
+            $('.grid-stack').gridstack({
+                width: 12,
+                alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+                resizable: {
+                    handles: 'e, se, s, sw, w'
+                }
+            });
+        });
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <hr>
+  ga('create', 'UA-1891156-8', 'auto');
+  ga('send', 'pageview');
 
-    <div class="row">
-        <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Easy to install and publish</h3>
-            <p>Get started by cloning source into GitHub account of your project. Thanks to <a href="https://pages.github.com">GitHub Pages</a>,
-              it will be automatically compiled and published under your project's subdomain on `github.io`.
-            </p>
-        </div>
-        <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-cogs" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Modular Styling and Templating</h3>
-            <p>This template uses <a href="https://github.com/twbs/bootstrap-sass">bootstrap-sass</a> along with <a href="https://bootswatch.com/">Bootwatch themes</a>.
-            You can change the theme or write your custom by overwriting bootstrap sass variables for a different color set, font options, etc.</p>
-        </div>
-        <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Git-based source control</h3>
-            <p>Leverage from Git version control system by
-              maintaining your documentation along with the source code; publish the page when you merge to the master branch.</p>
-        </div>
-    </div>
+</script>
+</body>
 
-
-</div> -->
+</html>

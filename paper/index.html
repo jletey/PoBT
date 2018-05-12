@@ -1,0 +1,60 @@
+<head>
+	<title>Paper</title>
+	<script src="../assets/pdf.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		PDFJS.disableWorker = true; // due to CORS
+		var canvas = document.createElement('canvas'),
+		ctx = canvas.getContext('2d'),
+		pages = [],
+		currentPage = 1,
+		url = '';
+
+		PDFJS.getDocument(url).then(function(pdf) {
+			if (currentPage <= pdf.numPages) getPage();
+
+			// main entry point/function for loop
+			function getPage() {
+			// when promise is returned do as usual
+			pdf.getPage(currentPage).then(function(page) {
+				var scale = 1;
+				viewport = page.getViewport(scale);
+				canvas.height = viewport.height;
+				canvas.width = viewport.width;
+
+				var renderContext = {
+					canvasContext: ctx,
+					viewport: viewport
+				};
+
+				// now, tap into the returned promise from render:\
+				page.render(renderContext).then(function() {
+				// store compressed image data in array
+				pages.push(canvas.toDataURL());
+
+				if (currentPage < pdf.numPages) {
+					currentPage++;
+					getPage(); // get next page
+				} else {
+					// after all the pages are parsed
+					for (var i = 0; i < pages.length; i++) {
+						drawPage(i);
+					}
+				}
+			});
+			});
+		}
+		});
+
+		function drawPage(index, callback) {
+			var img = new Image;
+			img.onload = function() {
+				ctx.drawImage(this, 0, 0, ctx.canvas.width, ctx.canvas.height);
+				if (index > 0) img.style.display = 'inline-block';
+				document.body.appendChild(img);
+			}
+			img.src = pages[index]; // start loading the data-url as source
+		}
+	</script>
+</body>
