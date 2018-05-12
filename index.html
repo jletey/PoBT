@@ -8,13 +8,19 @@
     <meta name="description" content="gridstack.js is a jQuery plugin for widget layout">
     <meta name="keywords" content="gridstack, jquery, grid, layout, drag-n-drop, widgets, js, javascript">
     <meta name="author" content="John Letey">
-    
+
     <title>A Study of Transcription and Its Affects</title>
+
+    <!-- Begin : Code Syntax Highlighting -->
+    <link rel="stylesheet" type="text/css" href="assets/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/syntax-highlighter/styles/shThemeRDark.css" media="all">
+    <!-- End : Code Syntax Highlighting -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
     <link href="freelancer/css/freelancer.css" rel="stylesheet">
+    <!-- <link href="assets/buttons/style.css"> -->
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"/>
@@ -26,10 +32,10 @@
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    [if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    [endif]
 
     <link href="assets/gridstack.css" rel="stylesheet">
     <link href="gridstack-demo.css" rel="stylesheet">
@@ -66,8 +72,11 @@
                     <li>
                         <a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects">GitHub</a>
                     </li>
-                    <li>
-                        <a href="paper/index.html">Paper</a>
+                    <li class="page-scroll">
+                        <a href="#paper">Paper</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#running-code">Running the Code</a>
                     </li>
                 </ul>
             </div>
@@ -92,15 +101,16 @@
             </div>
         </div>
     </header>
-    <!-- <section id="demo" class="darklue">
+    <section id="paper" class="darklue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Demo</h2>
+                    <h2>Paper</h2>
                     <hr class="star-light">
+                    <!-- <a data-animation="ripple">Paper Preview</a> <a data-animation="ripple" href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf">Download Paper</a> -->
                 </div>
             </div>
-            <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
+            <!-- <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
                 <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">1</div></div>
                 <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4"><div class="grid-stack-item-content">2</div></div>
                 <div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes"><div class="grid-stack-item-content"> <span class="fa fa-hand-o-up"></span> Drag me! </div></div>
@@ -112,19 +122,19 @@
                 <div class="grid-stack-item" data-gs-x="4" data-gs-y="4" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">9</div></div>
                 <div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">10</div></div>
                 <div class="grid-stack-item" data-gs-x="10" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">11</div></div>
-            </div>
+            </div> -->
         </div>
-    </section> -->
+    </section>
     <!-- Portfolio Grid Section -->
-    <!-- <section id="usage">
+    <section id="running-code">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Usage</h2>
+                    <h2>Running the Code</h2>
                     <hr class="star-primary">
                 </div>
             </div>
-            <h3>Basic Usage</h3>
+            <!-- <h3>Basic Usage</h3>
             <pre><code class="html">
 &lt;div class=&quot;grid-stack&quot;&gt;
     &lt;div class=&quot;grid-stack-item&quot;
@@ -150,8 +160,8 @@ $(function () {
 &lt;/script&gt;
             </code></pre>
             <p>For more samples and documentation please visit <a href="https://github.com/gridstack/gridstack.js">https://github.com/gridstack/gridstack.js</a>.</p>
-        </div>
-    </section> -->
+        </div> -->
+    </section>
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-below">
@@ -171,6 +181,18 @@ $(function () {
         </a>
     </div>
 
+    <!-- Begin : Code Syntax Highlighting -->
+    <script src="assets/syntax-highlighter/scripts/shCore.js"></script>
+    <script src="assets/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="assets/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="assets/syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script src="assets/syntax-highlighter/scripts/shBrushBash.js"></script>
+    <!-- End : Code Syntax Highlighting -->
+
+    <script src="assets/buttons/touchMyRipple.js"></script>
+
+    <!-- <script src="assets/buttons/index.js"></script> -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
@@ -187,8 +209,8 @@ $(function () {
     <!-- Custom Theme JavaScript -->
     <script src="freelancer/js/freelancer.js"></script>
 
-    <script src="dist/gridstack.js"></script>
-    <script src="dist/gridstack.jQueryUI.js"></script>
+    <script src="assets/gridstack.js"></script>
+    <script src="assets/gridstack.jQueryUI.js"></script>
     <script type="text/javascript">
         hljs.initHighlightingOnLoad();
         $(function () {
