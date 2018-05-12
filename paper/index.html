@@ -9,7 +9,7 @@
 		ctx = canvas.getContext('2d'),
 		pages = [],
 		currentPage = 1,
-		url = '';
+		url = 'https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf';
 
 		PDFJS.getDocument(url).then(function(pdf) {
 			if (currentPage <= pdf.numPages) getPage();
