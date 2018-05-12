@@ -13,6 +13,7 @@ from time import time
 from pyfaidx import Fasta
 from calculate_hits import calculate_hits
 from plot_hist import plot_hist
+from multiprocessing import Pool
 ## Get the parameters when the user called to function
 args = list(sys.argv[1:])
 data_path = args[0]
@@ -47,10 +48,18 @@ tfList = []
 for i in range(124):
     line = tamoData[19 + 42*i - 1]
     tfList.append(line[9:])
+# Define function that's required to run multiprocessing
+def test_func():
+    pass
 # Go through each transcription factor and calculate all the hits for that specific one
-for tf in tfList:
-    print('It took', calculate_hits(genes, chrs[:len(chrs)-n], data_path + '/yeast.tamo', tf, 'src/hits/Hits'+tf+'.gff')/60, 'minutes to calculate the hits for transcription factor', tf)
+for tf in tfList[:30]:
+    with Pool(8) as p:
+        r = p.apply_async(test_func)
+	print('It took', calculate_hits(genes, chrs[:len(chrs)-n], data_path + '/yeast.tamo', tf, 'src/hits/Hits'+tf+'.gff')/60, 'minutes to calculate the hits for transcription factor', tf)
+	result = r.get()
 # Go through each transcription factor and plot a histogram for that specific one
-for tf in tfList:
-    print(tf)
-    plot_hist('src/hits/Hits'+tf+'.gff', 'src/hists/Hist'+tf+'.png')
+for tf in tfList[:30]:
+    with Pool(8) as p:
+        r = p.apply_async(test_func)
+        plot_hist('src/hits/Hits'+tf+'.gff', 'src/hists/Hist'+tf+'.png')
+        result = r.get()

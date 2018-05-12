@@ -10,8 +10,8 @@
 ## Imports
 from time import time
 from read_gff import read_gff
-import matplotlib.pylab as plt
-plt.style.use('bmh')
+#import matplotlib.pylab as plt
+#plt.style.use('bmh')
 import numpy as np
 ## Implementation of plot_hist
 def plot_hist(HitsInFilename, PicFile):
@@ -28,29 +28,33 @@ def plot_hist(HitsInFilename, PicFile):
             strongSites.append(int(data[i][3]))
     # Set the number of plus or minus range of what we're going to be anaylsing and the size of the buckets
     r = 50
-    s = 150
+    s = 50
     # Analyse the hits
     categories = [0 for i in range(r)]
-    for i in range(len(strongSites[:100])):
-        for j in range(len(weakSites[:100])):
+    for i in range(len(strongSites)):
+        for j in range(len(weakSites)):
+            value = abs(strongSites[i] - weakSites[j])
+            for k in range(r//s):
+                if (value <= (s*k) and (value >= s*(k-1))):
+                    categories[k] += 1
+    """
+    for i in range(len(strongSites)):
+        position1 = 0
+        position2 = 0
+        for j in range(len(weakSites)):
+            if weakSites[j] <= strongSites[i]-r:
+                position1 = j
+            if weakSites[j] <= strongSites[i]+r:
+                position2 = j
+        for j in range(position1, position2):
             value = abs(strongSites[i] - weakSites[j])
             for k in range(r//s):
                 if (value <= (s*k) and (value > s*(k-1))):
-                    categories[k] += 1
-    # for i in range(len(strongSites)):
-    #     position1 = 0
-    #     position2 = 0
-    #     for j in range(len(weakSites)):
-    #         if weakSites[j] <= strongSites[i]-r:
-    #             position1 = j
-    #         if weakSites[j] <= strongSites[i]+r:
-    #             position2 = j
-    #     for j in range(position1, position2):
-    #         value = abs(strongSites[i] - weakSites[j])
-    #         for k in range(r//s):
-    #             if (value <= (s*k) and (value > s*(k-1))):
-    #                 categories[k] += 1
+                   categories[k] += 1
+    """
     # Plot the histogram
+    print(categories)
+    """
     fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10,5))
     ax.bar(range(len(categories)), categories, color='black', label='histogram')
     plt.plot(range(len(categories)), [np.mean(categories) for i in range(len(categories))], color='#a76c6e', label='mean')
@@ -63,6 +67,7 @@ def plot_hist(HitsInFilename, PicFile):
     ax.grid(alpha=0.25)
     ax.legend(loc="upper left", fontsize=12)
     fig.savefig(PicFile)
+    """
     # Get the time at the end of the function
     t_end = time()
     # Return the amount of seconds it took the function to run (in seconds)
