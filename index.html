@@ -20,7 +20,7 @@
 
     <!-- Custom CSS -->
     <link href="freelancer/css/freelancer.css" rel="stylesheet">
-    <!-- <link href="assets/buttons/style.css"> -->
+    <link href="assets/buttons/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"/>
@@ -90,6 +90,21 @@
                 <div class="col-lg-12">
                     <div class="intro-text">
                         <span class="name">A Study of Transcription and Its Affects</span>
+                        <pre class="brush: js; highlight: [2,4]">
+                        {
+                            // selector of the element you want to attach the ripple ( is required )
+                            selectors: 'class, id',
+
+                            // color...🤔🤔🤔🤔🤔🤔
+                            color: 'rgba, hex, hsla',
+
+                            // pass the scrolling element if it's not window
+                            offsetEl: 'class, id',
+
+                            // this option accept an event listener
+                            eventListener: 'event'
+                        }
+                        </pre>
                         <!-- <hr class="star-light"> -->
                         <!-- <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column
                         grid. It allows you to build draggable responsive bootstrap v3 friendly layouts.
@@ -107,7 +122,7 @@
                 <div class="col-lg-12 text-center">
                     <h2>Paper</h2>
                     <hr class="star-light">
-                    <!-- <a data-animation="ripple">Paper Preview</a> <a data-animation="ripple" href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf">Download Paper</a> -->
+                    <button id="myButton" data-animation="ripple" onclick="wait('1s', function(){window.location='paper/index.html'});">Paper Preview</button> <button data-animation="ripple" onclick="wait('1s', function(){window.location='https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf'});">Download Paper</button>
                 </div>
             </div>
             <!-- <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
@@ -134,6 +149,7 @@
                     <hr class="star-primary">
                 </div>
             </div>
+            <p>To run my code, simply run the following command:</p>
             <!-- <h3>Basic Usage</h3>
             <pre><code class="html">
 &lt;div class=&quot;grid-stack&quot;&gt;
@@ -189,9 +205,19 @@ $(function () {
     <script src="assets/syntax-highlighter/scripts/shBrushBash.js"></script>
     <!-- End : Code Syntax Highlighting -->
 
+    <!-- Begin : Touch My Ripple Settings -->
     <script src="assets/buttons/touchMyRipple.js"></script>
+    <script type="text/javascript">
+        tmripple.init({
+            color: '#262C38', // default is 'rgba(255, 255, 255, 0.4)'
+            eventListener: 'click' // default is 'click'
+        });
+    </script>
+    <!-- End : Touch My Ripple Settings -->
 
-    <!-- <script src="assets/buttons/index.js"></script> -->
+    <!--  -->
+    <script src="assets/wait/wait.js"></script>
+    <!--  -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
