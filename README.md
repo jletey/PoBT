@@ -1,22 +1,12 @@
 <p align="center">
-<!--   <a href="">
-    <img src="research_project_logo.svg" alt="" width=72 height=72>
-  </a> -->
-
   <h1 align="center">A Study of Transcription and Its Affects</h1>
 
   <p align="center">
-<!--     Research project investigating hits calculated from yeast chromosomes and PSSMs and their correlations to each other. Transcription clusters and PSSMs have information about the transcription process, so modeling it can help us understand more about transcription. We hypothesized that the histogram of hits contains a pattern of having a peak around 30. We were able to prove this [INSERT ACCURACY HERE]% of the time. -->
-<!--     <br> -->
-<!--     <br> -->
-    <!-- <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects/docs/home/"><strong>Explore the docs »</strong></a> -->
-<!--     <br> -->
-<!--     <br> -->
     <a href="https://johnletey.github.io/A-Study-of-Transcription-and-Its-Affects">Main Website</a>
     ·
     <a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects">GitHub Repository</a>
     ·
-    <a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf">Paper Download</a>
+    <a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf">Download Paper</a>
   </p>
 </p>
 
@@ -24,7 +14,7 @@
 
 <!-- - [Overview](#overview) -->
 - [Quick Start](#quick-start)
-- [Status](#status)
+<!-- - [Status](#status) -->
 - [What's Included](#whats-included)
 - [Notes and Warnings](#notes-and-warnings)
 
@@ -68,9 +58,9 @@ Then, open up `localhost:9000` in your favorite browser.
 
 TODO
 
-## Status
+<!-- ## Status -->
 
-<img src="https://cdn.travis-ci.org/images/favicon-c566132d45ab1a9bcae64d8d90e4378a.svg" width=24 height=24/> [![Travis Build Status][travis-image]][travis-url] <img src="https://circleci.com/favicon.ico" width=24 height=24/> [![Circle Build Status][circle-image]][circle-url] <img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> [![GitHub Issues][issues-image]][issues-url]
+<!-- <img src="https://cdn.travis-ci.org/images/favicon-c566132d45ab1a9bcae64d8d90e4378a.svg" width=24 height=24/> [![Travis Build Status][travis-image]][travis-url] <img src="https://circleci.com/favicon.ico" width=24 height=24/> [![Circle Build Status][circle-image]][circle-url] <img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> [![GitHub Issues][issues-image]][issues-url] -->
 
 <!-- [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/johnletey/A-Study-of-Transcription-and-Its-Affects-Demo/master) -->
 
