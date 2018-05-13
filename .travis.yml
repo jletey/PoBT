@@ -1,7 +1,0 @@
-language: python
-python:
-  - "3.6"
-before_script: bash ci/travis/travis-setup.sh
-script: bash ci/travis/travis-run.sh
-notifications:
-  email: false
