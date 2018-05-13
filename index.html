@@ -38,10 +38,11 @@
     [endif]
 
     <link href="assets/gridstack.css" rel="stylesheet">
-    <link href="gridstack-demo.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 </head>
 <body id="page-top" class="index">
-    <!-- Navigation -->
+
+    <!-- Begin : Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,18 +58,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- <li class="hidden">
+                    <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#demo">Demo</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#usage">Usage</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/gridstack/gridstack.js/issues">Issues</a>
-                    </li> -->
                     <li>
                         <a href="https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects">GitHub</a>
                     </li>
@@ -80,67 +72,39 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
+    <!-- End : Navigation -->
+
+    <!-- Begin : Header Section -->
     <header>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text">
                         <span class="name">A Study of Transcription and Its Affects</span>
-<!--                         <pre class="brush: js; highlight: [2,4]">
-                        {
-                            // selector of the element you want to attach the ripple ( is required )
-                            selectors: 'class, id',
-
-                            // color...🤔🤔🤔🤔🤔🤔
-                            color: 'rgba, hex, hsla',
-
-                            // pass the scrolling element if it's not window
-                            offsetEl: 'class, id',
-
-                            // this option accept an event listener
-                            eventListener: 'event'
-                        }
-                        </pre> -->
-                        <!-- <hr class="star-light"> -->
-                        <!-- <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column
-                        grid. It allows you to build draggable responsive bootstrap v3 friendly layouts.
-                        It also works great with <a href="http://knockoutjs.com">knockout.js</a> and touch devices.</p>
-
-                        <p>Inspired by <a href="http://gridster.net">gridster.js</a>. Built with love.</p> -->
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <!-- End : Header Section -->
+
+    <!-- Begin : Paper Section -->
     <section id="paper" class="darklue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Paper</h2>
                     <hr class="star-light">
-                    <button id="myButton" data-animation="ripple" onclick="wait('1s', function(){window.location='paper/index.html'});">Paper Preview</button> <button data-animation="ripple" onclick="wait('1s', function(){window.location='https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf'});">Download Paper</button>
+                    <button id="myButton" data-animation="ripple" onclick="wait('1s', function(){window.location='paper/web/viewer.html?file=https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/blob/master/paper/main.pdf'});">Paper Preview</button> <button data-animation="ripple" onclick="wait('1s', function(){window.location='https://github.com/johnletey/A-Study-of-Transcription-and-Its-Affects/raw/master/paper/main.pdf'});">Download Paper</button>
                 </div>
             </div>
-            <!-- <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
-                <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">1</div></div>
-                <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4"><div class="grid-stack-item-content">2</div></div>
-                <div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes"><div class="grid-stack-item-content"> <span class="fa fa-hand-o-up"></span> Drag me! </div></div>
-                <div class="grid-stack-item" data-gs-x="10" data-gs-y="0" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">4</div></div>
-                <div class="grid-stack-item" data-gs-x="0" data-gs-y="2" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">5</div></div>
-                <div class="grid-stack-item" data-gs-x="2" data-gs-y="2" data-gs-width="2" data-gs-height="4"><div class="grid-stack-item-content">6</div></div>
-                <div class="grid-stack-item" data-gs-x="8" data-gs-y="2" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">7</div></div>
-                <div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">8</div></div>
-                <div class="grid-stack-item" data-gs-x="4" data-gs-y="4" data-gs-width="4" data-gs-height="2"><div class="grid-stack-item-content">9</div></div>
-                <div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">10</div></div>
-                <div class="grid-stack-item" data-gs-x="10" data-gs-y="4" data-gs-width="2" data-gs-height="2"><div class="grid-stack-item-content">11</div></div>
-            </div> -->
         </div>
     </section>
-    <!-- Portfolio Grid Section -->
+    <!-- End : Paper Section -->
+
+    <!-- Begin : Running the Code Section -->
     <section id="running-code">
         <div class="container">
             <div class="row">
@@ -150,35 +114,10 @@
                 </div>
             </div>
             <p>To run my code, simply run the following command:</p>
-            <!-- <h3>Basic Usage</h3>
-            <pre><code class="html">
-&lt;div class=&quot;grid-stack&quot;&gt;
-    &lt;div class=&quot;grid-stack-item&quot;
-        data-gs-x=&quot;0&quot; data-gs-y=&quot;0&quot;
-        data-gs-width=&quot;4&quot; data-gs-height=&quot;2&quot;&gt;
-            &lt;div class=&quot;grid-stack-item-content&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;grid-stack-item&quot;
-        data-gs-x=&quot;4&quot; data-gs-y=&quot;0&quot;
-        data-gs-width=&quot;4&quot; data-gs-height=&quot;4&quot;&gt;
-            &lt;div class=&quot;grid-stack-item-content&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(function () {
-    var options = {
-        cellHeight: 80,
-        verticalMargin: 10
-    };
-    $('.grid-stack').gridstack(options);
-});
-&lt;/script&gt;
-            </code></pre>
-            <p>For more samples and documentation please visit <a href="https://github.com/gridstack/gridstack.js">https://github.com/gridstack/gridstack.js</a>.</p>
-        </div> -->
     </section>
-    <!-- Footer -->
+    <!-- End : Running the Code Section -->
+
+    <!-- Begin : Footer -->
     <footer class="text-center">
         <div class="footer-below">
             <div class="container">
@@ -190,6 +129,8 @@ $(function () {
             </div>
         </div>
     </footer>
+    <!-- End : Footer -->
+
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visble-sm">
         <a class="btn btn-primary" href="#page-top">
