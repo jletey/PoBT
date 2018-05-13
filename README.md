@@ -14,9 +14,9 @@
 
 <!-- - [Overview](#overview) -->
 - [Quick Start](#quick-start)
-<!-- - [Status](#status) -->
 - [What's Included](#whats-included)
 - [Notes and Warnings](#notes-and-warnings)
+<!-- - [Status](#status) -->
 
 <!-- ## Overview -->
 
