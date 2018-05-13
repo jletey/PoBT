@@ -4,3 +4,88 @@ header a, header a:hover { color: #fff; }
 .darklue hr.star-light::after {
     background-color: #2c3e50;
 }
+
+/*Syntax Highlighter : Sublime Theme */
+
+.syntaxhighlighter {
+    background-color: #2b303b !important;
+    padding: 15px 0;
+    margin: 2em 0 1em 0 !important;
+}
+
+.syntaxhighlighter a,
+.syntaxhighlighter div,
+.syntaxhighlighter code,
+.syntaxhighlighter table,
+.syntaxhighlighter table td,
+.syntaxhighlighter table tr,
+.syntaxhighlighter table tbody,
+.syntaxhighlighter table thead,
+.syntaxhighlighter table caption,
+.syntaxhighlighter textarea {
+    line-height: 1.3em !important;
+}
+
+.syntaxhighlighter .line.alt1 {
+    background-color: #2b303b !important;
+}
+
+.syntaxhighlighter .line.alt2 {
+    background-color: #2b303b !important;
+}
+
+.syntaxhighlighter .string,
+.syntaxhighlighter .string a {
+    color: #90be8c !important;
+}
+
+.syntaxhighlighter .color1,
+.syntaxhighlighter .color1 a {
+    color: #d08770 !important;
+}
+
+.syntaxhighlighter .plain,
+.syntaxhighlighter .plain a {
+    color: #c0c5ce !important;
+}
+
+.syntaxhighlighter .keyword {
+    color: #bf616a !important;
+}
+
+.syntaxhighlighter .gutter {
+    color: #757a84 !important;
+}
+
+.syntaxhighlighter .line.highlighted.alt1,
+.syntaxhighlighter .line.highlighted.alt2 {
+    background-color: #333E49 !important;
+}
+
+.syntaxhighlighter .gutter .line.highlighted {
+    background-color: #343d46 !important;
+    color: #757a84 !important;
+}
+
+.syntaxhighlighter .value {
+    color: #96b5b4 !important;
+}
+/*css*/
+/* .syntaxhighlighter .css.plain,
+.syntaxhighlighter .css.plain a {
+    color: #d08770 !important;
+}
+
+.syntaxhighlighter .css.keyword {
+    color: #c0c5ce !important;
+}*/
+
+.syntaxhighlighter .color3,
+.syntaxhighlighter .color3 a {
+    color: #b48ead !important;
+}
+/*js*/
+
+.syntaxhighlighter .js.keyword {
+    color: #b48ead !important;
+}
