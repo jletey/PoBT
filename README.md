@@ -38,7 +38,7 @@ Please see the [notes and warnings](#notes-and-warnings) section before proceedi
 pip install -r requirements.txt
 ```
 
-**Running code on my data (this is still a work in progress)**
+**Running code on my data**
 
 To easily run code on my data, simply run this command:
 
