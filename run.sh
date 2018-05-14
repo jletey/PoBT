@@ -114,6 +114,6 @@ done
 
 __install_requirements
 __log_info "Running my code which will calculate hits and plot histograms"
-python src/main.py src/data 2 n src/hits/
+pythonw src/main.py src/data 2 n output 
 __cleanup
 exit 0

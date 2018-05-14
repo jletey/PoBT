@@ -19,7 +19,7 @@ args = list(sys.argv[1:])
 data_path = args[0]
 n = int(args[1])
 show_fasta_data = args[2]
-hits_path = args[3]
+output_path = args[3]
 ## Print out to the user and tell then what options they selected
 print('>>>>>>>>>>>>>>>>>>')
 print('data files =', '[' + data_path + '/' + 'yeast.tamo' + ']', 'and', '[' + data_path + '/' + 'SGDv3.fasta' + ']')
@@ -52,14 +52,20 @@ for i in range(124):
 def test_func():
     pass
 # Go through each transcription factor and calculate all the hits for that specific one
+"""
 for tf in tfList[:30]:
     with Pool(8) as p:
         r = p.apply_async(test_func)
-	print('It took', calculate_hits(genes, chrs[:len(chrs)-n], data_path + '/yeast.tamo', tf, 'src/hits/Hits'+tf+'.gff')/60, 'minutes to calculate the hits for transcription factor', tf)
-	result = r.get()
-# Go through each transcription factor and plot a histogram for that specific one
-for tf in tfList[:30]:
-    with Pool(8) as p:
-        r = p.apply_async(test_func)
-        plot_hist('src/hits/Hits'+tf+'.gff', 'src/hists/Hist'+tf+'.png')
+        print('It took', calculate_hits(genes, chrs[:len(chrs)-n], data_path + '/yeast.tamo', tf, output_path + '/hits/Hits'+tf+'.gff')/60, 'minutes to calculate the hits for transcription factor', tf)
         result = r.get()
+"""
+# Go through each transcription factor and plot a histogram for that specific one
+fileID = open(output_path + '/peaks.txt', 'w')
+for tf in tfList[:30]:
+    with Pool(8) as p:
+        r = p.apply_async(test_func)
+        time_took, peak = plot_hist(output_path + '/hits/Hits'+tf+'.gff', output_path + '/hists/Hist'+tf+'.png')
+        fileID.write(tf + '\t' + peak + '\n')
+        print('It took', time_took/60, 'minutes to compute the histogram analysis for transcription factor', tf)
+        result = r.get()
+fileID.close()

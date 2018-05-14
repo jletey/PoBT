@@ -10,12 +10,12 @@
 ## Imports
 from time import time
 from read_gff import read_gff
-#import matplotlib.pylab as plt
-#plt.style.use('bmh')
+import matplotlib.pyplot as plt
+plt.style.use('bmh')
 import numpy as np
 ## Implementation of plot_hist
 def plot_hist(HitsInFilename, PicFile):
-    # Get the time at the begining of the function
+    # Get the time at the beginning of the function
     t_beg = time()
     # Get the data from the GFF file
     data = read_gff(HitsInFilename)
@@ -26,10 +26,10 @@ def plot_hist(HitsInFilename, PicFile):
             weakSites.append(int(data[i][3]))
         else:
             strongSites.append(int(data[i][3]))
-    # Set the number of plus or minus range of what we're going to be anaylsing and the size of the buckets
-    r = 50
+    # Set the number of plus or minus range of what we're going to be analyzing and the size of the buckets
+    r = 150
     s = 50
-    # Analyse the hits
+    # Analyze the hits
     categories = [0 for i in range(r)]
     for i in range(len(strongSites)):
         for j in range(len(weakSites)):
@@ -53,8 +53,6 @@ def plot_hist(HitsInFilename, PicFile):
                    categories[k] += 1
     """
     # Plot the histogram
-    print(categories)
-    """
     fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10,5))
     ax.bar(range(len(categories)), categories, color='black', label='histogram')
     plt.plot(range(len(categories)), [np.mean(categories) for i in range(len(categories))], color='#a76c6e', label='mean')
@@ -67,8 +65,11 @@ def plot_hist(HitsInFilename, PicFile):
     ax.grid(alpha=0.25)
     ax.legend(loc="upper left", fontsize=12)
     fig.savefig(PicFile)
-    """
+    # Print where the peak value occurs
+    peakIndex = np.argmax(categories)
+    peak = peakIndex*(r//s) + 0.5*(r//s)
+    print("The peak at {:.3f}".format(peak))
     # Get the time at the end of the function
     t_end = time()
-    # Return the amount of seconds it took the function to run (in seconds)
-    return t_end - t_beg
+    # Return the amount of seconds it took the function to run (in seconds) and also where the peak value occurs
+    return (t_end - t_beg, peak)
