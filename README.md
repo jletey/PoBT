@@ -46,14 +46,6 @@ To easily run code on my data, simply run this command:
 python src/main.py src/data 2 n src/hits/
 ```
 
-But, to get a more interactive and visual experience, run the following command:
-
-```sh
-python run_server.py
-```
-
-Then, open up `localhost:9000` in your favorite browser.
-
 **Running on your own data**
 
 TODO
