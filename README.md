@@ -43,12 +43,22 @@ pip install -r requirements.txt
 To easily run code on my data, simply run this command:
 
 ```sh
-python src/main.py src/data 2 n src/hits/
+python src/main.py src/data 2 n src/hits/ src/hists/
 ```
 
 **Running on your own data**
 
-TODO
+To run my code on your own data, please note that my program takes in two files, namely, on FASTA formatted and the other one TAMO formatted. After that, it's pretty simple, but just make sure to follow the below instructions:
+
+Start off with the command `python src/main.py`
+
+1. Then, the first argument to pass in is the data directory (in my case it was `src/data`)
+2. Then, pass in the number of chromosomes that you don't want to use (in my case it was 2)
+3. Then, if you want to see a basic output of the chromosome, pass in `y`, otherwise pass in `n`
+4. Then, pass in the folder where you want to hold all of the hits files (the folder has to exist)
+5. And finally, pass in the folder where you want to hold all of the histogram files (the folder has to exist)
+
+After that, you should be good to go!
 
 <!-- ## Status -->
 
