@@ -108,5 +108,3 @@ venv.bak/
 *.aux
 *.log
 *.out
-*.tex
-*.sty
