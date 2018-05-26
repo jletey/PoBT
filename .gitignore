@@ -108,3 +108,4 @@ venv.bak/
 *.aux
 *.log
 *.out
+*.sty

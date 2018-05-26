@@ -48,24 +48,27 @@ tfList = []
 for i in range(124):
     line = tamoData[19 + 42*i - 1]
     tfList.append(line[9:])
-# Define function that's required to run multiprocessing
-def test_func():
-    pass
+# Define functions for multiprocessing
+def hits_func():
+    print('It took', calculate_hits(genes, chrs[:len(chrs)-n], data_path + '/yeast.tamo', tf, output_path + '/hits/Hits'+tf+'.gff')/60, 'minutes to calculate the hits for transcription factor', tf)
+def hist_func():
+    time_took, peak = plot_hist(output_path + '/hits/Hits'+tf+'.gff', output_path + '/hists/Hist'+tf+'.png')
+    print('It took', time_took/60, 'minutes to compute the histogram analysis for transcription factor', tf)
+    return peak
 # Go through each transcription factor and calculate all the hits for that specific one
 """
 for tf in tfList[:30]:
-    with Pool(8) as p:
-        r = p.apply_async(test_func)
-        print('It took', calculate_hits(genes, chrs[:len(chrs)-n], data_path + '/yeast.tamo', tf, output_path + '/hits/Hits'+tf+'.gff')/60, 'minutes to calculate the hits for transcription factor', tf)
+    with Pool(4) as p:
+        r = p.apply_async(hits_func)
         result = r.get()
 """
 # Go through each transcription factor and plot a histogram for that specific one
-fileID = open(output_path + '/peaks.txt', 'w')
+peaks = []
 for tf in tfList[:30]:
-    with Pool(8) as p:
-        r = p.apply_async(test_func)
-        time_took, peak = plot_hist(output_path + '/hits/Hits'+tf+'.gff', output_path + '/hists/Hist'+tf+'.png')
-        fileID.write(tf + '\t' + peak + '\n')
-        print('It took', time_took/60, 'minutes to compute the histogram analysis for transcription factor', tf)
-        result = r.get()
+    with Pool(4) as p:
+        r = p.apply_async(hist_func)
+        peaks.append(r.get())
+fileID = open(output_path + '/peaks.txt', 'w')
+for peak, tf in zip(peaks, tfList[:30]):
+    fileID.write(tf + '\t' + str(peak) + '\n')
 fileID.close()

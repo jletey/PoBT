@@ -28,15 +28,26 @@ def plot_hist(HitsInFilename, PicFile):
             strongSites.append(int(data[i][3]))
     # Set the number of plus or minus range of what we're going to be analyzing and the size of the buckets
     r = 150
-    s = 50
+    s = 20
     # Analyze the hits
-    categories = [0 for i in range(r)]
+    categories = [0 for i in range(r//s)]
+    for i in range(len(strongSites)):
+        for j in range(len(weakSites)):
+            mat = [0 for i in range(r//s)]
+            value = abs(strongSites[i] - weakSites[j])
+            for k in range(r//s):
+                if value <= s*k and value > s*(k-1):
+                    mat[k] = value
+            categories += mat
+    print(categories)
+    """
     for i in range(len(strongSites)):
         for j in range(len(weakSites)):
             value = abs(strongSites[i] - weakSites[j])
             for k in range(r//s):
                 if (value <= (s*k) and (value >= s*(k-1))):
                     categories[k] += 1
+    """
     """
     for i in range(len(strongSites)):
         position1 = 0
