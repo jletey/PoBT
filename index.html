@@ -9,10 +9,11 @@
 
     <title>A Study of Transcription and Its Affects</title>
 
-    <!-- Begin : Code Syntax Highlighting -->
-    <link rel="stylesheet" type="text/css" href="assets/syntax-highlighter/styles/shCore.css" media="all">
-    <link rel="stylesheet" type="text/css" href="assets/syntax-highlighter/styles/shThemeRDark.css" media="all">
-    <!-- End : Code Syntax Highlighting -->
+    <!-- Begin : EnlighterJS -->
+    <link rel="stylesheet" type="text/css" href="assets/EnlighterJS/EnlighterJS.css" />
+    <script type="text/javascript" src="assets/EnlighterJS/EnlighterJS.js" ></script>
+    <meta name="EnlighterJS" content="Advanced javascript based syntax highlighting" data-indent="4" data-selector-block="pre" data-selector-inline="code" data-language="javascript" />
+    <!-- End : Enlighter -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -113,9 +114,11 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <p>If you dare to run my code (since it takes forever), simply run the following two commands in your favorite terminal:</p>
-            <p>1. <code>pip install -r requirements.txt</code></p>
-            <p>2. <code>bash run.sh</code></p>
+            <p>If you dare to run my code (since it takes forever), simply run the following commands in your favorite terminal:</p>
+            <pre data-enlighter-language="bash">
+            pip install -r requirements.txt
+            bash run.sh
+            </pre>
     </section>
     <!-- End : Running the Code Section -->
 
