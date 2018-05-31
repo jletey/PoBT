@@ -26,19 +26,24 @@ def plot_hist(HitsInFilename, PicFile):
             weakSites.append(int(data[i][3]))
         else:
             strongSites.append(int(data[i][3]))
+    weakSites = np.array(weakSites)
+    strongSites = np.array(strongSites)
     # Set the number of plus or minus range of what we're going to be analyzing and the size of the buckets
     r = 150
-    s = 20
+    s = 3
     # Analyze the hits
     categories = [0 for i in range(r//s)]
-    for i in range(len(strongSites)):
-        for j in range(len(weakSites)):
+    for i in range(strongSites.shape[0]):
+        for j in range(weakSites.shape[0]):
             mat = [0 for i in range(r//s)]
             value = abs(strongSites[i] - weakSites[j])
+            if value > r:
+                break
             for k in range(r//s):
                 if value <= s*k and value > s*(k-1):
                     mat[k] = value
-            categories += mat
+            for i in range(len(mat)):
+                categories[i] += mat[i]
     print(categories)
     """
     for i in range(len(strongSites)):
@@ -78,7 +83,7 @@ def plot_hist(HitsInFilename, PicFile):
     fig.savefig(PicFile)
     # Print where the peak value occurs
     peakIndex = np.argmax(categories)
-    peak = peakIndex*(r//s) + 0.5*(r//s)
+    peak = peakIndex*s + 0.5*s
     print("The peak at {:.3f}".format(peak))
     # Get the time at the end of the function
     t_end = time()
