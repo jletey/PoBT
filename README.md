@@ -16,7 +16,7 @@ Research project investigating if weak affinity binding sites aid in unwrapping 
 
 ## Quick Start
 
-Please see the [notes and warnings](#notes-and-warnings) section before proceeding! Note that, if you want to do all of the following by hand, go for it... but if you're lazy, just simply run `bash run.sh`.
+Please take into account that my code does take a while to run, not as long as most programs like this take, but still pretty long. Note that, if you want to do all of the following by hand, go for it... but if you're lazy, just simply run `bash run.sh`.
 
 **Installing Dependencies**
 
