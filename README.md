@@ -10,11 +10,6 @@
   </p>
 </p>
 
-## Table of Contents
-
-- [Overview](#abstract)
-- [Quick Start](#quick-start)
-
 ## Abstract
 
 Research project investigating if weak affinity binding sites aid in unwrapping the nucleosome so that strong affinity sites can occur, and if there's a certain pattern between the different binding sites if this occurs. Using Python computer programs to simulate the binding process. We inputted pre-mapped yeast chromosomes and yeast transcription factors into our model.
@@ -50,7 +45,6 @@ Start off with the command `python src/main.py`
 1. Then, the first argument to pass in is the data directory (in my case it was `src/data`)
 2. Then, pass in the number of chromosomes that you don't want to use (in my case it was 2)
 3. Then, if you want to see a basic output of the chromosome, pass in `y`, otherwise pass in `n`
-4. Then, pass in the folder where you want to hold all of the hits files (the folder has to exist)
-5. And finally, pass in the folder where you want to hold all of the histogram files (the folder has to exist)
+4. And finally, pass in the folder where you want all your ouput to be!
 
 After that, you should be good to go!
